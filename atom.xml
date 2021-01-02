@@ -6,7 +6,7 @@
   <link href="https://peyton.github.io/atom.xml" rel="self"/>
   
   <link href="https://peyton.github.io/"/>
-  <updated>2020-11-30T15:26:13.000Z</updated>
+  <updated>2020-11-01T07:38:38.468Z</updated>
   <id>https://peyton.github.io/</id>
   
   <author>
@@ -15,6 +15,359 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数字图像处理之错切问题</title>
+    <link href="https://peyton.github.io/2020/11/01/shu-zi-tu-xiang-chu-li-ke-cheng-zuo-ye/"/>
+    <id>https://peyton.github.io/2020/11/01/shu-zi-tu-xiang-chu-li-ke-cheng-zuo-ye/</id>
+    <published>2020-11-01T07:18:50.000Z</published>
+    <updated>2020-11-01T07:38:38.468Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="数字图像处理" scheme="https://peyton.github.io/categories/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
+    
+    
+    <category term="MATLAB" scheme="https://peyton.github.io/tags/MATLAB/"/>
+    
+    <category term="数字图像处理" scheme="https://peyton.github.io/tags/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VHDL语言入门</title>
+    <link href="https://peyton.github.io/2020/07/11/vhdl-yu-yan-ru-men/"/>
+    <id>https://peyton.github.io/2020/07/11/vhdl-yu-yan-ru-men/</id>
+    <published>2020-07-11T03:21:39.000Z</published>
+    <updated>2020-07-11T05:47:20.650Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;语言描述法&quot;&gt;&lt;a href=&quot;#语言描述法&quot; class=&quot;headerlink&quot; title=&quot;语言描述法&quot;&gt;&lt;/a&gt;语言描述法&lt;/h2&gt;&lt;h3 id=&quot;1-结构描述法&quot;&gt;&lt;a href=&quot;#1-结构描述法&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="VHDL" scheme="https://peyton.github.io/categories/VHDL/"/>
+    
+    
+    <category term="VHDL" scheme="https://peyton.github.io/tags/VHDL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VSCode优雅配置LaTeX</title>
+    <link href="https://peyton.github.io/2020/07/11/vscode-you-ya-pei-zhi-latex/"/>
+    <id>https://peyton.github.io/2020/07/11/vscode-you-ya-pei-zhi-latex/</id>
+    <published>2020-07-11T01:14:11.000Z</published>
+    <updated>2020-07-11T02:23:31.749Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;软件安装&quot;&gt;&lt;a href=&quot;#软件安装&quot; class=&quot;headerlink&quot; title=&quot;软件安装&quot;&gt;&lt;/a&gt;软件安装&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="LaTeX" scheme="https://peyton.github.io/categories/LaTeX/"/>
+    
+    <category term="VSCode" scheme="https://peyton.github.io/categories/LaTeX/VSCode/"/>
+    
+    
+    <category term="LaTex" scheme="https://peyton.github.io/tags/LaTex/"/>
+    
+    <category term="VSCode" scheme="https://peyton.github.io/tags/VSCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scrapy爬虫实战--当当网</title>
+    <link href="https://peyton.github.io/2020/07/10/scrapy-pa-chong-shi-zhan-dang-dang-wang/"/>
+    <id>https://peyton.github.io/2020/07/10/scrapy-pa-chong-shi-zhan-dang-dang-wang/</id>
+    <published>2020-07-10T08:41:31.000Z</published>
+    <updated>2020-07-10T14:57:32.379Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;看完Scrapy的概述，我们大概对Scrapy这个爬虫框架有了一个大致的了解。下面就通过爬取当当网python书籍信息来对Scrapy这个框架做一个实战。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;创建一个项目文件夹，并打开终端cd到创建文件夹处。在该目录下，在终端输入：&lt;pre</summary>
+        
+      
+    
+    
+    
+    <category term="python" scheme="https://peyton.github.io/categories/python/"/>
+    
+    <category term="爬虫" scheme="https://peyton.github.io/categories/python/%E7%88%AC%E8%99%AB/"/>
+    
+    <category term="实战" scheme="https://peyton.github.io/categories/python/%E7%88%AC%E8%99%AB/%E5%AE%9E%E6%88%98/"/>
+    
+    
+    <category term="python" scheme="https://peyton.github.io/tags/python/"/>
+    
+    <category term="爬虫" scheme="https://peyton.github.io/tags/%E7%88%AC%E8%99%AB/"/>
+    
+    <category term="实战" scheme="https://peyton.github.io/tags/%E5%AE%9E%E6%88%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scrapy爬虫简介</title>
+    <link href="https://peyton.github.io/2020/07/08/scrapy-pa-chong-jian-jie/"/>
+    <id>https://peyton.github.io/2020/07/08/scrapy-pa-chong-jian-jie/</id>
+    <published>2020-07-08T07:39:07.000Z</published>
+    <updated>2020-07-10T06:09:48.134Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;流程图&quot;&gt;&lt;a href=&quot;#流程图&quot; class=&quot;headerlink&quot; title=&quot;流程图&quot;&gt;&lt;/a&gt;流程图&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="爬虫" scheme="https://peyton.github.io/categories/%E7%88%AC%E8%99%AB/"/>
+    
+    
+    <category term="python" scheme="https://peyton.github.io/tags/python/"/>
+    
+    <category term="爬虫" scheme="https://peyton.github.io/tags/%E7%88%AC%E8%99%AB/"/>
+    
+    <category term="Scrapy" scheme="https://peyton.github.io/tags/Scrapy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LaTeX环境搭建</title>
+    <link href="https://peyton.github.io/2020/07/02/latex-huan-jing-da-jian/"/>
+    <id>https://peyton.github.io/2020/07/02/latex-huan-jing-da-jian/</id>
+    <published>2020-07-02T00:56:55.000Z</published>
+    <updated>2020-07-02T00:59:09.101Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;软件安装&quot;&gt;&lt;a href=&quot;#软件安装&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="LaTeX" scheme="https://peyton.github.io/categories/LaTeX/"/>
+    
+    
+    <category term="LaTeX" scheme="https://peyton.github.io/tags/LaTeX/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java期末练习</title>
+    <link href="https://peyton.github.io/2020/06/14/java-qi-mo-lian-xi/"/>
+    <id>https://peyton.github.io/2020/06/14/java-qi-mo-lian-xi/</id>
+    <published>2020-06-14T07:01:43.000Z</published>
+    <updated>2020-06-14T07:18:05.494Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;这期可能是关于Java的最后一期更新了！期末考试即将来临，老师终于官方的发题目啦！这让我倍感涕零。下面二话不说就抛代码了~&lt;/p&gt;
+&lt;h3 id=&quot;题一（基本循环、选择语句）&quot;&gt;&lt;a href=&quot;#题一（基本循环、选择语句）&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://peyton.github.io/categories/Java/"/>
+    
+    
+    <category term="Java" scheme="https://peyton.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基于Java的GUI设计</title>
+    <link href="https://peyton.github.io/2020/06/13/java-de-gui-she-ji/"/>
+    <id>https://peyton.github.io/2020/06/13/java-de-gui-she-ji/</id>
+    <published>2020-06-13T11:19:39.000Z</published>
+    <updated>2020-06-13T11:43:44.885Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在2020的今天，GUI，可能已经是大家耳熟能详的词了。所谓GUI即是用户界面，像我们的QQ，WeChat等等都是以用户界面的形式呈现在我们眼前的。而Java作为一种运用广泛的程序语言，自然在GUI设计上也有其独特之处。下面就以2道常规GUI题来实战一下吧！此次的题目以及代</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://peyton.github.io/categories/Java/"/>
+    
+    
+    <category term="Java" scheme="https://peyton.github.io/tags/Java/"/>
+    
+    <category term="GUI" scheme="https://peyton.github.io/tags/GUI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java常用类实战</title>
+    <link href="https://peyton.github.io/2020/06/05/java-chang-yong-lei-shi-zhan/"/>
+    <id>https://peyton.github.io/2020/06/05/java-chang-yong-lei-shi-zhan/</id>
+    <published>2020-06-05T14:35:56.000Z</published>
+    <updated>2020-06-05T15:07:20.176Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;ArrayList类&quot;&gt;&lt;a href=&quot;#ArrayList类&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://peyton.github.io/categories/Java/"/>
+    
+    
+    <category term="Java" scheme="https://peyton.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TensorBoard实战</title>
+    <link href="https://peyton.github.io/2020/06/05/tensorboard-shi-zhan/"/>
+    <id>https://peyton.github.io/2020/06/05/tensorboard-shi-zhan/</id>
+    <published>2020-06-05T10:49:12.000Z</published>
+    <updated>2020-06-05T11:22:39.771Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;今天我们来介绍一款机器学习中很实用的工具：TensorBoard。它之所以实用，主要是因为它将机器学习这一个类似黑盒的东西可视化出来，让用户对训练过程有一个更好的理解。下面就基于MNIST数据集来实战一下TensorBoard的使用方法。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="Keras" scheme="https://peyton.github.io/categories/Keras/"/>
+    
+    
+    <category term="Tensorboard" scheme="https://peyton.github.io/tags/Tensorboard/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>screen常用命令</title>
+    <link href="https://peyton.github.io/2020/06/05/screen-jiao-cheng/"/>
+    <id>https://peyton.github.io/2020/06/05/screen-jiao-cheng/</id>
+    <published>2020-06-05T07:16:20.000Z</published>
+    <updated>2020-06-06T01:10:53.202Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;​   </summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://peyton.github.io/categories/Linux/"/>
+    
+    
+    <category term="screen" scheme="https://peyton.github.io/tags/screen/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java基础练习</title>
+    <link href="https://peyton.github.io/2020/06/01/java-chang-gui-cao-zuo/"/>
+    <id>https://peyton.github.io/2020/06/01/java-chang-gui-cao-zuo/</id>
+    <published>2020-06-01T13:59:45.000Z</published>
+    <updated>2020-06-06T01:10:36.149Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;时间之矢稍纵即逝，接近2周就要Java期末考了。作为一个一学期没怎么认真听Java课的我来说，内心波澜起伏。借着空余的时间，把Java的重点稍微总结了一下，下面就以涵盖全书的4个例子展开。&lt;/p&gt;
+&lt;h3 id=&quot;题1-数组-：&quot;&gt;&lt;a href=&quot;#题1-数组-：&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://peyton.github.io/categories/Java/"/>
+    
+    
+    <category term="Java" scheme="https://peyton.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>conda常用命令</title>
+    <link href="https://peyton.github.io/2020/05/29/conda-cao-zuo/"/>
+    <id>https://peyton.github.io/2020/05/29/conda-cao-zuo/</id>
+    <published>2020-05-29T03:41:44.000Z</published>
+    <updated>2020-06-06T01:10:13.434Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;conda可以说是每个学习python的人都应该了解的。当我们安装python包，或者创建环境的时候都会和它打交道。为了帮助大家对conda有一个更好的了解，下面总结了一些关于conda的命令行操作。主要是关于conda换源问题以及conda虚拟环境操作问题。那下面就开始吧</summary>
+        
+      
+    
+    
+    
+    <category term="python基础" scheme="https://peyton.github.io/categories/python%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="conda命令行" scheme="https://peyton.github.io/tags/conda%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
+    
+  </entry>
   
   <entry>
     <title>Fenix — 比 MyBatis 更加强大的 Spring Data JPA 扩展库</title>
@@ -215,345 +568,6 @@
     <category term="面向对象编程" scheme="https://peyton.github.io/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/"/>
     
     <category term="设计原则" scheme="https://peyton.github.io/tags/%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>GitLab CI/CD 介绍和使用</title>
-    <link href="https://peyton.github.io/2018/11/22/ruan-jian-gong-ju/devops/gitlab-ci-jie-shao-he-shi-yong/"/>
-    <id>https://peyton.github.io/2018/11/22/ruan-jian-gong-ju/devops/gitlab-ci-jie-shao-he-shi-yong/</id>
-    <published>2018-11-22T15:30:00.000Z</published>
-    <updated>2020-11-30T15:26:13.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、持续集成介绍&quot;&gt;&lt;a href=&quot;#一、持续集成介绍&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="软件工具" scheme="https://peyton.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
-    
-    
-    <category term="GitLab CI" scheme="https://peyton.github.io/tags/GitLab-CI/"/>
-    
-    <category term="DevOps" scheme="https://peyton.github.io/tags/DevOps/"/>
-    
-    <category term="Jenkins" scheme="https://peyton.github.io/tags/Jenkins/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vue 文档风格的 Typora 主题</title>
-    <link href="https://peyton.github.io/2018/11/19/ruan-jian-gong-ju/markdown/vue-wen-dang-feng-ge-de-typora-zhu-ti/"/>
-    <id>https://peyton.github.io/2018/11/19/ruan-jian-gong-ju/markdown/vue-wen-dang-feng-ge-de-typora-zhu-ti/</id>
-    <published>2018-11-18T16:30:00.000Z</published>
-    <updated>2020-11-30T15:26:13.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/blinkfox/typora-vue-theme&quot;&gt;typora-vue-theme&lt;/a&gt; 是 Typora Markdown 文档编辑器中一款类似&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="软件工具" scheme="https://peyton.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
-    
-    
-    <category term="Typora" scheme="https://peyton.github.io/tags/Typora/"/>
-    
-    <category term="Markdown" scheme="https://peyton.github.io/tags/Markdown/"/>
-    
-    <category term="Vue" scheme="https://peyton.github.io/tags/Vue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CPU多级缓存</title>
-    <link href="https://peyton.github.io/2018/11/18/ruan-jian-gong-ju/cpu-duo-ji-huan-cun/"/>
-    <id>https://peyton.github.io/2018/11/18/ruan-jian-gong-ju/cpu-duo-ji-huan-cun/</id>
-    <published>2018-11-18T13:55:00.000Z</published>
-    <updated>2020-11-30T15:26:13.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、什么是CPU缓存&quot;&gt;&lt;a href=&quot;#一、什么是CPU缓存&quot; class=&quot;headerlink&quot; title=&quot;一、什么是CPU缓存&quot;&gt;&lt;/a&gt;一、什么是CPU缓存&lt;/h2&gt;&lt;h3 id=&quot;1-CPU缓存的来历&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="软件工具" scheme="https://peyton.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
-    
-    
-    <category term="CPU缓存" scheme="https://peyton.github.io/tags/CPU%E7%BC%93%E5%AD%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>单元测试指南</title>
-    <link href="https://peyton.github.io/2018/11/15/hou-duan/java/dan-yuan-ce-shi-zhi-nan/"/>
-    <id>https://peyton.github.io/2018/11/15/hou-duan/java/dan-yuan-ce-shi-zhi-nan/</id>
-    <published>2018-11-15T14:50:00.000Z</published>
-    <updated>2020-11-30T15:26:13.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、必要性&quot;&gt;&lt;a href=&quot;#一、必要性&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="后端" scheme="https://peyton.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
-    
-    
-    <category term="Java" scheme="https://peyton.github.io/tags/Java/"/>
-    
-    <category term="单元测试" scheme="https://peyton.github.io/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java8新特性及使用(二)</title>
-    <link href="https://peyton.github.io/2018/11/14/hou-duan/java/java8-xin-te-xing-ji-shi-yong-er/"/>
-    <id>https://peyton.github.io/2018/11/14/hou-duan/java/java8-xin-te-xing-ji-shi-yong-er/</id>
-    <published>2018-11-14T14:00:00.000Z</published>
-    <updated>2020-11-30T15:26:13.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;扩展注解的支持&quot;&gt;&lt;a href=&quot;#扩展注解的支持&quot; class=&quot;headerlink&quot; title=&quot;扩展注解的支持&quot;&gt;&lt;/a&gt;扩展注解的支持&lt;/h2&gt;&lt;p&gt;Java</summary>
-        
-      
-    
-    
-    
-    <category term="后端" scheme="https://peyton.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
-    
-    
-    <category term="Java" scheme="https://peyton.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java8新特性及使用(一)</title>
-    <link href="https://peyton.github.io/2018/11/13/hou-duan/java/java8-xin-te-xing-ji-shi-yong-yi/"/>
-    <id>https://peyton.github.io/2018/11/13/hou-duan/java/java8-xin-te-xing-ji-shi-yong-yi/</id>
-    <published>2018-11-13T14:30:00.000Z</published>
-    <updated>2020-11-30T15:26:13.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;新特性列表&quot;&gt;&lt;a href=&quot;#新特性列表&quot; class=&quot;headerlink&quot; title=&quot;新特性列表&quot;&gt;&lt;/a&gt;新特性列表&lt;/h2&gt;&lt;p&gt;以下是Java8中的引入的部分新特性。关于Java8新特性更详细的介绍可参考&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="后端" scheme="https://peyton.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
-    
-    
-    <category term="Java" scheme="https://peyton.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java7新特性及使用</title>
-    <link href="https://peyton.github.io/2018/11/12/hou-duan/java/java7-xin-te-xing-ji-shi-yong/"/>
-    <id>https://peyton.github.io/2018/11/12/hou-duan/java/java7-xin-te-xing-ji-shi-yong/</id>
-    <published>2018-11-11T16:30:00.000Z</published>
-    <updated>2020-11-30T15:26:13.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;新特性列表&quot;&gt;&lt;a href=&quot;#新特性列表&quot; class=&quot;headerlink&quot; title=&quot;新特性列表&quot;&gt;&lt;/a&gt;新特性列表&lt;/h2&gt;&lt;p&gt;以下是Java7中的引入的部分新特性。关于Java7更详细的介绍可参考&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="后端" scheme="https://peyton.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
-    
-    
-    <category term="Java" scheme="https://peyton.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java6新特性及使用</title>
-    <link href="https://peyton.github.io/2018/11/11/hou-duan/java/java6-xin-te-xing-ji-shi-yong/"/>
-    <id>https://peyton.github.io/2018/11/11/hou-duan/java/java6-xin-te-xing-ji-shi-yong/</id>
-    <published>2018-11-11T14:40:00.000Z</published>
-    <updated>2020-11-30T15:26:13.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;新特性列表&quot;&gt;&lt;a href=&quot;#新特性列表&quot; class=&quot;headerlink&quot; title=&quot;新特性列表&quot;&gt;&lt;/a&gt;新特性列表&lt;/h2&gt;&lt;p&gt;以下是Java6中的引入的部分新特性，相比Java5的新特性就少了很多了。关于Java6更详细的介绍可参考&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="后端" scheme="https://peyton.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
-    
-    
-    <category term="Java" scheme="https://peyton.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java5新特性及使用</title>
-    <link href="https://peyton.github.io/2018/11/09/hou-duan/java/java5-xin-te-xing-ji-shi-yong/"/>
-    <id>https://peyton.github.io/2018/11/09/hou-duan/java/java5-xin-te-xing-ji-shi-yong/</id>
-    <published>2018-11-08T16:30:00.000Z</published>
-    <updated>2020-11-30T15:26:13.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;新特性列表&quot;&gt;&lt;a href=&quot;#新特性列表&quot; class=&quot;headerlink&quot; title=&quot;新特性列表&quot;&gt;&lt;/a&gt;新特性列表&lt;/h2&gt;&lt;p&gt;以下是Java5中的引入的部分新特性，关于更详细的新特性了解，可参考&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="后端" scheme="https://peyton.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
-    
-    
-    <category term="Java" scheme="https://peyton.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java注解的理解和应用</title>
-    <link href="https://peyton.github.io/2018/11/08/hou-duan/java/java-zhu-jie-de-li-jie-he-ying-yong/"/>
-    <id>https://peyton.github.io/2018/11/08/hou-duan/java/java-zhu-jie-de-li-jie-he-ying-yong/</id>
-    <published>2018-11-07T16:30:00.000Z</published>
-    <updated>2020-11-30T15:26:13.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;h3 id=&quot;1-什么是注解&quot;&gt;&lt;a href=&quot;#1-什么是注解&quot; class=&quot;headerlink&quot; title=&quot;1.</summary>
-        
-      
-    
-    
-    
-    <category term="后端" scheme="https://peyton.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
-    
-    
-    <category term="Java" scheme="https://peyton.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java反射基础</title>
-    <link href="https://peyton.github.io/2018/11/07/hou-duan/java/java-fan-she-ji-chu/"/>
-    <id>https://peyton.github.io/2018/11/07/hou-duan/java/java-fan-she-ji-chu/</id>
-    <published>2018-11-07T13:40:00.000Z</published>
-    <updated>2020-11-30T15:26:13.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、概述&quot;&gt;&lt;a href=&quot;#一、概述&quot; class=&quot;headerlink&quot; title=&quot;一、概述&quot;&gt;&lt;/a&gt;一、概述&lt;/h2&gt;&lt;h3 id=&quot;1-简介&quot;&gt;&lt;a href=&quot;#1-简介&quot; class=&quot;headerlink&quot; title=&quot;1.</summary>
-        
-      
-    
-    
-    
-    <category term="后端" scheme="https://peyton.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
-    
-    
-    <category term="Java" scheme="https://peyton.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java IO 知识整理</title>
-    <link href="https://peyton.github.io/2018/11/05/hou-duan/java/java-io-zhi-shi-zheng-li/"/>
-    <id>https://peyton.github.io/2018/11/05/hou-duan/java/java-io-zhi-shi-zheng-li/</id>
-    <published>2018-11-05T03:30:00.000Z</published>
-    <updated>2020-11-30T15:26:13.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;各IO类关系梳理&quot;&gt;&lt;a href=&quot;#各IO类关系梳理&quot; class=&quot;headerlink&quot; title=&quot;各IO类关系梳理&quot;&gt;&lt;/a&gt;各IO类关系梳理&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;InputStream: Java</summary>
-        
-      
-    
-    
-    
-    <category term="后端" scheme="https://peyton.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
-    
-    
-    <category term="Java" scheme="https://peyton.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java面向对象设计之责任链模式</title>
-    <link href="https://peyton.github.io/2018/11/04/ruan-jian-she-ji/she-ji-mo-shi/java-mian-xiang-dui-xiang-she-ji-zhi-ze-ren-lian-mo-shi/"/>
-    <id>https://peyton.github.io/2018/11/04/ruan-jian-she-ji/she-ji-mo-shi/java-mian-xiang-dui-xiang-she-ji-zhi-ze-ren-lian-mo-shi/</id>
-    <published>2018-11-04T14:00:00.000Z</published>
-    <updated>2020-11-30T15:26:13.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;模式动机&quot;&gt;&lt;a href=&quot;#模式动机&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="软件设计" scheme="https://peyton.github.io/categories/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/"/>
-    
-    
-    <category term="Java" scheme="https://peyton.github.io/tags/Java/"/>
-    
-    <category term="设计模式" scheme="https://peyton.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
