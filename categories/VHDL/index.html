@@ -823,6 +823,13 @@ AeqB&lt;=NOT((a(0) XOR b(0)) OR (a(1) XOR b(1)) OR(a(2) XOR b(2)) OR
     
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
+<script type="text/javascript">
+//只在桌面版网页启用特效
+var windowWidth = $(window).width();
+if (windowWidth > 768) {
+    document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+}
+</script>
 
 </body>
 
