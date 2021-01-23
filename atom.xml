@@ -6,7 +6,7 @@
   <link href="https://peyton.github.io/atom.xml" rel="self"/>
   
   <link href="https://peyton.github.io/"/>
-  <updated>2020-11-01T07:38:38.468Z</updated>
+  <updated>2021-01-23T07:41:40.718Z</updated>
   <id>https://peyton.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://peyton.github.io/2020/11/01/shu-zi-tu-xiang-chu-li-ke-cheng-zuo-ye/"/>
     <id>https://peyton.github.io/2020/11/01/shu-zi-tu-xiang-chu-li-ke-cheng-zuo-ye/</id>
     <published>2020-11-01T07:18:50.000Z</published>
-    <updated>2020-11-01T07:38:38.468Z</updated>
+    <updated>2021-01-23T07:41:40.718Z</updated>
     
     
       
@@ -104,7 +104,7 @@
     <link href="https://peyton.github.io/2020/07/10/scrapy-pa-chong-shi-zhan-dang-dang-wang/"/>
     <id>https://peyton.github.io/2020/07/10/scrapy-pa-chong-shi-zhan-dang-dang-wang/</id>
     <published>2020-07-10T08:41:31.000Z</published>
-    <updated>2020-07-10T14:57:32.379Z</updated>
+    <updated>2021-01-23T07:39:29.136Z</updated>
     
     
       
@@ -121,10 +121,6 @@
     
     <category term="python" scheme="https://peyton.github.io/categories/python/"/>
     
-    <category term="爬虫" scheme="https://peyton.github.io/categories/python/%E7%88%AC%E8%99%AB/"/>
-    
-    <category term="实战" scheme="https://peyton.github.io/categories/python/%E7%88%AC%E8%99%AB/%E5%AE%9E%E6%88%98/"/>
-    
     
     <category term="python" scheme="https://peyton.github.io/tags/python/"/>
     
@@ -139,7 +135,7 @@
     <link href="https://peyton.github.io/2020/07/08/scrapy-pa-chong-jian-jie/"/>
     <id>https://peyton.github.io/2020/07/08/scrapy-pa-chong-jian-jie/</id>
     <published>2020-07-08T07:39:07.000Z</published>
-    <updated>2020-07-10T06:09:48.134Z</updated>
+    <updated>2021-01-23T07:39:14.021Z</updated>
     
     
       
@@ -152,12 +148,10 @@
     
     
     
-    <category term="爬虫" scheme="https://peyton.github.io/categories/%E7%88%AC%E8%99%AB/"/>
+    <category term="python" scheme="https://peyton.github.io/categories/python/"/>
     
     
     <category term="python" scheme="https://peyton.github.io/tags/python/"/>
-    
-    <category term="爬虫" scheme="https://peyton.github.io/tags/%E7%88%AC%E8%99%AB/"/>
     
     <category term="Scrapy" scheme="https://peyton.github.io/tags/Scrapy/"/>
     
@@ -349,7 +343,7 @@
     <link href="https://peyton.github.io/2020/05/29/conda-cao-zuo/"/>
     <id>https://peyton.github.io/2020/05/29/conda-cao-zuo/</id>
     <published>2020-05-29T03:41:44.000Z</published>
-    <updated>2020-06-06T01:10:13.434Z</updated>
+    <updated>2021-01-23T07:38:33.925Z</updated>
     
     
       
@@ -362,10 +356,10 @@
     
     
     
-    <category term="python基础" scheme="https://peyton.github.io/categories/python%E5%9F%BA%E7%A1%80/"/>
+    <category term="python" scheme="https://peyton.github.io/categories/python/"/>
     
     
-    <category term="conda命令行" scheme="https://peyton.github.io/tags/conda%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
+    <category term="conda" scheme="https://peyton.github.io/tags/conda/"/>
     
   </entry>
   
