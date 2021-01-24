@@ -485,31 +485,31 @@
             <div id="articleContent">
                 <h2 id="题目介绍："><a href="#题目介绍：" class="headerlink" title="题目介绍："></a>题目介绍：</h2><p><img src="https://github.com/Peyton-Chen/Picture/raw/master/1128.PNG" alt="1128"></p>
 <h2 id="考察点，难度："><a href="#考察点，难度：" class="headerlink" title="考察点，难度："></a>考察点，难度：</h2><p>模拟现实类，数组操作，难度易</p>
-<h2 id="解题代码："><a href="#解题代码：" class="headerlink" title="解题代码："></a>解题代码：</h2><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;cstdio&gt;
-#include&lt;cmath&gt;
-using namespace std;
+<h2 id="解题代码："><a href="#解题代码：" class="headerlink" title="解题代码："></a>解题代码：</h2><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;cstdio&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;cmath&gt;</span></span>
+using namespace std<span class="token punctuation">;</span>
 
-int main()
-{
-	int K, n;
-	scanf("%d", &amp;K);
-	for (int i = 0; i &lt; K; i++){
-		bool issolution = true;
-		scanf("%d", &amp;n);
-		int seq[n+1] = {0};
-		for (int j = 1; j &lt; n+1; j++) scanf("%d", seq+j);
-		for (int j = 1; j &lt; n+1 &amp;&amp; issolution; j++){
-			for (int k = 1; k &lt; j; k++){
-				if (seq[j] == seq[k] || abs(seq[j]-seq[k]) == abs(j-k)){
-					issolution = false;
-					break;
-				}
-			}
-		}
-		printf("%s", issolution ? "YES\n" : "NO\n");
-	}
-	return 0;
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	<span class="token keyword">int</span> K<span class="token punctuation">,</span> n<span class="token punctuation">;</span>
+	<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>K<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> K<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		bool issolution <span class="token operator">=</span> true<span class="token punctuation">;</span>
+		<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">int</span> seq<span class="token punctuation">[</span>n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+		<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span> seq<span class="token operator">+</span>j<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> n<span class="token operator">+</span><span class="token number">1</span> <span class="token operator">&amp;&amp;</span> issolution<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+			<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> k <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> k <span class="token operator">&lt;</span> j<span class="token punctuation">;</span> k<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+				<span class="token keyword">if</span> <span class="token punctuation">(</span>seq<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> seq<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">||</span> <span class="token function">abs</span><span class="token punctuation">(</span>seq<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">-</span>seq<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token function">abs</span><span class="token punctuation">(</span>j<span class="token operator">-</span>k<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+					issolution <span class="token operator">=</span> false<span class="token punctuation">;</span>
+					<span class="token keyword">break</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+		<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%s"</span><span class="token punctuation">,</span> issolution <span class="token operator">?</span> <span class="token string">"YES\n"</span> <span class="token operator">:</span> <span class="token string">"NO\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
