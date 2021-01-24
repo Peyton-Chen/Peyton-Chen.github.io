@@ -4,6 +4,156 @@
   
     
     <entry>
+      <title>PAT甲级1128题（八皇后问题）</title>
+      <link href="2021/01/24/pat/mo-ni-ti/pat-jia-ji-1128/"/>
+      <url>2021/01/24/pat/mo-ni-ti/pat-jia-ji-1128/</url>
+      
+        <content type="html"><![CDATA[<h2 id="题目介绍："><a href="#题目介绍：" class="headerlink" title="题目介绍："></a>题目介绍：</h2><p><img src="https://github.com/Peyton-Chen/Picture/raw/master/1128.PNG" alt="img"></p><h2 id="考察点，难度："><a href="#考察点，难度：" class="headerlink" title="考察点，难度："></a>考察点，难度：</h2><p>模拟现实类，数组操作，难度易</p><h2 id="解题代码："><a href="#解题代码：" class="headerlink" title="解题代码："></a>解题代码：</h2><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;cstdio&gt;#include&lt;cmath&gt;using namespace std;int main(){int K, n;scanf("%d", &amp;K);for (int i = 0; i &lt; K; i++){bool issolution = true;scanf("%d", &amp;n);int seq[n+1] = {0};for (int j = 1; j &lt; n+1; j++) scanf("%d", seq+j);for (int j = 1; j &lt; n+1 &amp;&amp; issolution; j++){for (int k = 1; k &lt; j; k++){if (seq[j] == seq[k] || abs(seq[j]-seq[k]) == abs(j-k)){issolution = false;break;}}}printf("%s", issolution ? "YES\n" : "NO\n");}return 0;}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> PAT </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 模拟题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>PAT甲级1117题（均分问题）</title>
+      <link href="2021/01/24/pat/mo-ni-ti/pat-jia-ji-1117/"/>
+      <url>2021/01/24/pat/mo-ni-ti/pat-jia-ji-1117/</url>
+      
+        <content type="html"><![CDATA[<h2 id="题目介绍："><a href="#题目介绍：" class="headerlink" title="题目介绍："></a>题目介绍：</h2><p><img src="https://github.com/Peyton-Chen/Picture/raw/master/1117.PNG" alt="img"></p><h2 id="考察点，难度："><a href="#考察点，难度：" class="headerlink" title="考察点，难度："></a>考察点，难度：</h2><p>模拟现实类，排序函数，难度易</p><h2 id="解题代码："><a href="#解题代码：" class="headerlink" title="解题代码："></a>解题代码：</h2><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;#include&lt;algorithm&gt;using namespace std;int main(){int n, i;scanf("%d", &amp;n);int dis[n];for (i = 0; i &lt; n; i++) scanf("%d", &amp;dis[i]);sort(dis, dis+n, greater&lt;int&gt;());// 从大到小排序 for (i = 0; i &lt; n; i++)if (dis[i] &lt;= i + 1) break;printf("%d\n", i);return 0;}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> PAT </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 模拟题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>PAT甲级1051题（堆栈）</title>
+      <link href="2021/01/24/pat/mo-ni-ti/pat-jia-ji-1051/"/>
+      <url>2021/01/24/pat/mo-ni-ti/pat-jia-ji-1051/</url>
+      
+        <content type="html"><![CDATA[<h2 id="题目介绍："><a href="#题目介绍：" class="headerlink" title="题目介绍："></a>题目介绍：</h2><p><img src="https://github.com/Peyton-Chen/Picture/raw/master/1051.PNG" alt="img"></p><h2 id="考察点，难度："><a href="#考察点，难度：" class="headerlink" title="考察点，难度："></a>考察点，难度：</h2><p>模拟现实类，模拟堆栈，数据结构，难度易</p><h2 id="解题代码："><a href="#解题代码：" class="headerlink" title="解题代码："></a>解题代码：</h2><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include &lt;cstdio&gt;#include &lt;stack&gt;using namespace std;int main(){int m, n, k;scanf("%d %d %d", &amp;m, &amp;n, &amp;k);for (int i = 0; i &lt; k; i++){int seq[n+1];stack&lt;int&gt; pop;for (int j = 1; j &lt; n+1; j++) scanf("%d", seq+j);int current = 1;for (int j = 1; j &lt; n+1; j++){pop.push(j);if (pop.size() &gt; m) break;while (!pop.empty() &amp;&amp; pop.top() == seq[current]){pop.pop();current++;}}if (current &lt; n+1) printf("NO\n");else printf("YES\n");}return 0;}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> PAT </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 模拟题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>PAT甲级1046题（最短路径）</title>
+      <link href="2021/01/24/pat/mo-ni-ti/pat-jia-ji-1046/"/>
+      <url>2021/01/24/pat/mo-ni-ti/pat-jia-ji-1046/</url>
+      
+        <content type="html"><![CDATA[<h2 id="题目介绍："><a href="#题目介绍：" class="headerlink" title="题目介绍："></a>题目介绍：</h2><p><img src="https://github.com/Peyton-Chen/Picture/raw/master/1046.PNG" alt="img"></p><h2 id="考察点，难度："><a href="#考察点，难度：" class="headerlink" title="考察点，难度："></a>考察点，难度：</h2><p>模拟现实类，问题转换题，最短路径，难度易</p><h2 id="解题代码："><a href="#解题代码：" class="headerlink" title="解题代码："></a>解题代码：</h2><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;cstdio&gt;#include&lt;algorithm&gt;using namespace std;int main(){int sum = 0, N, M, a, b, temp, d;scanf("%d",&amp;N);int distance[N+1] = {0};for (int i = 1; i &lt;= N; i++){scanf("%d", &amp;temp);sum += temp;distance[i] = sum;}scanf("%d", &amp;M);for (int i = 0; i &lt; M; i++){scanf("%d%d", &amp;a, &amp;b);if (a &gt; b) swap(a, b);d = distance[b-1] - distance[a-1];printf("%d\n", min(d, sum-d));}return 0;}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> PAT </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 模拟题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>PAT甲级1042题（刷牌器）</title>
+      <link href="2021/01/24/pat/mo-ni-ti/pat-jia-ji-1042/"/>
+      <url>2021/01/24/pat/mo-ni-ti/pat-jia-ji-1042/</url>
+      
+        <content type="html"><![CDATA[<h2 id="题目介绍："><a href="#题目介绍：" class="headerlink" title="题目介绍："></a>题目介绍：</h2><p><img src="https://github.com/Peyton-Chen/Picture/raw/master/1042.png" alt="img"></p><h2 id="考察点，难度："><a href="#考察点，难度：" class="headerlink" title="考察点，难度："></a>考察点，难度：</h2><p>模拟现实类，字符串操作，难度易</p><h2 id="解题代码："><a href="#解题代码：" class="headerlink" title="解题代码："></a>解题代码：</h2><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include &lt;iostream&gt;#include &lt;string&gt;using namespace std;int main(){int N;scanf("%d",&amp;N);int order[54];int listone[54],listtwo[54]={0};for(int i=0;i&lt;54;i++){scanf("%d",&amp;order[i]);listone[i]=i+1;}for(int i=0;i&lt;N;i++){if(i%2==0){for(int j=0;j&lt;54;j++){listtwo[order[j]-1]=listone[j];}}else{for(int j=0;j&lt;54;j++){listone[order[j]-1]=listtwo[j];}}}string out;if(N%2==0){for(int i=0;i&lt;54;i++){int pos=(listone[i]-1)/13,abs=(listone[i]-1)%13;switch(pos){case 0: out="S";out.append(to_string(abs+1));break;case 1: out="H";out.append(to_string(abs+1));break;case 2: out="C";out.append(to_string(abs+1));break;case 3: out="D";out.append(to_string(abs+1));break;default: out="J";out.append(to_string(abs+1));}if(i==53){cout&lt;&lt;out;break;}cout&lt;&lt;out+" ";}}else{for(int i=0;i&lt;54;i++){int pos=(listtwo[i]-1)/13,abs=(listtwo[i]-1)%13;switch(pos){case 0: out="S";out.append(to_string(abs+1));break;case 1: out="H";out.append(to_string(abs+1));break;case 2: out="C";out.append(to_string(abs+1));break;case 3: out="D";out.append(to_string(abs+1));break;default: out="J";out.append(to_string(abs+1));}if(i==53){cout&lt;&lt;out;break;}cout&lt;&lt;out+" ";}}return 0;} <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> PAT </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 模拟题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>PAT甲级1008题（电梯）</title>
+      <link href="2021/01/24/pat/mo-ni-ti/pat-jia-ji-1008/"/>
+      <url>2021/01/24/pat/mo-ni-ti/pat-jia-ji-1008/</url>
+      
+        <content type="html"><![CDATA[<h2 id="题目介绍："><a href="#题目介绍：" class="headerlink" title="题目介绍："></a>题目介绍：</h2><p><img src="https://github.com/Peyton-Chen/Picture/raw/master/1008.PNG" alt="img"></p><h2 id="考察点，难度："><a href="#考察点，难度：" class="headerlink" title="考察点，难度："></a>考察点，难度：</h2><p>模拟现实类，难度易</p><h2 id="解题代码："><a href="#解题代码：" class="headerlink" title="解题代码："></a>解题代码：</h2><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include &lt;iostream&gt;using namespace std;int main(){int N;cin&gt;&gt;N;int floor[N+1];floor[0]=0;int wait=0, up=0, down=0;for(int i=1;i&lt;N+1;i++){cin&gt;&gt;floor[i];wait+=5;if(floor[i]&gt;=floor[i-1]){up+=6*(floor[i]-floor[i-1]);}else{down+=4*(floor[i-1]-floor[i]);}}printf("%d",up+down+wait);return 0;} <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> PAT </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 模拟题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>数字图像处理之错切问题</title>
       <link href="2020/11/01/shu-zi-tu-xiang-chu-li-ke-cheng-zuo-ye/"/>
       <url>2020/11/01/shu-zi-tu-xiang-chu-li-ke-cheng-zuo-ye/</url>
