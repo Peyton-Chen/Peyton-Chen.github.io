@@ -6,7 +6,7 @@
   <link href="https://peyton.github.io/atom.xml" rel="self"/>
   
   <link href="https://peyton.github.io/"/>
-  <updated>2021-01-24T00:49:31.043Z</updated>
+  <updated>2021-01-25T00:47:06.507Z</updated>
   <id>https://peyton.github.io/</id>
   
   <author>
@@ -17,18 +17,43 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>PAT甲级1015题（逆素）</title>
+    <link href="https://peyton.github.io/2021/01/25/pat/jin-zhi-zhuan-huan-ti/pat-jia-ji-1015/"/>
+    <id>https://peyton.github.io/2021/01/25/pat/jin-zhi-zhuan-huan-ti/pat-jia-ji-1015/</id>
+    <published>2021-01-25T00:45:44.000Z</published>
+    <updated>2021-01-25T00:47:06.507Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-题目介绍：&quot;&gt;&lt;a href=&quot;#1-题目介绍：&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍：&quot;&gt;&lt;/a&gt;1.题目介绍：&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
+    
+    
+    <category term="进制转换题" scheme="https://peyton.github.io/tags/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
     <title>PAT甲级1128题（八皇后问题）</title>
     <link href="https://peyton.github.io/2021/01/24/pat/mo-ni-ti/pat-jia-ji-1128/"/>
     <id>https://peyton.github.io/2021/01/24/pat/mo-ni-ti/pat-jia-ji-1128/</id>
     <published>2021-01-24T00:40:44.000Z</published>
-    <updated>2021-01-24T00:49:31.043Z</updated>
+    <updated>2021-01-25T00:25:18.470Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;题目介绍：&quot;&gt;&lt;a href=&quot;#题目介绍：&quot; class=&quot;headerlink&quot; title=&quot;题目介绍：&quot;&gt;&lt;/a&gt;题目介绍：&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
+    <summary type="html">&lt;h2 id=&quot;1-题目介绍：&quot;&gt;&lt;a href=&quot;#1-题目介绍：&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍：&quot;&gt;&lt;/a&gt;1.题目介绍：&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
         
       
     
@@ -46,14 +71,14 @@
     <link href="https://peyton.github.io/2021/01/24/pat/mo-ni-ti/pat-jia-ji-1117/"/>
     <id>https://peyton.github.io/2021/01/24/pat/mo-ni-ti/pat-jia-ji-1117/</id>
     <published>2021-01-24T00:39:44.000Z</published>
-    <updated>2021-01-24T00:49:40.659Z</updated>
+    <updated>2021-01-25T00:25:08.908Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;题目介绍：&quot;&gt;&lt;a href=&quot;#题目介绍：&quot; class=&quot;headerlink&quot; title=&quot;题目介绍：&quot;&gt;&lt;/a&gt;题目介绍：&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
+    <summary type="html">&lt;h2 id=&quot;1-题目介绍：&quot;&gt;&lt;a href=&quot;#1-题目介绍：&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍：&quot;&gt;&lt;/a&gt;1.题目介绍：&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
         
       
     
@@ -71,14 +96,14 @@
     <link href="https://peyton.github.io/2021/01/24/pat/mo-ni-ti/pat-jia-ji-1051/"/>
     <id>https://peyton.github.io/2021/01/24/pat/mo-ni-ti/pat-jia-ji-1051/</id>
     <published>2021-01-24T00:37:44.000Z</published>
-    <updated>2021-01-24T00:49:51.611Z</updated>
+    <updated>2021-01-25T00:24:59.558Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;题目介绍：&quot;&gt;&lt;a href=&quot;#题目介绍：&quot; class=&quot;headerlink&quot; title=&quot;题目介绍：&quot;&gt;&lt;/a&gt;题目介绍：&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
+    <summary type="html">&lt;h2 id=&quot;1-题目介绍：&quot;&gt;&lt;a href=&quot;#1-题目介绍：&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍：&quot;&gt;&lt;/a&gt;1.题目介绍：&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
         
       
     
@@ -96,14 +121,14 @@
     <link href="https://peyton.github.io/2021/01/24/pat/mo-ni-ti/pat-jia-ji-1046/"/>
     <id>https://peyton.github.io/2021/01/24/pat/mo-ni-ti/pat-jia-ji-1046/</id>
     <published>2021-01-24T00:35:44.000Z</published>
-    <updated>2021-01-24T00:46:04.949Z</updated>
+    <updated>2021-01-25T00:24:48.681Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;题目介绍：&quot;&gt;&lt;a href=&quot;#题目介绍：&quot; class=&quot;headerlink&quot; title=&quot;题目介绍：&quot;&gt;&lt;/a&gt;题目介绍：&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
+    <summary type="html">&lt;h2 id=&quot;1-题目介绍：&quot;&gt;&lt;a href=&quot;#1-题目介绍：&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍：&quot;&gt;&lt;/a&gt;1.题目介绍：&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
         
       
     
@@ -121,14 +146,14 @@
     <link href="https://peyton.github.io/2021/01/24/pat/mo-ni-ti/pat-jia-ji-1042/"/>
     <id>https://peyton.github.io/2021/01/24/pat/mo-ni-ti/pat-jia-ji-1042/</id>
     <published>2021-01-24T00:33:44.000Z</published>
-    <updated>2021-01-24T00:45:52.774Z</updated>
+    <updated>2021-01-25T00:24:38.162Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;题目介绍：&quot;&gt;&lt;a href=&quot;#题目介绍：&quot; class=&quot;headerlink&quot; title=&quot;题目介绍：&quot;&gt;&lt;/a&gt;题目介绍：&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
+    <summary type="html">&lt;h2 id=&quot;1-题目介绍：&quot;&gt;&lt;a href=&quot;#1-题目介绍：&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍：&quot;&gt;&lt;/a&gt;1.题目介绍：&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
         
       
     
@@ -146,14 +171,14 @@
     <link href="https://peyton.github.io/2021/01/24/pat/mo-ni-ti/pat-jia-ji-1008/"/>
     <id>https://peyton.github.io/2021/01/24/pat/mo-ni-ti/pat-jia-ji-1008/</id>
     <published>2021-01-24T00:26:44.000Z</published>
-    <updated>2021-01-24T00:45:31.829Z</updated>
+    <updated>2021-01-25T00:47:29.740Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;题目介绍：&quot;&gt;&lt;a href=&quot;#题目介绍：&quot; class=&quot;headerlink&quot; title=&quot;题目介绍：&quot;&gt;&lt;/a&gt;题目介绍：&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
+    <summary type="html">&lt;h2 id=&quot;1-题目介绍：&quot;&gt;&lt;a href=&quot;#1-题目介绍：&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍：&quot;&gt;&lt;/a&gt;1.题目介绍：&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
         
       
     

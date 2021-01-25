@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="screen常用命令, 杂货铺, Peyton">
+    <meta name="keywords" content="PAT甲级1015题（逆素）, 杂货铺, Peyton">
     <meta name="description" content="从来没有真正的绝境，只有心灵的迷途">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>screen常用命令 | Peytonの杂货铺</title>
+    <title>PAT甲级1015题（逆素） | Peytonの杂货铺</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -301,12 +301,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">screen常用命令</h1>
+                    <h1 class="description center-align post-title">PAT甲级1015题（逆素）</h1>
                 </div>
             </div>
         </div>
@@ -422,8 +422,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/screen/">
-                                <span class="chip bg-color">screen</span>
+                            <a href="/tags/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E9%A2%98/">
+                                <span class="chip bg-color">进制转换题</span>
                             </a>
                         
                     </div>
@@ -434,8 +434,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Linux/" class="post-category">
-                                Linux
+                            <a href="/categories/PAT/" class="post-category">
+                                PAT
                             </a>
                         
                     </div>
@@ -447,7 +447,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-06-05
+                    2021-01-25
                 </div>
                 
 
@@ -456,7 +456,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    333
+                    154
                 </div>
                 
 
@@ -483,15 +483,48 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>​    想必在Linux云服务器上跑过代码的同学都会有这样子的苦恼：我们通过SSH访问云服务器，将我们需要执行的代码在服务器上运行，但当你断开SSH连接后，你的代码也会随之停止运行。此时你可能开始寻找一种即使SSH离线也能让服务器运行目标代码的方法。这种方法确实存在，那就是下面提到的：screen（窗口）。这个东西实际上可以这样理解：我们通过SSH连接服务器，这时相当于开了一个主窗口。而我们关闭SSH连接后，这个主窗口也就关闭了，所以运行于主窗口的代码也就这样挂掉了。而通过screen操作相当于通过主窗口创建子窗口，主窗口湮灭了但子窗口还是存在的，所以将我们的目标代码放在子窗口运行便能够解决我们上述提到的无法离线运行的问题。</p>
-<p>下面就介绍几种screen最常见的操作：</p>
-<h2 id="screen创建"><a href="#screen创建" class="headerlink" title="screen创建"></a>screen创建</h2><pre class="line-numbers language-none"><code class="language-none">screen -S ###（窗口名）<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="screen列表查看"><a href="#screen列表查看" class="headerlink" title="screen列表查看"></a>screen列表查看</h2><pre class="line-numbers language-none"><code class="language-none">screen -ls<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="screen恢复"><a href="#screen恢复" class="headerlink" title="screen恢复"></a>screen恢复</h2><pre class="line-numbers language-none"><code class="language-none">screen -r ###（窗口名）<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="screen删除"><a href="#screen删除" class="headerlink" title="screen删除"></a>screen删除</h2><pre class="line-numbers language-none"><code class="language-none">screen -S ###(窗口名) -X quit<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="screen恢复异常"><a href="#screen恢复异常" class="headerlink" title="screen恢复异常"></a>screen恢复异常</h2><pre class="line-numbers language-none"><code class="language-none">screen -d ###（窗口名）
-screen -r ###（窗口名）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h2 id="screen返回主窗口"><a href="#screen返回主窗口" class="headerlink" title="screen返回主窗口"></a>screen返回主窗口</h2><pre class="line-numbers language-none"><code class="language-none">Ctrl + A + D<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h2 id="1-题目介绍："><a href="#1-题目介绍：" class="headerlink" title="1.题目介绍："></a>1.题目介绍：</h2><p><img src="https://github.com/Peyton-Chen/Picture/raw/master/1015.JPG" alt="1008"></p>
+<h2 id="2-考察点，难度："><a href="#2-考察点，难度：" class="headerlink" title="2.考察点，难度："></a>2.考察点，难度：</h2><p>进制转换，素数判定，难度易</p>
+<h2 id="3-解题代码："><a href="#3-解题代码：" class="headerlink" title="3.解题代码："></a>3.解题代码：</h2><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstdio&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+using namespace std<span class="token punctuation">;</span>
+
+<span class="token comment">/*
+	判断素数函数 
+*/</span>
+bool <span class="token function">isPrime</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">&lt;=</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">return</span> false<span class="token punctuation">;</span>
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span> i <span class="token operator">*</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span> n <span class="token operator">%</span> i <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token keyword">return</span> false<span class="token punctuation">;</span>
+	<span class="token keyword">return</span> true<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/*
+	进制转化函数 
+*/</span>
+<span class="token keyword">int</span> <span class="token function">revD</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">,</span> <span class="token keyword">int</span> D<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	<span class="token keyword">int</span> n2D<span class="token punctuation">[</span><span class="token number">20</span><span class="token punctuation">]</span><span class="token punctuation">,</span> num <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> result <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	<span class="token keyword">do</span> <span class="token punctuation">{</span>
+		n2D<span class="token punctuation">[</span>num<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> n <span class="token operator">%</span> D<span class="token punctuation">;</span>
+		n <span class="token operator">=</span> n <span class="token operator">/</span> D<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span> <span class="token keyword">while</span><span class="token punctuation">(</span>n <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> num<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> result <span class="token operator">=</span> result <span class="token operator">*</span> D <span class="token operator">+</span> n2D<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+	<span class="token keyword">return</span> result<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	<span class="token keyword">int</span> n<span class="token punctuation">,</span> D<span class="token punctuation">;</span>
+	<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">while</span> <span class="token punctuation">(</span>n <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>D<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%s"</span><span class="token punctuation">,</span><span class="token function">isPrime</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token function">isPrime</span><span class="token punctuation">(</span><span class="token function">revD</span><span class="token punctuation">(</span>n<span class="token punctuation">,</span>D<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token string">"Yes\n"</span> <span class="token operator">:</span> <span class="token string">"No\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -518,7 +551,7 @@ screen -r ###（窗口名）<span aria-hidden="true" class="line-numbers-rows"><
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://peyton.github.io/2020/06/05/screen-jiao-cheng/">https://peyton.github.io/2020/06/05/screen-jiao-cheng/</a>
+                    <a href="https://peyton.github.io/2021/01/25/pat/jin-zhi-zhuan-huan-ti/pat-jia-ji-1015/">https://peyton.github.io/2021/01/25/pat/jin-zhi-zhuan-huan-ti/pat-jia-ji-1015/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -556,8 +589,8 @@ screen -r ###（窗口名）<span aria-hidden="true" class="line-numbers-rows"><
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/screen/">
-                                    <span class="chip bg-color">screen</span>
+                                <a href="/tags/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E9%A2%98/">
+                                    <span class="chip bg-color">进制转换题</span>
                                 </a>
                             
                         </div>
@@ -727,17 +760,18 @@ screen -r ###（窗口名）<span aria-hidden="true" class="line-numbers-rows"><
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/06/05/tensorboard-shi-zhan/">
+                <a href="/2021/01/25/pat/jin-zhi-zhuan-huan-ti/pat-jia-ji-1015/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="TensorBoard实战">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="PAT甲级1015题（逆素）">
                         
-                        <span class="card-title">TensorBoard实战</span>
+                        <span class="card-title">PAT甲级1015题（逆素）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -747,26 +781,27 @@ screen -r ###（窗口名）<span aria-hidden="true" class="line-numbers-rows"><
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-06-05
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-25
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Keras/" class="post-category">
-                                    Keras
+                            <a href="/categories/PAT/" class="post-category">
+                                    PAT
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Tensorboard/">
-                        <span class="chip bg-color">Tensorboard</span>
+                    <a href="/tags/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E9%A2%98/">
+                        <span class="chip bg-color">进制转换题</span>
                     </a>
                     
                 </div>
@@ -780,13 +815,13 @@ screen -r ###（窗口名）<span aria-hidden="true" class="line-numbers-rows"><
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/06/01/java-chang-gui-cao-zuo/">
+                <a href="/2021/01/24/pat/mo-ni-ti/pat-jia-ji-1128/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Java基础练习">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="PAT甲级1128题（八皇后问题）">
                         
-                        <span class="card-title">Java基础练习</span>
+                        <span class="card-title">PAT甲级1128题（八皇后问题）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -797,14 +832,14 @@ screen -r ###（窗口名）<span aria-hidden="true" class="line-numbers-rows"><
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-24
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Java/" class="post-category">
-                                    Java
+                            <a href="/categories/PAT/" class="post-category">
+                                    PAT
                                 </a>
                             
                             
@@ -814,8 +849,8 @@ screen -r ###（窗口名）<span aria-hidden="true" class="line-numbers-rows"><
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Java/">
-                        <span class="chip bg-color">Java</span>
+                    <a href="/tags/%E6%A8%A1%E6%8B%9F%E9%A2%98/">
+                        <span class="chip bg-color">模拟题</span>
                     </a>
                     
                 </div>
