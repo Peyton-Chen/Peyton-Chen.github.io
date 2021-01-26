@@ -6,7 +6,7 @@
   <link href="https://peyton.github.io/atom.xml" rel="self"/>
   
   <link href="https://peyton.github.io/"/>
-  <updated>2021-01-25T00:50:57.864Z</updated>
+  <updated>2021-01-26T03:11:52.706Z</updated>
   <id>https://peyton.github.io/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>PAT甲级1019题（回文数）</title>
+    <link href="https://peyton.github.io/2021/01/26/pat/jin-zhi-zhuan-huan-ti/pat-jia-ji-1019/"/>
+    <id>https://peyton.github.io/2021/01/26/pat/jin-zhi-zhuan-huan-ti/pat-jia-ji-1019/</id>
+    <published>2021-01-26T02:24:44.000Z</published>
+    <updated>2021-01-26T03:11:52.706Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
+    
+    
+    <category term="进制转换题" scheme="https://peyton.github.io/tags/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
     <title>PAT甲级1015题（逆素）</title>
     <link href="https://peyton.github.io/2021/01/25/pat/jin-zhi-zhuan-huan-ti/pat-jia-ji-1015/"/>
     <id>https://peyton.github.io/2021/01/25/pat/jin-zhi-zhuan-huan-ti/pat-jia-ji-1015/</id>
     <published>2021-01-25T00:45:44.000Z</published>
-    <updated>2021-01-25T00:50:57.864Z</updated>
+    <updated>2021-01-26T02:22:45.171Z</updated>
     
     
       
@@ -510,31 +535,6 @@
     
     
     <category term="Java" scheme="https://peyton.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>conda常用命令</title>
-    <link href="https://peyton.github.io/2020/05/29/conda-cao-zuo/"/>
-    <id>https://peyton.github.io/2020/05/29/conda-cao-zuo/</id>
-    <published>2020-05-29T03:41:44.000Z</published>
-    <updated>2021-01-23T07:38:33.925Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;conda可以说是每个学习python的人都应该了解的。当我们安装python包，或者创建环境的时候都会和它打交道。为了帮助大家对conda有一个更好的了解，下面总结了一些关于conda的命令行操作。主要是关于conda换源问题以及conda虚拟环境操作问题。那下面就开始吧</summary>
-        
-      
-    
-    
-    
-    <category term="python" scheme="https://peyton.github.io/categories/python/"/>
-    
-    
-    <category term="conda" scheme="https://peyton.github.io/tags/conda/"/>
     
   </entry>
   
