@@ -6,7 +6,7 @@
   <link href="https://peyton.github.io/atom.xml" rel="self"/>
   
   <link href="https://peyton.github.io/"/>
-  <updated>2021-01-26T03:25:52.758Z</updated>
+  <updated>2021-01-27T01:10:05.424Z</updated>
   <id>https://peyton.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PAT甲级1027题（RGB转换）</title>
+    <link href="https://peyton.github.io/2021/01/27/pat/jin-zhi-zhuan-huan-ti/pat-jia-ji-1027/"/>
+    <id>https://peyton.github.io/2021/01/27/pat/jin-zhi-zhuan-huan-ti/pat-jia-ji-1027/</id>
+    <published>2021-01-27T01:07:44.000Z</published>
+    <updated>2021-01-27T01:10:05.424Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
+    
+    
+    <category term="进制转换题" scheme="https://peyton.github.io/tags/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>PAT甲级1019题（回文数）</title>
@@ -67,11 +92,11 @@
   </entry>
   
   <entry>
-    <title>PAT甲级1128题（八皇后问题）</title>
+    <title>PAT甲级1128题（八皇后）</title>
     <link href="https://peyton.github.io/2021/01/24/pat/mo-ni-ti/pat-jia-ji-1128/"/>
     <id>https://peyton.github.io/2021/01/24/pat/mo-ni-ti/pat-jia-ji-1128/</id>
     <published>2021-01-24T00:40:44.000Z</published>
-    <updated>2021-01-25T00:51:47.262Z</updated>
+    <updated>2021-01-26T05:54:44.566Z</updated>
     
     
       
@@ -509,32 +534,6 @@
     
     
     <category term="screen" scheme="https://peyton.github.io/tags/screen/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java基础练习</title>
-    <link href="https://peyton.github.io/2020/06/01/java-chang-gui-cao-zuo/"/>
-    <id>https://peyton.github.io/2020/06/01/java-chang-gui-cao-zuo/</id>
-    <published>2020-06-01T13:59:45.000Z</published>
-    <updated>2020-06-06T01:10:36.149Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;时间之矢稍纵即逝，接近2周就要Java期末考了。作为一个一学期没怎么认真听Java课的我来说，内心波澜起伏。借着空余的时间，把Java的重点稍微总结了一下，下面就以涵盖全书的4个例子展开。&lt;/p&gt;
-&lt;h3 id=&quot;题1-数组-：&quot;&gt;&lt;a href=&quot;#题1-数组-：&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Java" scheme="https://peyton.github.io/categories/Java/"/>
-    
-    
-    <category term="Java" scheme="https://peyton.github.io/tags/Java/"/>
     
   </entry>
   

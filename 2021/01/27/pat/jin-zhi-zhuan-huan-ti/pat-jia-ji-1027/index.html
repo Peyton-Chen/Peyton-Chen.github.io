@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Scrapy爬虫简介, 杂货铺, Peyton">
+    <meta name="keywords" content="PAT甲级1027题（RGB转换）, 杂货铺, Peyton">
     <meta name="description" content="从来没有真正的绝境，只有心灵的迷途">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Scrapy爬虫简介 | Peytonの杂货铺</title>
+    <title>PAT甲级1027题（RGB转换） | Peytonの杂货铺</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -238,12 +238,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Scrapy爬虫简介</h1>
+                    <h1 class="description center-align post-title">PAT甲级1027题（RGB转换）</h1>
                 </div>
             </div>
         </div>
@@ -359,12 +359,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/python/">
-                                <span class="chip bg-color">python</span>
-                            </a>
-                        
-                            <a href="/tags/Scrapy/">
-                                <span class="chip bg-color">Scrapy</span>
+                            <a href="/tags/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E9%A2%98/">
+                                <span class="chip bg-color">进制转换题</span>
                             </a>
                         
                     </div>
@@ -375,8 +371,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/python/" class="post-category">
-                                python
+                            <a href="/categories/PAT/" class="post-category">
+                                PAT
                             </a>
                         
                     </div>
@@ -388,7 +384,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-08
+                    2021-01-27
                 </div>
                 
 
@@ -397,7 +393,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    328
+                    126
                 </div>
                 
 
@@ -424,30 +420,42 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h2><p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_processing.png" alt="img"></p>
-<p>1.Spiders(爬虫):它负责处理所有Responses,从中分析提取数据，获取Item字段需要的数据，并将需要跟进的URL提交给引擎，再次进入Scheduler(调度器)</p>
-<p>2.Engine(引擎)：负责Spider、ItemPipeline、Downloader、Scheduler中间的通讯，信号、数据传递等。</p>
-<p>3.Scheduler(调度器)：它负责接受引擎发送过来的Request请求，并按照一定的方式进行整理排列，入队，当引擎需要时，交还给引擎。</p>
-<p>4.Downloader(下载器)：负责下载Scrapy Engine(引擎)发送的所有Requests请求，并将其获取到的Responses交还给Scrapy Engine(引擎)，由引擎交给Spider来处理</p>
-<p>5.ItemPipeline(管道):它负责处理Spider中获取到的Item，并进行进行后期处理（详细分析、过滤、存储等）的地方.</p>
-<p>6.Downloader Middlewares（下载中间件）：你可以当作是一个可以自定义扩展下载功能的组件。</p>
-<p>7.Spider Middlewares（Spider中间件）：你可以理解为是一个可以自定扩展和操作引擎和Spider中间通信的功能组件（比如进入Spider的Responses;和从Spider出去的Requests）</p>
-<p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_struct.png"></p>
-<h2 id="入门使用"><a href="#入门使用" class="headerlink" title="入门使用"></a>入门使用</h2><h3 id="创建过程："><a href="#创建过程：" class="headerlink" title="创建过程："></a>创建过程：</h3><p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_way.png"></p>
-<hr>
-<h3 id="结构："><a href="#结构：" class="headerlink" title="结构："></a>结构：</h3><p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapt_file.png"></p>
-<hr>
-<h3 id="spider使用："><a href="#spider使用：" class="headerlink" title="spider使用："></a>spider使用：</h3><p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_spider.png"></p>
-<hr>
-<h3 id="pipeline更改和使用："><a href="#pipeline更改和使用：" class="headerlink" title="pipeline更改和使用："></a>pipeline更改和使用：</h3><p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_pipeline_1.png"></p>
-<p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_pipeline_2.png"></p>
-<hr>
-<h3 id="log简单设置："><a href="#log简单设置：" class="headerlink" title="log简单设置："></a>log简单设置：</h3><p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_log.png"></p>
-<hr>
-<h3 id="翻页爬取方法："><a href="#翻页爬取方法：" class="headerlink" title="翻页爬取方法："></a>翻页爬取方法：</h3><p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_turnpage.png"></p>
-<p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_turnpage1.png"></p>
-<h3 id="item的设置："><a href="#item的设置：" class="headerlink" title="item的设置："></a>item的设置：</h3><p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_item.png"></p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1mf4y127S5#reply3147097466">https://www.bilibili.com/video/BV1mf4y127S5#reply3147097466</a></p>
+                <h2 id="1-题目介绍"><a href="#1-题目介绍" class="headerlink" title="1.题目介绍"></a>1.题目介绍</h2><p><img src="https://github.com/Peyton-Chen/Picture/raw/master/1027.JPG" alt="1019"></p>
+<p><strong>radix</strong>:基数</p>
+<h2 id="2-考察点，难度"><a href="#2-考察点，难度" class="headerlink" title="2.考察点，难度"></a>2.考察点，难度</h2><p>进制转换，字符串处理，难度易</p>
+<h2 id="3-解题代码"><a href="#3-解题代码" class="headerlink" title="3.解题代码"></a>3.解题代码</h2><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;string&gt;</span></span>
+using namespace std<span class="token punctuation">;</span>
+
+string s<span class="token operator">=</span><span class="token string">"#"</span><span class="token punctuation">;</span>
+
+string <span class="token function">Map</span><span class="token punctuation">(</span><span class="token keyword">int</span> num<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">if</span><span class="token punctuation">(</span>num<span class="token operator">&lt;=</span><span class="token number">9</span><span class="token punctuation">)</span>
+		<span class="token keyword">return</span> <span class="token function">to_string</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>num<span class="token operator">==</span><span class="token number">10</span><span class="token punctuation">)</span>
+		<span class="token keyword">return</span> <span class="token string">"A"</span><span class="token punctuation">;</span>
+	<span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>num<span class="token operator">==</span><span class="token number">11</span><span class="token punctuation">)</span>
+		<span class="token keyword">return</span> <span class="token string">"B"</span><span class="token punctuation">;</span>
+	<span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>num<span class="token operator">==</span><span class="token number">12</span><span class="token punctuation">)</span>
+		<span class="token keyword">return</span> <span class="token string">"C"</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">void</span> <span class="token function">num2rgb</span><span class="token punctuation">(</span><span class="token keyword">int</span> num<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	s<span class="token operator">+=</span><span class="token function">Map</span><span class="token punctuation">(</span>num<span class="token operator">/</span><span class="token number">13</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	s<span class="token operator">+=</span><span class="token function">Map</span><span class="token punctuation">(</span>num<span class="token operator">%</span><span class="token number">13</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	
+	<span class="token keyword">int</span> r<span class="token punctuation">,</span>g<span class="token punctuation">,</span>b<span class="token punctuation">;</span>
+	<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d %d %d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>r<span class="token punctuation">,</span><span class="token operator">&amp;</span>g<span class="token punctuation">,</span><span class="token operator">&amp;</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">num2rgb</span><span class="token punctuation">(</span>r<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">num2rgb</span><span class="token punctuation">(</span>g<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">num2rgb</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	cout<span class="token operator">&lt;&lt;</span>s<span class="token punctuation">;</span>
+	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="4-原题地址"><a href="#4-原题地址" class="headerlink" title="4.原题地址"></a>4.原题地址</h2><p><a target="_blank" rel="noopener" href="https://pintia.cn/problem-sets/994805342720868352/problems/994805470349344768">https://pintia.cn/problem-sets/994805342720868352/problems/994805470349344768</a></p>
 
                 
             </div>
@@ -474,7 +482,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://peyton.github.io/2020/07/08/scrapy-pa-chong-jian-jie/">https://peyton.github.io/2020/07/08/scrapy-pa-chong-jian-jie/</a>
+                    <a href="https://peyton.github.io/2021/01/27/pat/jin-zhi-zhuan-huan-ti/pat-jia-ji-1027/">https://peyton.github.io/2021/01/27/pat/jin-zhi-zhuan-huan-ti/pat-jia-ji-1027/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -512,12 +520,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/python/">
-                                    <span class="chip bg-color">python</span>
-                                </a>
-                            
-                                <a href="/tags/Scrapy/">
-                                    <span class="chip bg-color">Scrapy</span>
+                                <a href="/tags/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E9%A2%98/">
+                                    <span class="chip bg-color">进制转换题</span>
                                 </a>
                             
                         </div>
@@ -687,17 +691,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/07/10/scrapy-pa-chong-shi-zhan-dang-dang-wang/">
+                <a href="/2021/01/27/pat/jin-zhi-zhuan-huan-ti/pat-jia-ji-1027/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Scrapy爬虫实战--当当网">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="PAT甲级1027题（RGB转换）">
                         
-                        <span class="card-title">Scrapy爬虫实战--当当网</span>
+                        <span class="card-title">PAT甲级1027题（RGB转换）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -707,34 +712,27 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-10
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-27
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/python/" class="post-category">
-                                    python
+                            <a href="/categories/PAT/" class="post-category">
+                                    PAT
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/python/">
-                        <span class="chip bg-color">python</span>
-                    </a>
-                    
-                    <a href="/tags/%E7%88%AC%E8%99%AB/">
-                        <span class="chip bg-color">爬虫</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%AE%9E%E6%88%98/">
-                        <span class="chip bg-color">实战</span>
+                    <a href="/tags/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E9%A2%98/">
+                        <span class="chip bg-color">进制转换题</span>
                     </a>
                     
                 </div>
@@ -748,13 +746,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/02/latex-huan-jing-da-jian/">
+                <a href="/2021/01/26/pat/jin-zhi-zhuan-huan-ti/pat-jia-ji-1019/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="LaTeX环境搭建">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="PAT甲级1019题（回文数）">
                         
-                        <span class="card-title">LaTeX环境搭建</span>
+                        <span class="card-title">PAT甲级1019题（回文数）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -765,14 +763,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-26
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/LaTeX/" class="post-category">
-                                    LaTeX
+                            <a href="/categories/PAT/" class="post-category">
+                                    PAT
                                 </a>
                             
                             
@@ -782,8 +780,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/LaTeX/">
-                        <span class="chip bg-color">LaTeX</span>
+                    <a href="/tags/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E9%A2%98/">
+                        <span class="chip bg-color">进制转换题</span>
                     </a>
                     
                 </div>
