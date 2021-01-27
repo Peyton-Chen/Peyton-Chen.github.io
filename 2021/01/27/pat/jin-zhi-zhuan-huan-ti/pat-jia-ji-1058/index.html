@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Scrapy爬虫实战--当当网, 杂货铺, Peyton">
+    <meta name="keywords" content="PAT甲级1058题（进制进位）, 杂货铺, Peyton">
     <meta name="description" content="从来没有真正的绝境，只有心灵的迷途">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Scrapy爬虫实战--当当网 | Peytonの杂货铺</title>
+    <title>PAT甲级1058题（进制进位） | Peytonの杂货铺</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -238,12 +238,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Scrapy爬虫实战--当当网</h1>
+                    <h1 class="description center-align post-title">PAT甲级1058题（进制进位）</h1>
                 </div>
             </div>
         </div>
@@ -359,16 +359,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/python/">
-                                <span class="chip bg-color">python</span>
-                            </a>
-                        
-                            <a href="/tags/%E7%88%AC%E8%99%AB/">
-                                <span class="chip bg-color">爬虫</span>
-                            </a>
-                        
-                            <a href="/tags/%E5%AE%9E%E6%88%98/">
-                                <span class="chip bg-color">实战</span>
+                            <a href="/tags/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E9%A2%98/">
+                                <span class="chip bg-color">进制转换题</span>
                             </a>
                         
                     </div>
@@ -379,8 +371,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/python/" class="post-category">
-                                python
+                            <a href="/categories/PAT/" class="post-category">
+                                PAT
                             </a>
                         
                     </div>
@@ -392,7 +384,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-10
+                    2021-01-27
                 </div>
                 
 
@@ -401,14 +393,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.5k
+                    149
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    7 分
+                    1 分
                 </div>
                 
 
@@ -428,227 +420,34 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>看完Scrapy的概述，我们大概对Scrapy这个爬虫框架有了一个大致的了解。下面就通过爬取当当网python书籍信息来对Scrapy这个框架做一个实战。</p>
-<ol>
-<li>创建一个项目文件夹，并打开终端cd到创建文件夹处。在该目录下，在终端输入：<pre class="line-numbers language-none"><code class="language-none">scrapy startproject (爬虫项目名)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-   通过执行这条命令，便会在当前文件夹下创建Scrapy的大致模板了。</li>
-</ol>
-<hr>
-<ol start="2">
-<li>进入工程文件夹，在终端输入：<pre class="line-numbers language-none"><code class="language-none">scrapy genspider (爬虫py的名字) （爬取的范围）<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</li>
-</ol>
-<hr>
-<ol start="3">
-<li>在items.py中添加item项。<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># -*- coding: utf-8 -*-</span>
+                <h2 id="1-题目介绍"><a href="#1-题目介绍" class="headerlink" title="1.题目介绍"></a>1.题目介绍</h2><p><img src="https://github.com/Peyton-Chen/Picture/raw/master/1058.JPG" alt="1058"></p>
+<h2 id="2-考察点，难度"><a href="#2-考察点，难度" class="headerlink" title="2.考察点，难度"></a>2.考察点，难度</h2><p>进制转换，进制进位，难度易</p>
+<h2 id="3-解题代码"><a href="#3-解题代码" class="headerlink" title="3.解题代码"></a>3.解题代码</h2><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+using namespace std<span class="token punctuation">;</span>
 
-<span class="token comment"># Define here the models for your scraped items</span>
-<span class="token comment">#</span>
-<span class="token comment"># See documentation in:</span>
-<span class="token comment"># https://docs.scrapy.org/en/latest/topics/items.html</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">int</span> a<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span>b<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span>c<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+	<span class="token keyword">int</span> sum<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span>upper<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+	<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d.%d.%d %d.%d.%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>a<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>a<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>a<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>b<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>b<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>b<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	sum<span class="token operator">=</span>a<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">+</span>b<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+	<span class="token keyword">if</span><span class="token punctuation">(</span>sum<span class="token operator">&gt;=</span><span class="token number">29</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		upper<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>
+		sum <span class="token operator">=</span> sum<span class="token operator">-</span><span class="token number">29</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	c<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">=</span>sum<span class="token punctuation">;</span>
+	sum<span class="token operator">=</span>a<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">+</span>b<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">+</span>upper<span class="token punctuation">;</span>
+	upper<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+	<span class="token keyword">if</span><span class="token punctuation">(</span>sum<span class="token operator">&gt;=</span><span class="token number">17</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		upper<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>
+		sum<span class="token operator">=</span>sum<span class="token operator">-</span><span class="token number">17</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	c<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span>sum<span class="token punctuation">;</span>
+	c<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token operator">=</span>upper<span class="token operator">+</span>a<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token operator">+</span>b<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+	cout<span class="token operator">&lt;&lt;</span>c<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token operator">&lt;&lt;</span><span class="token string">"."</span><span class="token operator">&lt;&lt;</span>c<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">&lt;&lt;</span><span class="token string">"."</span><span class="token operator">&lt;&lt;</span>c<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span> 
 
-<span class="token comment">#导入第三方库scrapy</span>
-<span class="token keyword">import</span> scrapy
-
-<span class="token comment">#定义有关需要爬取的数据的类DdpythonItem（当当pythonItem）</span>
-<span class="token keyword">class</span> <span class="token class-name">DdpythonItem</span><span class="token punctuation">(</span>scrapy<span class="token punctuation">.</span>Item<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token comment"># define the fields for your item here like:</span>
-    <span class="token comment"># name = scrapy.Field()</span>
-
-    name<span class="token operator">=</span>scrapy<span class="token punctuation">.</span>Field<span class="token punctuation">(</span><span class="token punctuation">)</span>             <span class="token comment">#书名</span>
-    author<span class="token operator">=</span>scrapy<span class="token punctuation">.</span>Field<span class="token punctuation">(</span><span class="token punctuation">)</span>           <span class="token comment">#作者</span>
-    introduction<span class="token operator">=</span>scrapy<span class="token punctuation">.</span>Field<span class="token punctuation">(</span><span class="token punctuation">)</span>     <span class="token comment">#简介</span>
-    price<span class="token operator">=</span>scrapy<span class="token punctuation">.</span>Field<span class="token punctuation">(</span><span class="token punctuation">)</span>            <span class="token comment">#价格</span>
-    press<span class="token operator">=</span>scrapy<span class="token punctuation">.</span>Field<span class="token punctuation">(</span><span class="token punctuation">)</span>            <span class="token comment">#出版社</span>
-    time<span class="token operator">=</span>scrapy<span class="token punctuation">.</span>Field<span class="token punctuation">(</span><span class="token punctuation">)</span>             <span class="token comment">#出版时间</span>
-    comment_num<span class="token operator">=</span>scrapy<span class="token punctuation">.</span>Field<span class="token punctuation">(</span><span class="token punctuation">)</span>      <span class="token comment">#评价数目</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-</ol>
-<hr>
-<ol start="4">
-<li>进入前面生成的爬虫py文件中，进行爬取方法的定义。<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># -*- coding: utf-8 -*-</span>
-
-<span class="token comment"># 导入第三方库scrapy以及自定义库items中的Item类DdpythonItem</span>
-<span class="token keyword">import</span> scrapy
-<span class="token keyword">from</span> <span class="token punctuation">.</span><span class="token punctuation">.</span>items <span class="token keyword">import</span> DdpythonItem
-
-<span class="token comment"># 定义爬虫类DdSpider（当当Spider），爬虫名字命名为dd</span>
-<span class="token keyword">class</span> <span class="token class-name">DdSpider</span><span class="token punctuation">(</span>scrapy<span class="token punctuation">.</span>Spider<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    name <span class="token operator">=</span> <span class="token string">'dd'</span>
-    <span class="token comment"># 爬取的网站为当当网，开始的url为'http://search.dangdang.com/?key=python'（python类图书界面）</span>
-    allowed_domains <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'dangdang.com'</span><span class="token punctuation">]</span>
-    start_urls <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'http://search.dangdang.com/?key=python'</span><span class="token punctuation">]</span>
-
-    <span class="token comment"># 定义解析response对象的方法</span>
-    <span class="token keyword">def</span> <span class="token function">parse</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> response<span class="token punctuation">)</span><span class="token punctuation">:</span>
-        <span class="token comment"># 使用 XPath 从页面的HTML源码中选择需要提取的数据</span>
-        <span class="token comment"># 根据对HTML源码的观察，设置XPath解析规则提取出所有书籍信息books</span>
-        books <span class="token operator">=</span> response<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'//ul[@class="bigimg"]/li'</span><span class="token punctuation">)</span>
-
-        <span class="token comment"># 对提取到的所有图书信息进行遍历，提取每一本书的相关信息</span>
-        <span class="token keyword">for</span> book <span class="token keyword">in</span> books<span class="token punctuation">:</span>
-            item <span class="token operator">=</span> DdpythonItem<span class="token punctuation">(</span><span class="token punctuation">)</span>       <span class="token comment"># 生成一个Item对象，用于存储提取到的信息</span>
-            item<span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">]</span> <span class="token operator">=</span> book<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'./a[@class="pic"]/@title'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span>
-            item<span class="token punctuation">[</span><span class="token string">'introduction'</span><span class="token punctuation">]</span> <span class="token operator">=</span> book<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'./p[@class="detail"]/text()'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>book<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'./p[@class="detail"]/text()'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token keyword">else</span> <span class="token string">'无介绍信息'</span>
-            item<span class="token punctuation">[</span><span class="token string">'author'</span><span class="token punctuation">]</span> <span class="token operator">=</span> book<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'./p/span[1]/a[1]/@title'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>book<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'./p/span[1]/a[1]/@title'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token keyword">else</span> <span class="token string">'无作者信息'</span>
-            item<span class="token punctuation">[</span><span class="token string">'price'</span><span class="token punctuation">]</span> <span class="token operator">=</span> book<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'./p/span[@class="search_now_price"]/text()'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span>
-            item<span class="token punctuation">[</span><span class="token string">'press'</span><span class="token punctuation">]</span> <span class="token operator">=</span> book<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'./p/span[3]/a/text()'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>book<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'./p/span[3]/a/text()'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token keyword">else</span> <span class="token string">'无出版社信息'</span>
-            item<span class="token punctuation">[</span><span class="token string">'time'</span><span class="token punctuation">]</span> <span class="token operator">=</span> book<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'./p[5]/span[2]/text()'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>book<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'./p[5]/span[2]/text()'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token keyword">else</span> <span class="token string">'无出版时间信息'</span>
-            item<span class="token punctuation">[</span><span class="token string">'comment_num'</span><span class="token punctuation">]</span> <span class="token operator">=</span> book<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'./p[@class="search_star_line"]/a/text()'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span>
-
-            <span class="token comment"># 将提取到的数据提交给pipelines进行保存输出</span>
-            <span class="token keyword">yield</span> item
-
-        <span class="token comment"># 设置爬取的页面数pageNum，爬取10个页面的python图书信息</span>
-        pageNum <span class="token operator">=</span> <span class="token number">10</span>
-        <span class="token comment"># 根据url的规则进行构建新的url，即page，将page提交给scrapy engine进行处理</span>
-        <span class="token keyword">for</span> page <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> pageNum<span class="token punctuation">)</span><span class="token punctuation">:</span>
-            page <span class="token operator">=</span> <span class="token string">'http://search.dangdang.com/?key=python&amp;page_index={}'</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>page<span class="token punctuation">)</span>
-
-            <span class="token comment"># 对页面page提交request请求，利用自定义的解析方法parse对获取到的页面进行解析</span>
-            <span class="token keyword">yield</span> scrapy<span class="token punctuation">.</span>Request<span class="token punctuation">(</span>page<span class="token punctuation">,</span> callback<span class="token operator">=</span>self<span class="token punctuation">.</span>parse<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-</ol>
-<hr>
-<ol start="5">
-<li>在pipelines.py文件中，将item中提取的数据保存下来。<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># -*- coding: utf-8 -*-</span>
-
-<span class="token comment"># Define your item pipelines here</span>
-<span class="token comment">#</span>
-<span class="token comment"># Don't forget to add your pipeline to the ITEM_PIPELINES setting</span>
-<span class="token comment"># See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html</span>
-
-<span class="token comment"># 导入第三方库pymysql，用于对MySQL数据库进行处理</span>
-<span class="token keyword">import</span> pymysql
-
-<span class="token comment"># 定义用于输出数据到MySQL数据库的Pipeline类DdpythonPipeline</span>
-<span class="token keyword">class</span> <span class="token class-name">DdpythonPipeline</span><span class="token punctuation">(</span><span class="token builtin">object</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token comment"># 定义处理item对象的方法process_item</span>
-    <span class="token keyword">def</span> <span class="token function">process_item</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> item<span class="token punctuation">,</span> spider<span class="token punctuation">)</span><span class="token punctuation">:</span>
-        <span class="token comment"># 通过pymysql对本地数据库进行连接，并且指定连接的数据库为“dd”</span>
-        db <span class="token operator">=</span> pymysql<span class="token punctuation">.</span>connect<span class="token punctuation">(</span>host<span class="token operator">=</span><span class="token string">"Localhost"</span><span class="token punctuation">,</span>user<span class="token operator">=</span><span class="token string">"root"</span><span class="token punctuation">,</span>password<span class="token operator">=</span><span class="token string">"cpt200406"</span><span class="token punctuation">,</span>db<span class="token operator">=</span><span class="token string">"dd"</span><span class="token punctuation">,</span>charset<span class="token operator">=</span><span class="token string">"utf8"</span><span class="token punctuation">)</span>
-        cursor <span class="token operator">=</span> db<span class="token punctuation">.</span>cursor<span class="token punctuation">(</span><span class="token punctuation">)</span>    <span class="token comment"># 获取db的游标对象，用于对事务进行处理</span>
-
-        <span class="token comment"># 根据提取的数据进行再次处理加工，转换成最终存储到数据库中的类型</span>
-        name <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token string">"name"</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
-        introduction<span class="token operator">=</span>item<span class="token punctuation">[</span><span class="token string">"introduction"</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
-        author<span class="token operator">=</span>item<span class="token punctuation">[</span><span class="token string">"author"</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
-        price <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token string">"price"</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token string">'¥'</span><span class="token punctuation">)</span>     <span class="token comment"># 删除价格前面的货币符￥</span>
-        press <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token string">"press"</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
-        time <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token string">"time"</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span>   <span class="token comment"># 删除时间前面的‘/’</span>
-        comment_num<span class="token operator">=</span>item<span class="token punctuation">[</span><span class="token string">"comment_num"</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token string">'条评论'</span><span class="token punctuation">)</span><span class="token comment"># 删除原始数据中的汉字‘条评论’</span>
-
-        <span class="token comment"># 对数据库进行插入操作，将提取到的item对象中的数据插入到dd数据库的ddpython数据表中</span>
-        cursor<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">'INSERT INTO ddpython(book_name,introduction,author,price,press,publication_time,comment_num) VALUES (%s,%s,%s,%s,%s,%s,%s)'</span><span class="token punctuation">,</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span>introduction<span class="token punctuation">,</span>author<span class="token punctuation">,</span>price<span class="token punctuation">,</span>press<span class="token punctuation">,</span>time<span class="token punctuation">,</span>comment_num<span class="token punctuation">)</span><span class="token punctuation">)</span>
-        <span class="token comment"># 对事务操作进行提交</span>
-        db<span class="token punctuation">.</span>commit<span class="token punctuation">(</span><span class="token punctuation">)</span>
-
-        <span class="token comment"># 关闭游标对象cursor以及数据库对象db</span>
-        cursor<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
-        db<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
-
-        <span class="token comment"># 返回item对象</span>
-        <span class="token keyword">return</span> item<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-</ol>
-<hr>
-<ol start="6">
-<li>在settings.py中,将pipelines的配置打开<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># -*- coding: utf-8 -*-</span>
-
-<span class="token comment"># Scrapy settings for DDPython project</span>
-<span class="token comment">#</span>
-<span class="token comment"># For simplicity, this file contains only settings considered important or</span>
-<span class="token comment"># commonly used. You can find more settings consulting the documentation:</span>
-<span class="token comment">#</span>
-<span class="token comment">#     https://docs.scrapy.org/en/latest/topics/settings.html</span>
-<span class="token comment">#     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html</span>
-<span class="token comment">#     https://docs.scrapy.org/en/latest/topics/spider-middleware.html</span>
-
-BOT_NAME <span class="token operator">=</span> <span class="token string">'DDPython'</span>
-
-SPIDER_MODULES <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'DDPython.spiders'</span><span class="token punctuation">]</span>
-NEWSPIDER_MODULE <span class="token operator">=</span> <span class="token string">'DDPython.spiders'</span>
-
-
-<span class="token comment"># Crawl responsibly by identifying yourself (and your website) on the user-agent</span>
-<span class="token comment">#USER_AGENT = 'DDPython (+http://www.yourdomain.com)'</span>
-
-<span class="token comment"># Obey robots.txt rules</span>
-ROBOTSTXT_OBEY <span class="token operator">=</span> <span class="token boolean">True</span>
-
-<span class="token comment"># Configure maximum concurrent requests performed by Scrapy (default: 16)</span>
-<span class="token comment">#CONCURRENT_REQUESTS = 32</span>
-
-<span class="token comment"># Configure a delay for requests for the same website (default: 0)</span>
-<span class="token comment"># See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay</span>
-<span class="token comment"># See also autothrottle settings and docs</span>
-<span class="token comment">#DOWNLOAD_DELAY = 3</span>
-<span class="token comment"># The download delay setting will honor only one of:</span>
-<span class="token comment">#CONCURRENT_REQUESTS_PER_DOMAIN = 16</span>
-<span class="token comment">#CONCURRENT_REQUESTS_PER_IP = 16</span>
-
-<span class="token comment"># Disable cookies (enabled by default)</span>
-<span class="token comment">#COOKIES_ENABLED = False</span>
-
-<span class="token comment"># Disable Telnet Console (enabled by default)</span>
-<span class="token comment">#TELNETCONSOLE_ENABLED = False</span>
-
-<span class="token comment"># Override the default request headers:</span>
-<span class="token comment">#DEFAULT_REQUEST_HEADERS = {</span>
-<span class="token comment">#   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',</span>
-<span class="token comment">#   'Accept-Language': 'en',</span>
-<span class="token comment">#}</span>
-
-<span class="token comment"># Enable or disable spider middlewares</span>
-<span class="token comment"># See https://docs.scrapy.org/en/latest/topics/spider-middleware.html</span>
-<span class="token comment">#SPIDER_MIDDLEWARES = {</span>
-<span class="token comment">#    'DDPython.middlewares.DdpythonSpiderMiddleware': 543,</span>
-<span class="token comment">#}</span>
-
-<span class="token comment"># Enable or disable downloader middlewares</span>
-<span class="token comment"># See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html</span>
-<span class="token comment">#DOWNLOADER_MIDDLEWARES = {</span>
-<span class="token comment">#    'DDPython.middlewares.DdpythonDownloaderMiddleware': 543,</span>
-<span class="token comment">#}</span>
-
-<span class="token comment"># Enable or disable extensions</span>
-<span class="token comment"># See https://docs.scrapy.org/en/latest/topics/extensions.html</span>
-<span class="token comment">#EXTENSIONS = {</span>
-<span class="token comment">#    'scrapy.extensions.telnet.TelnetConsole': None,</span>
-<span class="token comment">#}</span>
-
-<span class="token comment"># Configure item pipelines</span>
-<span class="token comment"># See https://docs.scrapy.org/en/latest/topics/item-pipeline.html</span>
-ITEM_PIPELINES <span class="token operator">=</span> <span class="token punctuation">{</span>
-   <span class="token string">'DDPython.pipelines.DdpythonPipeline'</span><span class="token punctuation">:</span> <span class="token number">300</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span>
-
-<span class="token comment"># Enable and configure the AutoThrottle extension (disabled by default)</span>
-<span class="token comment"># See https://docs.scrapy.org/en/latest/topics/autothrottle.html</span>
-<span class="token comment">#AUTOTHROTTLE_ENABLED = True</span>
-<span class="token comment"># The initial download delay</span>
-<span class="token comment">#AUTOTHROTTLE_START_DELAY = 5</span>
-<span class="token comment"># The maximum download delay to be set in case of high latencies</span>
-<span class="token comment">#AUTOTHROTTLE_MAX_DELAY = 60</span>
-<span class="token comment"># The average number of requests Scrapy should be sending in parallel to</span>
-<span class="token comment"># each remote server</span>
-<span class="token comment">#AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0</span>
-<span class="token comment"># Enable showing throttling stats for every response received:</span>
-<span class="token comment">#AUTOTHROTTLE_DEBUG = False</span>
-
-<span class="token comment"># Enable and configure HTTP caching (disabled by default)</span>
-<span class="token comment"># See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings</span>
-<span class="token comment">#HTTPCACHE_ENABLED = True</span>
-<span class="token comment">#HTTPCACHE_EXPIRATION_SECS = 0</span>
-<span class="token comment">#HTTPCACHE_DIR = 'httpcache'</span>
-<span class="token comment">#HTTPCACHE_IGNORE_HTTP_CODES = []</span>
-<span class="token comment">#HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-</ol>
-<hr>
-<ol start="7">
-<li>进入工作目录文件夹，输入以下命令启动爬虫：<pre class="line-numbers language-none"><code class="language-none">scrapy crawl (爬虫名)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
-</ol>
+	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="4-原题地址"><a href="#4-原题地址" class="headerlink" title="4.原题地址"></a>4.原题地址</h2><p><a target="_blank" rel="noopener" href="https://pintia.cn/problem-sets/994805342720868352/problems/994805416519647232">https://pintia.cn/problem-sets/994805342720868352/problems/994805416519647232</a></p>
 
                 
             </div>
@@ -675,7 +474,7 @@ ITEM_PIPELINES <span class="token operator">=</span> <span class="token punctuat
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://peyton.github.io/2020/07/10/scrapy-pa-chong-shi-zhan-dang-dang-wang/">https://peyton.github.io/2020/07/10/scrapy-pa-chong-shi-zhan-dang-dang-wang/</a>
+                    <a href="https://peyton.github.io/2021/01/27/pat/jin-zhi-zhuan-huan-ti/pat-jia-ji-1058/">https://peyton.github.io/2021/01/27/pat/jin-zhi-zhuan-huan-ti/pat-jia-ji-1058/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -713,16 +512,8 @@ ITEM_PIPELINES <span class="token operator">=</span> <span class="token punctuat
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/python/">
-                                    <span class="chip bg-color">python</span>
-                                </a>
-                            
-                                <a href="/tags/%E7%88%AC%E8%99%AB/">
-                                    <span class="chip bg-color">爬虫</span>
-                                </a>
-                            
-                                <a href="/tags/%E5%AE%9E%E6%88%98/">
-                                    <span class="chip bg-color">实战</span>
+                                <a href="/tags/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E9%A2%98/">
+                                    <span class="chip bg-color">进制转换题</span>
                                 </a>
                             
                         </div>
@@ -892,17 +683,18 @@ ITEM_PIPELINES <span class="token operator">=</span> <span class="token punctuat
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/07/11/vscode-you-ya-pei-zhi-latex/">
+                <a href="/2021/01/27/pat/jin-zhi-zhuan-huan-ti/pat-jia-ji-1058/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="VSCode优雅配置LaTeX">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="PAT甲级1058题（进制进位）">
                         
-                        <span class="card-title">VSCode优雅配置LaTeX</span>
+                        <span class="card-title">PAT甲级1058题（进制进位）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -912,34 +704,27 @@ ITEM_PIPELINES <span class="token operator">=</span> <span class="token punctuat
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-11
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-27
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/LaTeX/" class="post-category">
-                                    LaTeX
-                                </a>
-                            
-                            <a href="/categories/LaTeX/VSCode/" class="post-category">
-                                    VSCode
+                            <a href="/categories/PAT/" class="post-category">
+                                    PAT
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/LaTex/">
-                        <span class="chip bg-color">LaTex</span>
-                    </a>
-                    
-                    <a href="/tags/VSCode/">
-                        <span class="chip bg-color">VSCode</span>
+                    <a href="/tags/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E9%A2%98/">
+                        <span class="chip bg-color">进制转换题</span>
                     </a>
                     
                 </div>
@@ -953,13 +738,13 @@ ITEM_PIPELINES <span class="token operator">=</span> <span class="token punctuat
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/08/scrapy-pa-chong-jian-jie/">
+                <a href="/2021/01/27/pat/jin-zhi-zhuan-huan-ti/pat-jia-ji-1027/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="Scrapy爬虫简介">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="PAT甲级1027题（RGB转换）">
                         
-                        <span class="card-title">Scrapy爬虫简介</span>
+                        <span class="card-title">PAT甲级1027题（RGB转换）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -970,14 +755,14 @@ ITEM_PIPELINES <span class="token operator">=</span> <span class="token punctuat
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-27
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/python/" class="post-category">
-                                    python
+                            <a href="/categories/PAT/" class="post-category">
+                                    PAT
                                 </a>
                             
                             
@@ -987,12 +772,8 @@ ITEM_PIPELINES <span class="token operator">=</span> <span class="token punctuat
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/python/">
-                        <span class="chip bg-color">python</span>
-                    </a>
-                    
-                    <a href="/tags/Scrapy/">
-                        <span class="chip bg-color">Scrapy</span>
+                    <a href="/tags/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E9%A2%98/">
+                        <span class="chip bg-color">进制转换题</span>
                     </a>
                     
                 </div>

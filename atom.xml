@@ -6,7 +6,7 @@
   <link href="https://peyton.github.io/atom.xml" rel="self"/>
   
   <link href="https://peyton.github.io/"/>
-  <updated>2021-01-27T01:12:46.751Z</updated>
+  <updated>2021-01-27T01:29:36.164Z</updated>
   <id>https://peyton.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PAT甲级1058题（进制进位）</title>
+    <link href="https://peyton.github.io/2021/01/27/pat/jin-zhi-zhuan-huan-ti/pat-jia-ji-1058/"/>
+    <id>https://peyton.github.io/2021/01/27/pat/jin-zhi-zhuan-huan-ti/pat-jia-ji-1058/</id>
+    <published>2021-01-27T01:27:44.000Z</published>
+    <updated>2021-01-27T01:29:36.164Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
+    
+    
+    <category term="进制转换题" scheme="https://peyton.github.io/tags/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>PAT甲级1027题（RGB转换）</title>
@@ -509,31 +534,6 @@
     
     
     <category term="Tensorboard" scheme="https://peyton.github.io/tags/Tensorboard/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>screen常用命令</title>
-    <link href="https://peyton.github.io/2020/06/05/screen-jiao-cheng/"/>
-    <id>https://peyton.github.io/2020/06/05/screen-jiao-cheng/</id>
-    <published>2020-06-05T07:16:20.000Z</published>
-    <updated>2020-06-06T01:10:53.202Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;​   </summary>
-        
-      
-    
-    
-    
-    <category term="Linux" scheme="https://peyton.github.io/categories/Linux/"/>
-    
-    
-    <category term="screen" scheme="https://peyton.github.io/tags/screen/"/>
     
   </entry>
   
