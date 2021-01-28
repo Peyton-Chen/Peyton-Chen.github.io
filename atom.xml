@@ -6,7 +6,7 @@
   <link href="https://peyton.github.io/atom.xml" rel="self"/>
   
   <link href="https://peyton.github.io/"/>
-  <updated>2021-01-28T05:35:47.285Z</updated>
+  <updated>2021-01-28T15:39:07.158Z</updated>
   <id>https://peyton.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PAT甲级备考指南</title>
+    <link href="https://peyton.github.io/2021/01/28/pat/pat-jia-ji-bei-kao-zhi-nan/"/>
+    <id>https://peyton.github.io/2021/01/28/pat/pat-jia-ji-bei-kao-zhi-nan/</id>
+    <published>2021-01-28T10:28:24.000Z</published>
+    <updated>2021-01-28T15:39:07.158Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1-刷题地址&quot;&gt;&lt;a href=&quot;#1-刷题地址&quot; class=&quot;headerlink&quot; title=&quot;1.刷题地址&quot;&gt;&lt;/a&gt;1.刷题地址&lt;/h1&gt;&lt;p&gt;PAT计算机程序能力考试官网：&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
+    
+    
+    <category term="备考指南" scheme="https://peyton.github.io/tags/%E5%A4%87%E8%80%83%E6%8C%87%E5%8D%97/"/>
+    
+  </entry>
   
   <entry>
     <title>PAT甲级1100题（火星数）</title>
@@ -293,8 +318,8 @@
   
   <entry>
     <title>数字图像处理之错切问题</title>
-    <link href="https://peyton.github.io/2020/11/01/shu-zi-tu-xiang-chu-li-ke-cheng-zuo-ye/"/>
-    <id>https://peyton.github.io/2020/11/01/shu-zi-tu-xiang-chu-li-ke-cheng-zuo-ye/</id>
+    <link href="https://peyton.github.io/2020/11/01/matlab/shu-zi-tu-xiang-chu-li-ke-cheng-zuo-ye/"/>
+    <id>https://peyton.github.io/2020/11/01/matlab/shu-zi-tu-xiang-chu-li-ke-cheng-zuo-ye/</id>
     <published>2020-11-01T07:18:50.000Z</published>
     <updated>2021-01-23T07:57:05.667Z</updated>
     
@@ -376,8 +401,8 @@
   
   <entry>
     <title>Scrapy爬虫实战--当当网</title>
-    <link href="https://peyton.github.io/2020/07/10/scrapy-pa-chong-shi-zhan-dang-dang-wang/"/>
-    <id>https://peyton.github.io/2020/07/10/scrapy-pa-chong-shi-zhan-dang-dang-wang/</id>
+    <link href="https://peyton.github.io/2020/07/10/python/scrapy-pa-chong-shi-zhan-dang-dang-wang/"/>
+    <id>https://peyton.github.io/2020/07/10/python/scrapy-pa-chong-shi-zhan-dang-dang-wang/</id>
     <published>2020-07-10T08:41:31.000Z</published>
     <updated>2021-01-23T07:39:29.136Z</updated>
     
@@ -407,8 +432,8 @@
   
   <entry>
     <title>Scrapy爬虫简介</title>
-    <link href="https://peyton.github.io/2020/07/08/scrapy-pa-chong-jian-jie/"/>
-    <id>https://peyton.github.io/2020/07/08/scrapy-pa-chong-jian-jie/</id>
+    <link href="https://peyton.github.io/2020/07/08/python/scrapy-pa-chong-jian-jie/"/>
+    <id>https://peyton.github.io/2020/07/08/python/scrapy-pa-chong-jian-jie/</id>
     <published>2020-07-08T07:39:07.000Z</published>
     <updated>2021-01-23T07:39:14.021Z</updated>
     
@@ -459,8 +484,8 @@
   
   <entry>
     <title>Java期末练习</title>
-    <link href="https://peyton.github.io/2020/06/14/java-qi-mo-lian-xi/"/>
-    <id>https://peyton.github.io/2020/06/14/java-qi-mo-lian-xi/</id>
+    <link href="https://peyton.github.io/2020/06/14/java/java-qi-mo-lian-xi/"/>
+    <id>https://peyton.github.io/2020/06/14/java/java-qi-mo-lian-xi/</id>
     <published>2020-06-14T07:01:43.000Z</published>
     <updated>2020-06-14T07:18:05.494Z</updated>
     
@@ -485,8 +510,8 @@
   
   <entry>
     <title>基于Java的GUI设计</title>
-    <link href="https://peyton.github.io/2020/06/13/java-de-gui-she-ji/"/>
-    <id>https://peyton.github.io/2020/06/13/java-de-gui-she-ji/</id>
+    <link href="https://peyton.github.io/2020/06/13/java/java-de-gui-she-ji/"/>
+    <id>https://peyton.github.io/2020/06/13/java/java-de-gui-she-ji/</id>
     <published>2020-06-13T11:19:39.000Z</published>
     <updated>2020-06-13T11:43:44.885Z</updated>
     
@@ -507,31 +532,6 @@
     <category term="Java" scheme="https://peyton.github.io/tags/Java/"/>
     
     <category term="GUI" scheme="https://peyton.github.io/tags/GUI/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java常用类实战</title>
-    <link href="https://peyton.github.io/2020/06/05/java-chang-yong-lei-shi-zhan/"/>
-    <id>https://peyton.github.io/2020/06/05/java-chang-yong-lei-shi-zhan/</id>
-    <published>2020-06-05T14:35:56.000Z</published>
-    <updated>2020-06-05T15:07:20.176Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;ArrayList类&quot;&gt;&lt;a href=&quot;#ArrayList类&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Java" scheme="https://peyton.github.io/categories/Java/"/>
-    
-    
-    <category term="Java" scheme="https://peyton.github.io/tags/Java/"/>
     
   </entry>
   

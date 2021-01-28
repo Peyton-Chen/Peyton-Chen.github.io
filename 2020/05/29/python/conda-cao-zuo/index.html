@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="数字图像处理之错切问题, 杂货铺, Peyton">
+    <meta name="keywords" content="conda常用命令, 杂货铺, Peyton">
     <meta name="description" content="从来没有真正的绝境，只有心灵的迷途">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>数字图像处理之错切问题 | Peytonの杂货铺</title>
+    <title>conda常用命令 | Peytonの杂货铺</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -238,12 +238,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">数字图像处理之错切问题</h1>
+                    <h1 class="description center-align post-title">conda常用命令</h1>
                 </div>
             </div>
         </div>
@@ -359,12 +359,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/MATLAB/">
-                                <span class="chip bg-color">MATLAB</span>
-                            </a>
-                        
-                            <a href="/tags/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/">
-                                <span class="chip bg-color">数字图像处理</span>
+                            <a href="/tags/conda/">
+                                <span class="chip bg-color">conda</span>
                             </a>
                         
                     </div>
@@ -375,8 +371,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/" class="post-category">
-                                数字图像处理
+                            <a href="/categories/python/" class="post-category">
+                                python
                             </a>
                         
                     </div>
@@ -388,7 +384,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-11-01
+                    2020-05-29
                 </div>
                 
 
@@ -397,14 +393,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    290
+                    462
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -424,66 +420,52 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p><img src="https://github.com/Peyton-Chen/Picture/raw/master/%E5%9B%BE1.PNG" alt="图1"></p>
-<h2 id="修正原理"><a href="#修正原理" class="headerlink" title="修正原理"></a>修正原理</h2><p><img src="https://github.com/Peyton-Chen/Picture/raw/master/%E5%9B%BE2.PNG" alt="图2"></p>
-<h2 id="MATLAB代码实现"><a href="#MATLAB代码实现" class="headerlink" title="MATLAB代码实现"></a>MATLAB代码实现</h2><pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab"><span class="token keyword">function</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token function">Stamp</span><span class="token punctuation">(</span>Origin_path<span class="token punctuation">,</span> Need_to_fix_picture_path<span class="token punctuation">)</span>
-<span class="token comment">%% 本函数用于修正印章的错切问题</span>
-<span class="token comment">% Input:</span>
-<span class="token comment">%    Origin_path:原始理想图的存放路径</span>
-<span class="token comment">%    Need_to_fix_picture_path：待修复的图存放路径</span>
+                <p>conda可以说是每个学习python的人都应该了解的。当我们安装python包，或者创建环境的时候都会和它打交道。为了帮助大家对conda有一个更好的了解，下面总结了一些关于conda的命令行操作。主要是关于conda换源问题以及conda虚拟环境操作问题。那下面就开始吧！.0.0.</p>
+<hr>
+<h2 id="window环境下"><a href="#window环境下" class="headerlink" title="window环境下"></a>window环境下</h2><h3 id="conda查包"><a href="#conda查包" class="headerlink" title="conda查包"></a>conda查包</h3><pre class="line-numbers language-none"><code class="language-none">conda list<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="conda配置情况查询"><a href="#conda配置情况查询" class="headerlink" title="conda配置情况查询"></a>conda配置情况查询</h3><pre class="line-numbers language-none"><code class="language-none">conda info<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="conda换源"><a href="#conda换源" class="headerlink" title="conda换源"></a>conda换源</h3><pre class="line-numbers language-none"><code class="language-none">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+conda config --set show_channel_urls yes<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="conda换回默认源"><a href="#conda换回默认源" class="headerlink" title="conda换回默认源"></a>conda换回默认源</h3><pre class="line-numbers language-none"><code class="language-none">conda config --remove-key channels<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="conda虚拟环境创建"><a href="#conda虚拟环境创建" class="headerlink" title="conda虚拟环境创建"></a>conda虚拟环境创建</h3><pre class="line-numbers language-none"><code class="language-none">conda create -n your_env_name python=X.X<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="conda虚拟环境激活"><a href="#conda虚拟环境激活" class="headerlink" title="conda虚拟环境激活"></a>conda虚拟环境激活</h3><pre class="line-numbers language-none"><code class="language-none">activate your_env_name(虚拟环境名称)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="conda查询环境信息"><a href="#conda查询环境信息" class="headerlink" title="conda查询环境信息"></a>conda查询环境信息</h3><pre class="line-numbers language-none"><code class="language-none">conda env list<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="conda关闭虚拟环境"><a href="#conda关闭虚拟环境" class="headerlink" title="conda关闭虚拟环境"></a>conda关闭虚拟环境</h3><pre class="line-numbers language-none"><code class="language-none">deactivate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="conda删除虚拟环境"><a href="#conda删除虚拟环境" class="headerlink" title="conda删除虚拟环境"></a>conda删除虚拟环境</h3><pre class="line-numbers language-none"><code class="language-none">conda remove -n your_env_name(虚拟环境名称) --all<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="conda删除虚拟环境中的某些包"><a href="#conda删除虚拟环境中的某些包" class="headerlink" title="conda删除虚拟环境中的某些包"></a>conda删除虚拟环境中的某些包</h3><pre class="line-numbers language-none"><code class="language-none">conda remove --name your_env_name  package_name<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-    <span class="token comment">% 手动映射采点</span>
-    bad<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">285</span><span class="token punctuation">,</span><span class="token number">165</span><span class="token punctuation">;</span>
-        <span class="token number">170</span><span class="token punctuation">,</span><span class="token number">62</span><span class="token punctuation">;</span>
-        <span class="token number">265</span><span class="token punctuation">,</span><span class="token number">104</span><span class="token punctuation">;</span>
-        <span class="token number">294</span><span class="token punctuation">,</span><span class="token number">133</span><span class="token punctuation">;</span>
-        <span class="token number">81</span><span class="token punctuation">,</span><span class="token number">71</span><span class="token punctuation">;</span>
-        <span class="token number">240</span><span class="token punctuation">,</span><span class="token number">63</span><span class="token punctuation">;</span>
-        <span class="token number">220</span><span class="token punctuation">,</span><span class="token number">119</span><span class="token punctuation">;</span>
-        <span class="token number">79</span><span class="token punctuation">,</span><span class="token number">104</span><span class="token punctuation">;</span>
-        <span class="token number">148</span><span class="token punctuation">,</span><span class="token number">62</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-    good<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">205</span><span class="token punctuation">,</span><span class="token number">167</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token number">139</span><span class="token punctuation">,</span><span class="token number">62</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token number">216</span><span class="token punctuation">,</span><span class="token number">105</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token number">231</span><span class="token punctuation">,</span><span class="token number">133</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token number">46</span><span class="token punctuation">,</span><span class="token number">70</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token number">211</span><span class="token punctuation">,</span><span class="token number">63</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token number">163</span><span class="token punctuation">,</span><span class="token number">119</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token number">28</span><span class="token punctuation">,</span><span class="token number">105</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token number">119</span><span class="token punctuation">,</span><span class="token number">61</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-    
-    <span class="token comment">% 回归得到错切修正系数</span>
-    Parameter_X<span class="token operator">=</span><span class="token function">regress</span><span class="token punctuation">(</span><span class="token function">bad</span><span class="token punctuation">(</span><span class="token operator">:</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>good<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    Parameter_Y<span class="token operator">=</span><span class="token function">regress</span><span class="token punctuation">(</span><span class="token function">bad</span><span class="token punctuation">(</span><span class="token operator">:</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span>good<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    
-    <span class="token comment">% 载入错切后图片与原图片,并显示</span>
-    picture<span class="token operator">=</span><span class="token function">imread</span><span class="token punctuation">(</span>Need_to_fix_picture_path<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">% 错切图存放地址</span>
-    Shape<span class="token operator">=</span><span class="token function">size</span><span class="token punctuation">(</span>picture<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    target<span class="token operator">=</span><span class="token function">imread</span><span class="token punctuation">(</span>Origin_path<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">% 原始图存放地址</span>
-    target_size<span class="token operator">=</span><span class="token function">size</span><span class="token punctuation">(</span>target<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">figure</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">subplot</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">imshow</span><span class="token punctuation">(</span>picture<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">title</span><span class="token punctuation">(</span><span class="token string">'Need to fix'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">subplot</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">imshow</span><span class="token punctuation">(</span>target<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">title</span><span class="token punctuation">(</span><span class="token string">'target'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    
-    <span class="token comment">% 根据原图和错切图建立映射，修复错切问题</span>
-    Store_Matrix<span class="token operator">=</span><span class="token function">ones</span><span class="token punctuation">(</span><span class="token function">target_size</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">target_size</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token number">255</span><span class="token punctuation">;</span>
-    <span class="token keyword">for</span> channel<span class="token operator">=</span><span class="token number">1</span><span class="token operator">:</span><span class="token number">3</span>
-        <span class="token keyword">for</span> x<span class="token operator">=</span><span class="token number">1</span><span class="token operator">:</span><span class="token function">target_size</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
-            <span class="token keyword">for</span> y<span class="token operator">=</span><span class="token number">1</span><span class="token operator">:</span><span class="token function">target_size</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
-                <span class="token keyword">if</span> <span class="token function">floor</span><span class="token punctuation">(</span><span class="token punctuation">[</span>x<span class="token punctuation">,</span>y<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">*</span>Parameter_X<span class="token punctuation">)</span><span class="token operator">&gt;=</span><span class="token function">Shape</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
-                    <span class="token keyword">continue</span><span class="token punctuation">;</span>
-                <span class="token keyword">end</span>
-                <span class="token keyword">if</span> <span class="token function">floor</span><span class="token punctuation">(</span><span class="token punctuation">[</span>x<span class="token punctuation">,</span>y<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">*</span>Parameter_Y<span class="token punctuation">)</span><span class="token operator">&gt;=</span><span class="token function">Shape</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
-                    <span class="token keyword">continue</span><span class="token punctuation">;</span>
-                <span class="token keyword">end</span>
-                <span class="token function">Store_Matrix</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">,</span>channel<span class="token punctuation">)</span><span class="token operator">=</span><span class="token function">picture</span><span class="token punctuation">(</span><span class="token function">floor</span><span class="token punctuation">(</span><span class="token punctuation">[</span>x<span class="token punctuation">,</span>y<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">*</span>Parameter_X<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">floor</span><span class="token punctuation">(</span><span class="token punctuation">[</span>x<span class="token punctuation">,</span>y<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">*</span>Parameter_Y<span class="token punctuation">)</span><span class="token punctuation">,</span>channel<span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token keyword">end</span>
-        <span class="token keyword">end</span>
-    <span class="token keyword">end</span>
-    
-    <span class="token comment">% 显示修复后结果</span>
-    Store_Matrix<span class="token operator">=</span><span class="token function">uint8</span><span class="token punctuation">(</span>Store_Matrix<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">subplot</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">imshow</span><span class="token punctuation">(</span>Store_Matrix<span class="token punctuation">)</span><span class="token punctuation">;</span>    
-    <span class="token function">title</span><span class="token punctuation">(</span><span class="token string">'fixed picture'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">end</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="修正结果"><a href="#修正结果" class="headerlink" title="修正结果"></a>修正结果</h2><p><img src="https://github.com/Peyton-Chen/Picture/raw/master/%E5%9B%BE3.png" alt="图3"></p>
+
+<h2 id="Linux环境下"><a href="#Linux环境下" class="headerlink" title="Linux环境下"></a>Linux环境下</h2><p>如果与windows环境下操作方式相同的，则以下不再赘述。</p>
+<h3 id="conda虚拟环境激活-1"><a href="#conda虚拟环境激活-1" class="headerlink" title="conda虚拟环境激活"></a>conda虚拟环境激活</h3><pre class="line-numbers language-none"><code class="language-none">source activate your_env_name(虚拟环境名称)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="conda关闭虚拟环境-1"><a href="#conda关闭虚拟环境-1" class="headerlink" title="conda关闭虚拟环境"></a>conda关闭虚拟环境</h3><pre class="line-numbers language-none"><code class="language-none">source deactivate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="conda换源-1"><a href="#conda换源-1" class="headerlink" title="conda换源"></a>conda换源</h3><p>在终端输入：</p>
+<pre class="line-numbers language-none"><code class="language-none">vim ~/.condarc<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>这样就进入了conda源的配置文件了。下面（选择其一就好）将文件改为：</p>
+<p>清华源：</p>
+<pre class="line-numbers language-none"><code class="language-none">channels:
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+ssl_verify: true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>中科大源：</p>
+<pre class="line-numbers language-none"><code class="language-none">channels:
+  - https://mirrors.ustc.edu.cn/anaconda/pkgs/main/
+  - https://mirrors.ustc.edu.cn/anaconda/pkgs/free/
+  - https://mirrors.ustc.edu.cn/anaconda/cloud/conda-forge/
+ssl_verify: true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>上交源：</p>
+<pre class="line-numbers language-none"><code class="language-none">channels:
+  - https://mirrors.sjtug.sjtu.edu.cn/anaconda/pkgs/main/
+  - https://mirrors.sjtug.sjtu.edu.cn/anaconda/pkgs/free/
+  - https://mirrors.sjtug.sjtu.edu.cn/anaconda/cloud/conda-forge/
+ssl_verify: true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>参考文献：</p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/87123943">https://zhuanlan.zhihu.com/p/87123943</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/sean2100/article/details/80998643">https://blog.csdn.net/sean2100/article/details/80998643</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/lyy14011305/article/details/59500819">https://blog.csdn.net/lyy14011305/article/details/59500819</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_34613450/article/details/87457631">https://blog.csdn.net/weixin_34613450/article/details/87457631</a></p>
 
                 
             </div>
@@ -510,7 +492,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://peyton.github.io/2020/11/01/shu-zi-tu-xiang-chu-li-ke-cheng-zuo-ye/">https://peyton.github.io/2020/11/01/shu-zi-tu-xiang-chu-li-ke-cheng-zuo-ye/</a>
+                    <a href="https://peyton.github.io/2020/05/29/python/conda-cao-zuo/">https://peyton.github.io/2020/05/29/python/conda-cao-zuo/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -548,12 +530,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/MATLAB/">
-                                    <span class="chip bg-color">MATLAB</span>
-                                </a>
-                            
-                                <a href="/tags/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/">
-                                    <span class="chip bg-color">数字图像处理</span>
+                                <a href="/tags/conda/">
+                                    <span class="chip bg-color">conda</span>
                                 </a>
                             
                         </div>
@@ -727,13 +705,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/01/24/pat/mo-ni-ti/pat-jia-ji-1008/">
+                <a href="/2020/06/01/java/java-chang-gui-cao-zuo/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="PAT甲级1008题（电梯）">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Java基础练习">
                         
-                        <span class="card-title">PAT甲级1008题（电梯）</span>
+                        <span class="card-title">Java基础练习</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -744,14 +722,14 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-01-24
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-06-01
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/PAT/" class="post-category">
-                                    PAT
+                            <a href="/categories/Java/" class="post-category">
+                                    Java
                                 </a>
                             
                             
@@ -761,8 +739,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%A8%A1%E6%8B%9F%E9%A2%98/">
-                        <span class="chip bg-color">模拟题</span>
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
                     </a>
                     
                 </div>
@@ -773,16 +751,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/11/vhdl-yu-yan-ru-men/">
+                <a href="/2020/05/29/python/conda-cao-zuo/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="VHDL语言入门">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="conda常用命令">
                         
-                        <span class="card-title">VHDL语言入门</span>
+                        <span class="card-title">conda常用命令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -793,25 +771,26 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-29
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/VHDL/" class="post-category">
-                                    VHDL
+                            <a href="/categories/python/" class="post-category">
+                                    python
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/VHDL/">
-                        <span class="chip bg-color">VHDL</span>
+                    <a href="/tags/conda/">
+                        <span class="chip bg-color">conda</span>
                     </a>
                     
                 </div>
@@ -1011,7 +990,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">11.1k</span>&nbsp;字
+                class="white-color">12.8k</span>&nbsp;字
             
             
             

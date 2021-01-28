@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="TensorBoard实战, 杂货铺, Peyton">
+    <meta name="keywords" content="Scrapy爬虫简介, 杂货铺, Peyton">
     <meta name="description" content="从来没有真正的绝境，只有心灵的迷途">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>TensorBoard实战 | Peytonの杂货铺</title>
+    <title>Scrapy爬虫简介 | Peytonの杂货铺</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -238,12 +238,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">TensorBoard实战</h1>
+                    <h1 class="description center-align post-title">Scrapy爬虫简介</h1>
                 </div>
             </div>
         </div>
@@ -359,8 +359,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Tensorboard/">
-                                <span class="chip bg-color">Tensorboard</span>
+                            <a href="/tags/python/">
+                                <span class="chip bg-color">python</span>
+                            </a>
+                        
+                            <a href="/tags/Scrapy/">
+                                <span class="chip bg-color">Scrapy</span>
                             </a>
                         
                     </div>
@@ -371,8 +375,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Keras/" class="post-category">
-                                Keras
+                            <a href="/categories/python/" class="post-category">
+                                python
                             </a>
                         
                     </div>
@@ -384,7 +388,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-06-05
+                    2020-07-08
                 </div>
                 
 
@@ -393,14 +397,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    654
+                    328
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    1 分
                 </div>
                 
 
@@ -420,69 +424,30 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>今天我们来介绍一款机器学习中很实用的工具：TensorBoard。它之所以实用，主要是因为它将机器学习这一个类似黑盒的东西可视化出来，让用户对训练过程有一个更好的理解。下面就基于MNIST数据集来实战一下TensorBoard的使用方法。</p>
+                <h2 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h2><p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_processing.png" alt="img"></p>
+<p>1.Spiders(爬虫):它负责处理所有Responses,从中分析提取数据，获取Item字段需要的数据，并将需要跟进的URL提交给引擎，再次进入Scheduler(调度器)</p>
+<p>2.Engine(引擎)：负责Spider、ItemPipeline、Downloader、Scheduler中间的通讯，信号、数据传递等。</p>
+<p>3.Scheduler(调度器)：它负责接受引擎发送过来的Request请求，并按照一定的方式进行整理排列，入队，当引擎需要时，交还给引擎。</p>
+<p>4.Downloader(下载器)：负责下载Scrapy Engine(引擎)发送的所有Requests请求，并将其获取到的Responses交还给Scrapy Engine(引擎)，由引擎交给Spider来处理</p>
+<p>5.ItemPipeline(管道):它负责处理Spider中获取到的Item，并进行进行后期处理（详细分析、过滤、存储等）的地方.</p>
+<p>6.Downloader Middlewares（下载中间件）：你可以当作是一个可以自定义扩展下载功能的组件。</p>
+<p>7.Spider Middlewares（Spider中间件）：你可以理解为是一个可以自定扩展和操作引擎和Spider中间通信的功能组件（比如进入Spider的Responses;和从Spider出去的Requests）</p>
+<p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_struct.png"></p>
+<h2 id="入门使用"><a href="#入门使用" class="headerlink" title="入门使用"></a>入门使用</h2><h3 id="创建过程："><a href="#创建过程：" class="headerlink" title="创建过程："></a>创建过程：</h3><p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_way.png"></p>
 <hr>
-<h2 id="TensorBoard可视化MNIST分类代码"><a href="#TensorBoard可视化MNIST分类代码" class="headerlink" title="TensorBoard可视化MNIST分类代码"></a>TensorBoard可视化MNIST分类代码</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
-<span class="token keyword">from</span> keras<span class="token punctuation">.</span>layers <span class="token keyword">import</span> Input<span class="token punctuation">,</span> Dense<span class="token punctuation">,</span> Dropout<span class="token punctuation">,</span> Activation<span class="token punctuation">,</span> Conv2D<span class="token punctuation">,</span> MaxPool2D<span class="token punctuation">,</span> Flatten
-<span class="token keyword">from</span> keras<span class="token punctuation">.</span>datasets <span class="token keyword">import</span> mnist
-<span class="token keyword">from</span> keras<span class="token punctuation">.</span>models <span class="token keyword">import</span> Model
-<span class="token keyword">from</span> keras<span class="token punctuation">.</span>utils <span class="token keyword">import</span> to_categorical
-<span class="token keyword">from</span> keras<span class="token punctuation">.</span>callbacks <span class="token keyword">import</span> TensorBoard
-
-<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
-    <span class="token comment">#数据集处理</span>
-    <span class="token comment"># (X_train, y_train), (X_test, y_test) = mnist.load_data() # 使用keras导入数据集</span>
-    data <span class="token operator">=</span> np<span class="token punctuation">.</span>load<span class="token punctuation">(</span><span class="token string">'mnist.npz'</span><span class="token punctuation">)</span>
-    x_train<span class="token punctuation">,</span> y_train <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'x_train'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> data<span class="token punctuation">[</span><span class="token string">'y_train'</span><span class="token punctuation">]</span>
-    x_test<span class="token punctuation">,</span> y_test <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'x_test'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> data<span class="token punctuation">[</span><span class="token string">'y_test'</span><span class="token punctuation">]</span>
-    x_train <span class="token operator">=</span> np<span class="token punctuation">.</span>expand_dims<span class="token punctuation">(</span>x_train<span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
-    x_test <span class="token operator">=</span> np<span class="token punctuation">.</span>expand_dims<span class="token punctuation">(</span>x_test<span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
-    y_train<span class="token operator">=</span>to_categorical<span class="token punctuation">(</span>y_train<span class="token punctuation">,</span> num_classes<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">)</span>
-    y_test<span class="token operator">=</span>to_categorical<span class="token punctuation">(</span>y_test<span class="token punctuation">,</span> num_classes<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">)</span>
-    
-    <span class="token comment">#参数配置</span>
-    batch_size <span class="token operator">=</span><span class="token number">128</span>
-    epoch <span class="token operator">=</span> <span class="token number">10</span>
-
-    <span class="token comment"># 模型搭建</span>
-    inputs <span class="token operator">=</span> Input<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">28</span><span class="token punctuation">,</span> <span class="token number">28</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-    x <span class="token operator">=</span> Conv2D<span class="token punctuation">(</span><span class="token number">32</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">,</span> activation<span class="token operator">=</span><span class="token string">'relu'</span> <span class="token punctuation">)</span><span class="token punctuation">(</span>inputs<span class="token punctuation">)</span>
-    x <span class="token operator">=</span> Conv2D<span class="token punctuation">(</span><span class="token number">64</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">,</span> activation<span class="token operator">=</span><span class="token string">'relu'</span><span class="token punctuation">)</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
-    x <span class="token operator">=</span> MaxPool2D<span class="token punctuation">(</span>pool_size<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
-    x <span class="token operator">=</span> Flatten<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
-    x <span class="token operator">=</span> Dense<span class="token punctuation">(</span><span class="token number">128</span><span class="token punctuation">,</span> activation<span class="token operator">=</span><span class="token string">'relu'</span><span class="token punctuation">)</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
-    x <span class="token operator">=</span> Dropout<span class="token punctuation">(</span><span class="token number">0.5</span><span class="token punctuation">)</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
-    x <span class="token operator">=</span> Dense<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> activation<span class="token operator">=</span><span class="token string">'softmax'</span><span class="token punctuation">)</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
-	
-    model <span class="token operator">=</span> Model<span class="token punctuation">(</span>inputs<span class="token punctuation">,</span> x<span class="token punctuation">)</span>
-	<span class="token comment">#模型编译</span>
-    model<span class="token punctuation">.</span><span class="token builtin">compile</span><span class="token punctuation">(</span>loss<span class="token operator">=</span><span class="token string">'categorical_crossentropy'</span><span class="token punctuation">,</span> optimizer<span class="token operator">=</span><span class="token string">'adam'</span><span class="token punctuation">,</span>metrics<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'acc'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-	<span class="token comment">#面板配置</span>
-    Tensorboard <span class="token operator">=</span> TensorBoard<span class="token punctuation">(</span>log_dir<span class="token operator">=</span><span class="token string">'.\model'</span><span class="token punctuation">,</span> histogram_freq<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> write_grads<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span> <span class="token comment">#log_dir保存目录</span>
-	<span class="token comment">#模型训练</span>
-    result <span class="token operator">=</span> model<span class="token punctuation">.</span>fit<span class="token punctuation">(</span>x_train<span class="token punctuation">,</span> y_train<span class="token punctuation">,</span> batch_size<span class="token operator">=</span>batch_size<span class="token punctuation">,</span> epochs<span class="token operator">=</span>epoch<span class="token punctuation">,</span> shuffle<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> validation_split<span class="token operator">=</span><span class="token number">0.2</span><span class="token punctuation">,</span>callbacks<span class="token operator">=</span><span class="token punctuation">[</span>Tensorboard<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment">#在回调函数中加入TensorBoard！</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="结构："><a href="#结构：" class="headerlink" title="结构："></a>结构：</h3><p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapt_file.png"></p>
 <hr>
-<h2 id="TensorBoard启动"><a href="#TensorBoard启动" class="headerlink" title="TensorBoard启动"></a>TensorBoard启动</h2><p>实际上，训练信息已经保存在TensorBoard配置的目录中了。下面进入当前*.py目录下的PowerShell，敲入</p>
-<pre class="line-numbers language-none"><code class="language-none">tensorboard --logdir= XXX（前文中的model）<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>PowerShell会反馈一个本地6006端口开放的提示信息。此时打开浏览器输入</p>
-<pre class="line-numbers language-none"><code class="language-none">http://localhost:6006<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>这样就成功进入TensorBoard界面啦！</p>
-<h2 id="TensorBoard配置"><a href="#TensorBoard配置" class="headerlink" title="TensorBoard配置"></a>TensorBoard配置</h2><p>我们上述实战例子中，我们只能够看到Loss和Acc的训练曲线，而其他信息是没有保存下来的。但世界上TensorBoard的可视化功能非常强大，目前可以支持一下7种可视化类别：</p>
-<ol>
-<li>SCALARS：展示训练过程中的准确率、损失值、权重/偏置的变化情况</li>
-<li>IMAGES：展示训练过程中及记录的图像</li>
-<li>AUDIO：展示训练过程中记录的音频</li>
-<li>GRAPHS：展示模型的数据流图，以及各个设备上消耗的内存和时间</li>
-<li>DISTRIBUTIONS：展示训练过程中记录的数据的分布图</li>
-<li>HISTOGRAMS：展示训练过程中记录的数据的柱状图</li>
-<li>EMBEDDINGS：展示词向量后的投影分布</li>
-</ol>
-<p>具体的参数配置后续再加~</p>
-<h2 id="参考文献："><a href="#参考文献：" class="headerlink" title="参考文献："></a>参考文献：</h2><ol>
-<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/fendouaini/article/details/80368770?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase">https://blog.csdn.net/fendouaini/article/details/80368770?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase</a></li>
-<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/u010099080/article/details/77426577">https://blog.csdn.net/u010099080/article/details/77426577</a></li>
-<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/hnwolfs/article/details/81122380?utm_medium=distribute.pc_relevant.none-task-blog-baidujs-1">https://blog.csdn.net/hnwolfs/article/details/81122380?utm_medium=distribute.pc_relevant.none-task-blog-baidujs-1</a></li>
-</ol>
+<h3 id="spider使用："><a href="#spider使用：" class="headerlink" title="spider使用："></a>spider使用：</h3><p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_spider.png"></p>
+<hr>
+<h3 id="pipeline更改和使用："><a href="#pipeline更改和使用：" class="headerlink" title="pipeline更改和使用："></a>pipeline更改和使用：</h3><p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_pipeline_1.png"></p>
+<p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_pipeline_2.png"></p>
+<hr>
+<h3 id="log简单设置："><a href="#log简单设置：" class="headerlink" title="log简单设置："></a>log简单设置：</h3><p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_log.png"></p>
+<hr>
+<h3 id="翻页爬取方法："><a href="#翻页爬取方法：" class="headerlink" title="翻页爬取方法："></a>翻页爬取方法：</h3><p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_turnpage.png"></p>
+<p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_turnpage1.png"></p>
+<h3 id="item的设置："><a href="#item的设置：" class="headerlink" title="item的设置："></a>item的设置：</h3><p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_item.png"></p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1mf4y127S5#reply3147097466">https://www.bilibili.com/video/BV1mf4y127S5#reply3147097466</a></p>
 
                 
             </div>
@@ -509,7 +474,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://peyton.github.io/2020/06/05/tensorboard-shi-zhan/">https://peyton.github.io/2020/06/05/tensorboard-shi-zhan/</a>
+                    <a href="https://peyton.github.io/2020/07/08/python/scrapy-pa-chong-jian-jie/">https://peyton.github.io/2020/07/08/python/scrapy-pa-chong-jian-jie/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -547,8 +512,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Tensorboard/">
-                                    <span class="chip bg-color">Tensorboard</span>
+                                <a href="/tags/python/">
+                                    <span class="chip bg-color">python</span>
+                                </a>
+                            
+                                <a href="/tags/Scrapy/">
+                                    <span class="chip bg-color">Scrapy</span>
                                 </a>
                             
                         </div>
@@ -722,13 +691,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/06/05/java-chang-yong-lei-shi-zhan/">
+                <a href="/2020/07/10/python/scrapy-pa-chong-shi-zhan-dang-dang-wang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Java常用类实战">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Scrapy爬虫实战--当当网">
                         
-                        <span class="card-title">Java常用类实战</span>
+                        <span class="card-title">Scrapy爬虫实战--当当网</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -739,14 +708,14 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-06-05
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-10
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Java/" class="post-category">
-                                    Java
+                            <a href="/categories/python/" class="post-category">
+                                    python
                                 </a>
                             
                             
@@ -756,8 +725,16 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Java/">
-                        <span class="chip bg-color">Java</span>
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%88%AC%E8%99%AB/">
+                        <span class="chip bg-color">爬虫</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%AE%9E%E6%88%98/">
+                        <span class="chip bg-color">实战</span>
                     </a>
                     
                 </div>
@@ -771,13 +748,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/06/05/screen-jiao-cheng/">
+                <a href="/2020/07/02/latex-huan-jing-da-jian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="screen常用命令">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="LaTeX环境搭建">
                         
-                        <span class="card-title">screen常用命令</span>
+                        <span class="card-title">LaTeX环境搭建</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -788,14 +765,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-02
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Linux/" class="post-category">
-                                    Linux
+                            <a href="/categories/LaTeX/" class="post-category">
+                                    LaTeX
                                 </a>
                             
                             
@@ -805,8 +782,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/screen/">
-                        <span class="chip bg-color">screen</span>
+                    <a href="/tags/LaTeX/">
+                        <span class="chip bg-color">LaTeX</span>
                     </a>
                     
                 </div>
@@ -1006,7 +983,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">11.1k</span>&nbsp;字
+                class="white-color">12.8k</span>&nbsp;字
             
             
             
