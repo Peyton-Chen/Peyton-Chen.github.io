@@ -534,7 +534,8 @@ value_type<span class="token operator">&amp;</span> <span class="token function"
 <span class="token keyword">void</span> <span class="token function">push</span> <span class="token punctuation">(</span> <span class="token keyword">const</span> T<span class="token operator">&amp;</span> x <span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//将x入队列</span>
 <span class="token keyword">void</span> <span class="token function">pop</span> <span class="token punctuation">(</span> <span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//删除队首元素</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="2-8-STL-string"><a href="#2-8-STL-string" class="headerlink" title="2.8 STL-string"></a>2.8 STL-string</h2><pre class="line-numbers language-c" data-language="c"><code class="language-c">string<span class="token punctuation">.</span><span class="token function">c_str</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">//返回的是const char*而非char *，如果想返回char *的话可以这样写：char * a = (char*)string.c_str();</span>
-<span class="token function">strtok</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">//函数很好用，分割字符串 </span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<span class="token function">strtok</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">//函数很好用，分割字符串 </span>
+<span class="token function">insert</span><span class="token punctuation">(</span><span class="token keyword">int</span> pos<span class="token punctuation">,</span> string s<span class="token punctuation">)</span>	<span class="token comment">//在pos位置后面插入s字串</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 
 
@@ -776,18 +777,17 @@ value_type<span class="token operator">&amp;</span> <span class="token function"
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/01/28/pat/pat-jia-ji-bei-kao-zhi-nan/">
+                <a href="/2021/01/29/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1001/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="PAT甲级备考指南">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="PAT甲级1001题（加法添逗）">
                         
-                        <span class="card-title">PAT甲级备考指南</span>
+                        <span class="card-title">PAT甲级1001题（加法添逗）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -797,9 +797,9 @@ value_type<span class="token operator">&amp;</span> <span class="token function"
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-28
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-01-29
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -812,12 +812,11 @@ value_type<span class="token operator">&amp;</span> <span class="token function"
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%A4%87%E8%80%83%E6%8C%87%E5%8D%97/">
-                        <span class="chip bg-color">备考指南</span>
+                    <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86%E9%A2%98/">
+                        <span class="chip bg-color">字符串处理题</span>
                     </a>
                     
                 </div>
@@ -1066,7 +1065,7 @@ value_type<span class="token operator">&amp;</span> <span class="token function"
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">12.8k</span>&nbsp;字
+                class="white-color">13k</span>&nbsp;字
             
             
             
