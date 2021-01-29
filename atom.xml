@@ -6,7 +6,7 @@
   <link href="https://peyton.github.io/atom.xml" rel="self"/>
   
   <link href="https://peyton.github.io/"/>
-  <updated>2021-01-29T03:05:20.579Z</updated>
+  <updated>2021-01-29T05:11:13.007Z</updated>
   <id>https://peyton.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PAT甲级1108题（平均数）</title>
+    <link href="https://peyton.github.io/2021/01/29/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1108/"/>
+    <id>https://peyton.github.io/2021/01/29/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1108/</id>
+    <published>2021-01-29T05:00:44.000Z</published>
+    <updated>2021-01-29T05:11:13.007Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
+    
+    
+    <category term="字符串处理题" scheme="https://peyton.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>PAT甲级1005题（按位加法）</title>
@@ -504,31 +529,6 @@
     <category term="python" scheme="https://peyton.github.io/tags/python/"/>
     
     <category term="Scrapy" scheme="https://peyton.github.io/tags/Scrapy/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LaTeX环境搭建</title>
-    <link href="https://peyton.github.io/2020/07/02/latex-huan-jing-da-jian/"/>
-    <id>https://peyton.github.io/2020/07/02/latex-huan-jing-da-jian/</id>
-    <published>2020-07-02T00:56:55.000Z</published>
-    <updated>2020-07-02T00:59:09.101Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;软件安装&quot;&gt;&lt;a href=&quot;#软件安装&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="LaTeX" scheme="https://peyton.github.io/categories/LaTeX/"/>
-    
-    
-    <category term="LaTeX" scheme="https://peyton.github.io/tags/LaTeX/"/>
     
   </entry>
   
