@@ -6,7 +6,7 @@
   <link href="https://peyton.github.io/atom.xml" rel="self"/>
   
   <link href="https://peyton.github.io/"/>
-  <updated>2021-01-29T05:11:13.007Z</updated>
+  <updated>2021-01-30T04:00:34.058Z</updated>
   <id>https://peyton.github.io/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PAT甲级1140题（序列定义）</title>
+    <link href="https://peyton.github.io/2021/01/30/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1140/"/>
+    <id>https://peyton.github.io/2021/01/30/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1140/</id>
+    <published>2021-01-30T04:00:44.000Z</published>
+    <updated>2021-01-30T04:00:34.058Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
+    
+    
+    <category term="字符串处理题" scheme="https://peyton.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PAT甲级1132题（切分数字）</title>
+    <link href="https://peyton.github.io/2021/01/30/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1132/"/>
+    <id>https://peyton.github.io/2021/01/30/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1132/</id>
+    <published>2021-01-30T01:10:44.000Z</published>
+    <updated>2021-01-30T01:16:55.487Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
+    
+    
+    <category term="字符串处理题" scheme="https://peyton.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>PAT甲级1108题（平均数）</title>
@@ -471,64 +521,6 @@
     <category term="LaTex" scheme="https://peyton.github.io/tags/LaTex/"/>
     
     <category term="VSCode" scheme="https://peyton.github.io/tags/VSCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Scrapy爬虫实战--当当网</title>
-    <link href="https://peyton.github.io/2020/07/10/python/scrapy-pa-chong-shi-zhan-dang-dang-wang/"/>
-    <id>https://peyton.github.io/2020/07/10/python/scrapy-pa-chong-shi-zhan-dang-dang-wang/</id>
-    <published>2020-07-10T08:41:31.000Z</published>
-    <updated>2021-01-23T07:39:29.136Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;看完Scrapy的概述，我们大概对Scrapy这个爬虫框架有了一个大致的了解。下面就通过爬取当当网python书籍信息来对Scrapy这个框架做一个实战。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;创建一个项目文件夹，并打开终端cd到创建文件夹处。在该目录下，在终端输入：&lt;pre</summary>
-        
-      
-    
-    
-    
-    <category term="python" scheme="https://peyton.github.io/categories/python/"/>
-    
-    
-    <category term="python" scheme="https://peyton.github.io/tags/python/"/>
-    
-    <category term="爬虫" scheme="https://peyton.github.io/tags/%E7%88%AC%E8%99%AB/"/>
-    
-    <category term="实战" scheme="https://peyton.github.io/tags/%E5%AE%9E%E6%88%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Scrapy爬虫简介</title>
-    <link href="https://peyton.github.io/2020/07/08/python/scrapy-pa-chong-jian-jie/"/>
-    <id>https://peyton.github.io/2020/07/08/python/scrapy-pa-chong-jian-jie/</id>
-    <published>2020-07-08T07:39:07.000Z</published>
-    <updated>2021-01-23T07:39:14.021Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;流程图&quot;&gt;&lt;a href=&quot;#流程图&quot; class=&quot;headerlink&quot; title=&quot;流程图&quot;&gt;&lt;/a&gt;流程图&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="python" scheme="https://peyton.github.io/categories/python/"/>
-    
-    
-    <category term="python" scheme="https://peyton.github.io/tags/python/"/>
-    
-    <category term="Scrapy" scheme="https://peyton.github.io/tags/Scrapy/"/>
     
   </entry>
   
