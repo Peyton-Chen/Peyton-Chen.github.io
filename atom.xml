@@ -6,7 +6,7 @@
   <link href="https://peyton.github.io/atom.xml" rel="self"/>
   
   <link href="https://peyton.github.io/"/>
-  <updated>2021-01-30T04:00:34.058Z</updated>
+  <updated>2021-01-31T03:32:36.141Z</updated>
   <id>https://peyton.github.io/</id>
   
   <author>
@@ -15,6 +15,87 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PAT甲级1009题（多项式乘）</title>
+    <link href="https://peyton.github.io/2021/01/31/pat/san-lie-ti/pat-jia-ji-1009/"/>
+    <id>https://peyton.github.io/2021/01/31/pat/san-lie-ti/pat-jia-ji-1009/</id>
+    <published>2021-01-31T03:31:44.000Z</published>
+    <updated>2021-01-31T03:32:36.141Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
+    
+    
+    <category term="散列题" scheme="https://peyton.github.io/tags/%E6%95%A3%E5%88%97%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PAT甲级1002题（多项式加）</title>
+    <link href="https://peyton.github.io/2021/01/31/pat/san-lie-ti/pat-jia-ji-1002/"/>
+    <id>https://peyton.github.io/2021/01/31/pat/san-lie-ti/pat-jia-ji-1002/</id>
+    <published>2021-01-31T02:53:44.000Z</published>
+    <updated>2021-01-31T02:57:47.543Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
+    
+    
+    <category term="散列题" scheme="https://peyton.github.io/tags/%E6%95%A3%E5%88%97%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LaTeX环境搭建</title>
+    <link href="https://peyton.github.io/2021/01/31/mei-ri-ying-yu/"/>
+    <id>https://peyton.github.io/2021/01/31/mei-ri-ying-yu/</id>
+    <published>2021-01-31T00:56:55.000Z</published>
+    <updated>2021-01-31T01:11:58.493Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;2020.01.31&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;Words&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;Meanings&lt;/th&gt;
+&lt;th</summary>
+        
+      
+    
+    
+    
+    <category term="English" scheme="https://peyton.github.io/categories/English/"/>
+    
+    
+    <category term="English" scheme="https://peyton.github.io/tags/English/"/>
+    
+  </entry>
   
   <entry>
     <title>PAT甲级1140题（序列定义）</title>
@@ -438,89 +519,6 @@
     
     
     <category term="模拟题" scheme="https://peyton.github.io/tags/%E6%A8%A1%E6%8B%9F%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数字图像处理之错切问题</title>
-    <link href="https://peyton.github.io/2020/11/01/matlab/shu-zi-tu-xiang-chu-li-ke-cheng-zuo-ye/"/>
-    <id>https://peyton.github.io/2020/11/01/matlab/shu-zi-tu-xiang-chu-li-ke-cheng-zuo-ye/</id>
-    <published>2020-11-01T07:18:50.000Z</published>
-    <updated>2021-01-23T07:57:05.667Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="数字图像处理" scheme="https://peyton.github.io/categories/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
-    
-    
-    <category term="MATLAB" scheme="https://peyton.github.io/tags/MATLAB/"/>
-    
-    <category term="数字图像处理" scheme="https://peyton.github.io/tags/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VHDL语言入门</title>
-    <link href="https://peyton.github.io/2020/07/11/vhdl-yu-yan-ru-men/"/>
-    <id>https://peyton.github.io/2020/07/11/vhdl-yu-yan-ru-men/</id>
-    <published>2020-07-11T03:21:39.000Z</published>
-    <updated>2020-07-11T05:47:20.650Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;语言描述法&quot;&gt;&lt;a href=&quot;#语言描述法&quot; class=&quot;headerlink&quot; title=&quot;语言描述法&quot;&gt;&lt;/a&gt;语言描述法&lt;/h2&gt;&lt;h3 id=&quot;1-结构描述法&quot;&gt;&lt;a href=&quot;#1-结构描述法&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="VHDL" scheme="https://peyton.github.io/categories/VHDL/"/>
-    
-    
-    <category term="VHDL" scheme="https://peyton.github.io/tags/VHDL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VSCode优雅配置LaTeX</title>
-    <link href="https://peyton.github.io/2020/07/11/vscode-you-ya-pei-zhi-latex/"/>
-    <id>https://peyton.github.io/2020/07/11/vscode-you-ya-pei-zhi-latex/</id>
-    <published>2020-07-11T01:14:11.000Z</published>
-    <updated>2020-07-11T02:23:31.749Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;软件安装&quot;&gt;&lt;a href=&quot;#软件安装&quot; class=&quot;headerlink&quot; title=&quot;软件安装&quot;&gt;&lt;/a&gt;软件安装&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="LaTeX" scheme="https://peyton.github.io/categories/LaTeX/"/>
-    
-    <category term="VSCode" scheme="https://peyton.github.io/categories/LaTeX/VSCode/"/>
-    
-    
-    <category term="LaTex" scheme="https://peyton.github.io/tags/LaTex/"/>
-    
-    <category term="VSCode" scheme="https://peyton.github.io/tags/VSCode/"/>
     
   </entry>
   
