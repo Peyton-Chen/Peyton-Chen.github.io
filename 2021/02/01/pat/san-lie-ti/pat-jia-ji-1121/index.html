@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="每日英语, 杂货铺, Peyton">
+    <meta name="keywords" content="PAT甲级1121题（单身狗）, 杂货铺, Peyton">
     <meta name="description" content="从来没有真正的绝境，只有心灵的迷途">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>每日英语 | Peytonの杂货铺</title>
+    <title>PAT甲级1121题（单身狗） | Peytonの杂货铺</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -238,12 +238,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">每日英语</h1>
+                    <h1 class="description center-align post-title">PAT甲级1121题（单身狗）</h1>
                 </div>
             </div>
         </div>
@@ -359,8 +359,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/English/">
-                                <span class="chip bg-color">English</span>
+                            <a href="/tags/%E6%95%A3%E5%88%97%E9%A2%98/">
+                                <span class="chip bg-color">散列题</span>
                             </a>
                         
                     </div>
@@ -371,8 +371,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/English/" class="post-category">
-                                English
+                            <a href="/categories/PAT/" class="post-category">
+                                PAT
                             </a>
                         
                     </div>
@@ -384,7 +384,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-01-31
+                    2021-02-01
                 </div>
                 
 
@@ -393,7 +393,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    59
+                    200
                 </div>
                 
 
@@ -420,69 +420,50 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="2020-01-31"><a href="#2020-01-31" class="headerlink" title="2020.01.31"></a>2020.01.31</h2><table>
-<thead>
-<tr>
-<th align="center">Words</th>
-<th align="center">Meanings</th>
-<th align="center">character</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">bloc</td>
-<td align="center">集团</td>
-<td align="center">n</td>
-</tr>
-<tr>
-<td align="center">microphone</td>
-<td align="center">麦克风</td>
-<td align="center">n</td>
-</tr>
-<tr>
-<td align="center">aisle</td>
-<td align="center">走道</td>
-<td align="center">n</td>
-</tr>
-<tr>
-<td align="center">cotton</td>
-<td align="center">棉花</td>
-<td align="center">n</td>
-</tr>
-<tr>
-<td align="center">hook</td>
-<td align="center">钩子</td>
-<td align="center">n</td>
-</tr>
-</tbody></table>
-<h2 id="2020-02-01"><a href="#2020-02-01" class="headerlink" title="2020.02.01"></a>2020.02.01</h2><table>
-<thead>
-<tr>
-<th align="center">Words</th>
-<th align="center">Meanings</th>
-<th align="center">character</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">patronage</td>
-<td align="center">赞助，资助</td>
-<td align="center">n</td>
-</tr>
-<tr>
-<td align="center">insanity</td>
-<td align="center">精神错乱，疯狂</td>
-<td align="center">n</td>
-</tr>
-<tr>
-<td align="center">melody</td>
-<td align="center">旋律，曲子，曲调</td>
-<td align="center">n</td>
-</tr>
-<tr>
-<td align="center">bride</td>
-<td align="center">新娘</td>
-<td align="center">n</td>
-</tr>
-</tbody></table>
+                <h2 id="1-题目介绍"><a href="#1-题目介绍" class="headerlink" title="1.题目介绍"></a>1.题目介绍</h2><p><img src="https://github.com/Peyton-Chen/Picture/raw/master/1121.JPG" alt="1121"></p>
+<p><strong>nikename：绰号</strong></p>
+<p><strong>bigamous：重婚的</strong></p>
+<p><strong>dangling：摇摆的</strong></p>
+<h2 id="2-考察点，难度"><a href="#2-考察点，难度" class="headerlink" title="2.考察点，难度"></a>2.考察点，难度</h2><p>散列类，Map容器插入方法，Set容器的运用，难度易</p>
+<h2 id="3-解题代码"><a href="#3-解题代码" class="headerlink" title="3.解题代码"></a>3.解题代码</h2><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;set&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;unordered_map&gt;</span></span>
+using namespace std<span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">int</span> N<span class="token punctuation">,</span>M<span class="token punctuation">,</span>a<span class="token punctuation">,</span>b<span class="token punctuation">;</span>
+    unordered_map<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token punctuation">,</span><span class="token keyword">int</span><span class="token operator">&gt;</span> m<span class="token punctuation">;</span>
+    set<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> s<span class="token punctuation">,</span>real<span class="token punctuation">;</span>
+    set<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span><span class="token operator">::</span>iterator iter<span class="token punctuation">;</span>
+    cin<span class="token operator">&gt;&gt;</span>N<span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>N<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        cin<span class="token operator">&gt;&gt;</span>a<span class="token operator">&gt;&gt;</span>b<span class="token punctuation">;</span>
+        m<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span><span class="token punctuation">{</span>a<span class="token punctuation">,</span>b<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        m<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span><span class="token punctuation">{</span>b<span class="token punctuation">,</span>a<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    cin<span class="token operator">&gt;&gt;</span>M<span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>M<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        cin<span class="token operator">&gt;&gt;</span>a<span class="token punctuation">;</span>
+        real<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">for</span><span class="token punctuation">(</span>iter<span class="token operator">=</span>real<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>iter<span class="token operator">!=</span>real<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>iter<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>m<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token operator">*</span>iter<span class="token punctuation">)</span><span class="token operator">==</span>m<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            s<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span><span class="token operator">*</span>iter<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">else</span><span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>real<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>m<span class="token punctuation">[</span><span class="token operator">*</span>iter<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">==</span>real<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                s<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span><span class="token operator">*</span>iter<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    cout<span class="token operator">&lt;&lt;</span>s<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span>iter<span class="token operator">=</span>s<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>iter<span class="token operator">!=</span>s<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>iter<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        iter<span class="token operator">==</span>s<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">?</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%05d"</span><span class="token punctuation">,</span><span class="token operator">*</span>iter<span class="token punctuation">)</span><span class="token operator">:</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">" %05d"</span><span class="token punctuation">,</span><span class="token operator">*</span>iter<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="4-原题地址"><a href="#4-原题地址" class="headerlink" title="4.原题地址"></a>4.原题地址</h2><p><a target="_blank" rel="noopener" href="https://pintia.cn/problem-sets/994805342720868352/problems/994805352359378944">https://pintia.cn/problem-sets/994805342720868352/problems/994805352359378944</a></p>
 
                 
             </div>
@@ -509,7 +490,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://peyton.github.io/2021/01/31/mei-ri-ying-yu/">https://peyton.github.io/2021/01/31/mei-ri-ying-yu/</a>
+                    <a href="https://peyton.github.io/2021/02/01/pat/san-lie-ti/pat-jia-ji-1121/">https://peyton.github.io/2021/02/01/pat/san-lie-ti/pat-jia-ji-1121/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -547,8 +528,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/English/">
-                                    <span class="chip bg-color">English</span>
+                                <a href="/tags/%E6%95%A3%E5%88%97%E9%A2%98/">
+                                    <span class="chip bg-color">散列题</span>
                                 </a>
                             
                         </div>
@@ -718,17 +699,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/01/31/pat/san-lie-ti/pat-jia-ji-1002/">
+                <a href="/2021/02/01/pat/san-lie-ti/pat-jia-ji-1121/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="PAT甲级1002题（多项式加）">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="PAT甲级1121题（单身狗）">
                         
-                        <span class="card-title">PAT甲级1002题（多项式加）</span>
+                        <span class="card-title">PAT甲级1121题（单身狗）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -738,9 +720,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-01-31
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-01
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -753,6 +735,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -771,13 +754,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/01/30/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1140/">
+                <a href="/2021/02/01/pat/san-lie-ti/pat-jia-ji-1116/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="PAT甲级1140题（序列定义）">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="PAT甲级1116题（欢乐竞赛）">
                         
-                        <span class="card-title">PAT甲级1140题（序列定义）</span>
+                        <span class="card-title">PAT甲级1116题（欢乐竞赛）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -788,7 +771,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-30
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-01
                             </span>
                         <span class="publish-author">
                             
@@ -805,8 +788,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86%E9%A2%98/">
-                        <span class="chip bg-color">字符串处理题</span>
+                    <a href="/tags/%E6%95%A3%E5%88%97%E9%A2%98/">
+                        <span class="chip bg-color">散列题</span>
                     </a>
                     
                 </div>
@@ -1006,7 +989,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">14.9k</span>&nbsp;字
+                class="white-color">15.2k</span>&nbsp;字
             
             
             
