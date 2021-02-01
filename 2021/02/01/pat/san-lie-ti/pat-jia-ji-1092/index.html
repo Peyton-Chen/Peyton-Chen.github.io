@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="数字图像处理之错切问题, 杂货铺, Peyton">
+    <meta name="keywords" content="PAT甲级1092题（买气球）, 杂货铺, Peyton">
     <meta name="description" content="从来没有真正的绝境，只有心灵的迷途">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>数字图像处理之错切问题 | Peytonの杂货铺</title>
+    <title>PAT甲级1092题（买气球） | Peytonの杂货铺</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -238,12 +238,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">数字图像处理之错切问题</h1>
+                    <h1 class="description center-align post-title">PAT甲级1092题（买气球）</h1>
                 </div>
             </div>
         </div>
@@ -359,12 +359,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/MATLAB/">
-                                <span class="chip bg-color">MATLAB</span>
-                            </a>
-                        
-                            <a href="/tags/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/">
-                                <span class="chip bg-color">数字图像处理</span>
+                            <a href="/tags/%E6%95%A3%E5%88%97%E9%A2%98/">
+                                <span class="chip bg-color">散列题</span>
                             </a>
                         
                     </div>
@@ -375,8 +371,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/" class="post-category">
-                                数字图像处理
+                            <a href="/categories/PAT/" class="post-category">
+                                PAT
                             </a>
                         
                     </div>
@@ -388,7 +384,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-11-01
+                    2021-02-01
                 </div>
                 
 
@@ -397,7 +393,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    290
+                    205
                 </div>
                 
 
@@ -424,66 +420,49 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p><img src="https://github.com/Peyton-Chen/Picture/raw/master/%E5%9B%BE1.PNG" alt="图1"></p>
-<h2 id="修正原理"><a href="#修正原理" class="headerlink" title="修正原理"></a>修正原理</h2><p><img src="https://github.com/Peyton-Chen/Picture/raw/master/%E5%9B%BE2.PNG" alt="图2"></p>
-<h2 id="MATLAB代码实现"><a href="#MATLAB代码实现" class="headerlink" title="MATLAB代码实现"></a>MATLAB代码实现</h2><pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab"><span class="token keyword">function</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token function">Stamp</span><span class="token punctuation">(</span>Origin_path<span class="token punctuation">,</span> Need_to_fix_picture_path<span class="token punctuation">)</span>
-<span class="token comment">%% 本函数用于修正印章的错切问题</span>
-<span class="token comment">% Input:</span>
-<span class="token comment">%    Origin_path:原始理想图的存放路径</span>
-<span class="token comment">%    Need_to_fix_picture_path：待修复的图存放路径</span>
+                <h2 id="1-题目介绍"><a href="#1-题目介绍" class="headerlink" title="1.题目介绍"></a>1.题目介绍</h2><p><img src="https://github.com/Peyton-Chen/Picture/raw/master/1092.JPG" alt="1092"></p>
+<h2 id="2-考察点，难度"><a href="#2-考察点，难度" class="headerlink" title="2.考察点，难度"></a>2.考察点，难度</h2><p>散列类，Map容器插入方法，Map容器遍历方法，难度易</p>
+<h2 id="3-解题代码"><a href="#3-解题代码" class="headerlink" title="3.解题代码"></a>3.解题代码</h2><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;map&gt;</span></span>
+using namespace std<span class="token punctuation">;</span>
 
-    <span class="token comment">% 手动映射采点</span>
-    bad<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">285</span><span class="token punctuation">,</span><span class="token number">165</span><span class="token punctuation">;</span>
-        <span class="token number">170</span><span class="token punctuation">,</span><span class="token number">62</span><span class="token punctuation">;</span>
-        <span class="token number">265</span><span class="token punctuation">,</span><span class="token number">104</span><span class="token punctuation">;</span>
-        <span class="token number">294</span><span class="token punctuation">,</span><span class="token number">133</span><span class="token punctuation">;</span>
-        <span class="token number">81</span><span class="token punctuation">,</span><span class="token number">71</span><span class="token punctuation">;</span>
-        <span class="token number">240</span><span class="token punctuation">,</span><span class="token number">63</span><span class="token punctuation">;</span>
-        <span class="token number">220</span><span class="token punctuation">,</span><span class="token number">119</span><span class="token punctuation">;</span>
-        <span class="token number">79</span><span class="token punctuation">,</span><span class="token number">104</span><span class="token punctuation">;</span>
-        <span class="token number">148</span><span class="token punctuation">,</span><span class="token number">62</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-    good<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">205</span><span class="token punctuation">,</span><span class="token number">167</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token number">139</span><span class="token punctuation">,</span><span class="token number">62</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token number">216</span><span class="token punctuation">,</span><span class="token number">105</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token number">231</span><span class="token punctuation">,</span><span class="token number">133</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token number">46</span><span class="token punctuation">,</span><span class="token number">70</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token number">211</span><span class="token punctuation">,</span><span class="token number">63</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token number">163</span><span class="token punctuation">,</span><span class="token number">119</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token number">28</span><span class="token punctuation">,</span><span class="token number">105</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token number">119</span><span class="token punctuation">,</span><span class="token number">61</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-    
-    <span class="token comment">% 回归得到错切修正系数</span>
-    Parameter_X<span class="token operator">=</span><span class="token function">regress</span><span class="token punctuation">(</span><span class="token function">bad</span><span class="token punctuation">(</span><span class="token operator">:</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>good<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    Parameter_Y<span class="token operator">=</span><span class="token function">regress</span><span class="token punctuation">(</span><span class="token function">bad</span><span class="token punctuation">(</span><span class="token operator">:</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span>good<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    
-    <span class="token comment">% 载入错切后图片与原图片,并显示</span>
-    picture<span class="token operator">=</span><span class="token function">imread</span><span class="token punctuation">(</span>Need_to_fix_picture_path<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">% 错切图存放地址</span>
-    Shape<span class="token operator">=</span><span class="token function">size</span><span class="token punctuation">(</span>picture<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    target<span class="token operator">=</span><span class="token function">imread</span><span class="token punctuation">(</span>Origin_path<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">% 原始图存放地址</span>
-    target_size<span class="token operator">=</span><span class="token function">size</span><span class="token punctuation">(</span>target<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">figure</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">subplot</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">imshow</span><span class="token punctuation">(</span>picture<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">title</span><span class="token punctuation">(</span><span class="token string">'Need to fix'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">subplot</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">imshow</span><span class="token punctuation">(</span>target<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">title</span><span class="token punctuation">(</span><span class="token string">'target'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    
-    <span class="token comment">% 根据原图和错切图建立映射，修复错切问题</span>
-    Store_Matrix<span class="token operator">=</span><span class="token function">ones</span><span class="token punctuation">(</span><span class="token function">target_size</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">target_size</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token number">255</span><span class="token punctuation">;</span>
-    <span class="token keyword">for</span> channel<span class="token operator">=</span><span class="token number">1</span><span class="token operator">:</span><span class="token number">3</span>
-        <span class="token keyword">for</span> x<span class="token operator">=</span><span class="token number">1</span><span class="token operator">:</span><span class="token function">target_size</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
-            <span class="token keyword">for</span> y<span class="token operator">=</span><span class="token number">1</span><span class="token operator">:</span><span class="token function">target_size</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
-                <span class="token keyword">if</span> <span class="token function">floor</span><span class="token punctuation">(</span><span class="token punctuation">[</span>x<span class="token punctuation">,</span>y<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">*</span>Parameter_X<span class="token punctuation">)</span><span class="token operator">&gt;=</span><span class="token function">Shape</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
-                    <span class="token keyword">continue</span><span class="token punctuation">;</span>
-                <span class="token keyword">end</span>
-                <span class="token keyword">if</span> <span class="token function">floor</span><span class="token punctuation">(</span><span class="token punctuation">[</span>x<span class="token punctuation">,</span>y<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">*</span>Parameter_Y<span class="token punctuation">)</span><span class="token operator">&gt;=</span><span class="token function">Shape</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
-                    <span class="token keyword">continue</span><span class="token punctuation">;</span>
-                <span class="token keyword">end</span>
-                <span class="token function">Store_Matrix</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">,</span>channel<span class="token punctuation">)</span><span class="token operator">=</span><span class="token function">picture</span><span class="token punctuation">(</span><span class="token function">floor</span><span class="token punctuation">(</span><span class="token punctuation">[</span>x<span class="token punctuation">,</span>y<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">*</span>Parameter_X<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">floor</span><span class="token punctuation">(</span><span class="token punctuation">[</span>x<span class="token punctuation">,</span>y<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">*</span>Parameter_Y<span class="token punctuation">)</span><span class="token punctuation">,</span>channel<span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token keyword">end</span>
-        <span class="token keyword">end</span>
-    <span class="token keyword">end</span>
-    
-    <span class="token comment">% 显示修复后结果</span>
-    Store_Matrix<span class="token operator">=</span><span class="token function">uint8</span><span class="token punctuation">(</span>Store_Matrix<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">subplot</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">imshow</span><span class="token punctuation">(</span>Store_Matrix<span class="token punctuation">)</span><span class="token punctuation">;</span>    
-    <span class="token function">title</span><span class="token punctuation">(</span><span class="token string">'fixed picture'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">end</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="修正结果"><a href="#修正结果" class="headerlink" title="修正结果"></a>修正结果</h2><p><img src="https://github.com/Peyton-Chen/Picture/raw/master/%E5%9B%BE3.png" alt="图3"></p>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    string a<span class="token punctuation">,</span>b<span class="token punctuation">;</span>
+    <span class="token function">getline</span><span class="token punctuation">(</span>cin<span class="token punctuation">,</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">getline</span><span class="token punctuation">(</span>cin<span class="token punctuation">,</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">int</span> sum<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span>flag<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>
+    map<span class="token operator">&lt;</span><span class="token keyword">char</span><span class="token punctuation">,</span><span class="token keyword">int</span><span class="token operator">&gt;</span> store<span class="token punctuation">,</span>need<span class="token punctuation">;</span>
+    map<span class="token operator">&lt;</span><span class="token keyword">char</span><span class="token punctuation">,</span><span class="token keyword">int</span><span class="token operator">&gt;</span><span class="token operator">::</span>iterator iter<span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>a<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>store<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">==</span>store<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            store<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span>pair<span class="token operator">&lt;</span><span class="token keyword">char</span><span class="token punctuation">,</span><span class="token keyword">int</span><span class="token operator">&gt;</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">else</span><span class="token punctuation">{</span>
+            store<span class="token punctuation">[</span>a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token operator">+=</span><span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>b<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>need<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>b<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">==</span>need<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            need<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span>pair<span class="token operator">&lt;</span><span class="token keyword">char</span><span class="token punctuation">,</span><span class="token keyword">int</span><span class="token operator">&gt;</span><span class="token punctuation">(</span>b<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">else</span><span class="token punctuation">{</span>
+            need<span class="token punctuation">[</span>b<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token operator">+=</span><span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">for</span><span class="token punctuation">(</span>iter<span class="token operator">=</span>need<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>iter<span class="token operator">!=</span>need<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>iter<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>iter<span class="token operator">-&gt;</span>second<span class="token operator">&gt;</span>store<span class="token punctuation">[</span>iter<span class="token operator">-&gt;</span>first<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            sum <span class="token operator">+=</span> iter<span class="token operator">-&gt;</span>second <span class="token operator">-</span> store<span class="token punctuation">[</span>iter<span class="token operator">-&gt;</span>first<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            flag<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    flag<span class="token operator">?</span>cout<span class="token operator">&lt;&lt;</span><span class="token string">"Yes "</span><span class="token operator">&lt;&lt;</span>a<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span>b<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&lt;&lt;</span>endl<span class="token operator">:</span>cout<span class="token operator">&lt;&lt;</span><span class="token string">"No "</span><span class="token operator">&lt;&lt;</span>sum<span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="4-原题地址"><a href="#4-原题地址" class="headerlink" title="4.原题地址"></a>4.原题地址</h2><p><a target="_blank" rel="noopener" href="https://pintia.cn/problem-sets/994805342720868352/problems/994805374509498368">https://pintia.cn/problem-sets/994805342720868352/problems/994805374509498368</a></p>
 
                 
             </div>
@@ -510,7 +489,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://peyton.github.io/2020/11/01/matlab/shu-zi-tu-xiang-chu-li-ke-cheng-zuo-ye/">https://peyton.github.io/2020/11/01/matlab/shu-zi-tu-xiang-chu-li-ke-cheng-zuo-ye/</a>
+                    <a href="https://peyton.github.io/2021/02/01/pat/san-lie-ti/pat-jia-ji-1092/">https://peyton.github.io/2021/02/01/pat/san-lie-ti/pat-jia-ji-1092/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -548,12 +527,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/MATLAB/">
-                                    <span class="chip bg-color">MATLAB</span>
-                                </a>
-                            
-                                <a href="/tags/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/">
-                                    <span class="chip bg-color">数字图像处理</span>
+                                <a href="/tags/%E6%95%A3%E5%88%97%E9%A2%98/">
+                                    <span class="chip bg-color">散列题</span>
                                 </a>
                             
                         </div>
@@ -723,17 +698,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/01/24/pat/mo-ni-ti/pat-jia-ji-1008/">
+                <a href="/2021/02/01/pat/san-lie-ti/pat-jia-ji-1092/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="PAT甲级1008题（电梯）">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="PAT甲级1092题（买气球）">
                         
-                        <span class="card-title">PAT甲级1008题（电梯）</span>
+                        <span class="card-title">PAT甲级1092题（买气球）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -743,9 +719,59 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-01-24
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-01
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/PAT/" class="post-category">
+                                    PAT
+                                </a>
+                            
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%95%A3%E5%88%97%E9%A2%98/">
+                        <span class="chip bg-color">散列题</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/02/01/pat/san-lie-ti/pat-jia-ji-1084/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="PAT甲级1084题（坏键盘）">
+                        
+                        <span class="card-title">PAT甲级1084题（坏键盘）</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-01
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -761,57 +787,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%A8%A1%E6%8B%9F%E9%A2%98/">
-                        <span class="chip bg-color">模拟题</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/07/11/vhdl-yu-yan-ru-men/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="VHDL语言入门">
-                        
-                        <span class="card-title">VHDL语言入门</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-11
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/VHDL/" class="post-category">
-                                    VHDL
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/VHDL/">
-                        <span class="chip bg-color">VHDL</span>
+                    <a href="/tags/%E6%95%A3%E5%88%97%E9%A2%98/">
+                        <span class="chip bg-color">散列题</span>
                     </a>
                     
                 </div>
