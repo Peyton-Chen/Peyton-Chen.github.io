@@ -6,7 +6,7 @@
   <link href="https://peyton.github.io/atom.xml" rel="self"/>
   
   <link href="https://peyton.github.io/"/>
-  <updated>2021-02-01T12:33:32.069Z</updated>
+  <updated>2021-02-04T07:32:53.881Z</updated>
   <id>https://peyton.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PAT甲级1020题（中序后序遍历得层次遍历）</title>
+    <link href="https://peyton.github.io/2021/02/04/pat/er-cha-shu-ti/pat-jia-ji-1020/"/>
+    <id>https://peyton.github.io/2021/02/04/pat/er-cha-shu-ti/pat-jia-ji-1020/</id>
+    <published>2021-02-04T07:30:44.000Z</published>
+    <updated>2021-02-04T07:32:53.881Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
+    
+    
+    <category term="二叉树题" scheme="https://peyton.github.io/tags/%E4%BA%8C%E5%8F%89%E6%A0%91%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>PAT甲级1121题（单身狗）</title>
@@ -121,7 +146,7 @@
     <link href="https://peyton.github.io/2021/02/01/mei-ri-ying-yu/"/>
     <id>https://peyton.github.io/2021/02/01/mei-ri-ying-yu/</id>
     <published>2021-02-01T00:56:55.000Z</published>
-    <updated>2021-02-02T05:27:07.505Z</updated>
+    <updated>2021-02-04T07:38:41.758Z</updated>
     
     
       
@@ -475,31 +500,6 @@
     <id>https://peyton.github.io/2021/01/24/pat/mo-ni-ti/pat-jia-ji-1128/</id>
     <published>2021-01-24T00:40:44.000Z</published>
     <updated>2021-01-26T05:54:44.566Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
-    
-    
-    <category term="模拟题" scheme="https://peyton.github.io/tags/%E6%A8%A1%E6%8B%9F%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PAT甲级1117题（均分问题）</title>
-    <link href="https://peyton.github.io/2021/01/24/pat/mo-ni-ti/pat-jia-ji-1117/"/>
-    <id>https://peyton.github.io/2021/01/24/pat/mo-ni-ti/pat-jia-ji-1117/</id>
-    <published>2021-01-24T00:39:44.000Z</published>
-    <updated>2021-01-25T00:51:36.513Z</updated>
     
     
       
