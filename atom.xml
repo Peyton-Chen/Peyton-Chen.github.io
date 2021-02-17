@@ -42,6 +42,32 @@
   </entry>
   
   <entry>
+    <title>基于LaTeX制作学术PPT</title>
+    <link href="https://peyton.github.io/2021/02/15/ji-yu-latex-zhi-zuo-xue-zhu-ppt/"/>
+    <id>https://peyton.github.io/2021/02/15/ji-yu-latex-zhi-zuo-xue-zhu-ppt/</id>
+    <published>2021-02-15T00:56:55.000Z</published>
+    <updated>2021-02-15T15:26:38.294Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;​    LaTeX制作的PPT简洁明了，在各大顶会以及各种分享会上都出现。本文就介绍这些学术会议PPT的简单LaTeX制作方式。&lt;/p&gt;
+&lt;h2 id=&quot;1-头文件导入部分&quot;&gt;&lt;a href=&quot;#1-头文件导入部分&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="LaTeX" scheme="https://peyton.github.io/categories/LaTeX/"/>
+    
+    
+    <category term="LaTeX" scheme="https://peyton.github.io/tags/LaTeX/"/>
+    
+  </entry>
+  
+  <entry>
     <title>科研英语</title>
     <link href="https://peyton.github.io/2021/02/14/ke-yan-ying-yu/"/>
     <id>https://peyton.github.io/2021/02/14/ke-yan-ying-yu/</id>
@@ -481,31 +507,6 @@
     <id>https://peyton.github.io/2021/01/30/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1140/</id>
     <published>2021-01-30T04:00:44.000Z</published>
     <updated>2021-01-30T04:00:34.058Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
-    
-    
-    <category term="字符串处理题" scheme="https://peyton.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PAT甲级1132题（切分数字）</title>
-    <link href="https://peyton.github.io/2021/01/30/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1132/"/>
-    <id>https://peyton.github.io/2021/01/30/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1132/</id>
-    <published>2021-01-30T01:10:44.000Z</published>
-    <updated>2021-01-30T01:16:55.487Z</updated>
     
     
       

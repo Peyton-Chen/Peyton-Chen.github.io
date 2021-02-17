@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="TensorBoard实战, 杂货铺, Peyton">
+    <meta name="keywords" content="基于LaTeX制作学术PPT, 杂货铺, Peyton">
     <meta name="description" content="从来没有真正的绝境，只有心灵的迷途">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>TensorBoard实战 | Peytonの杂货铺</title>
+    <title>基于LaTeX制作学术PPT | Peytonの杂货铺</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -243,7 +243,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">TensorBoard实战</h1>
+                    <h1 class="description center-align post-title">基于LaTeX制作学术PPT</h1>
                 </div>
             </div>
         </div>
@@ -359,8 +359,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Tensorboard/">
-                                <span class="chip bg-color">Tensorboard</span>
+                            <a href="/tags/LaTeX/">
+                                <span class="chip bg-color">LaTeX</span>
                             </a>
                         
                     </div>
@@ -371,8 +371,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Keras/" class="post-category">
-                                Keras
+                            <a href="/categories/LaTeX/" class="post-category">
+                                LaTeX
                             </a>
                         
                     </div>
@@ -384,7 +384,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-06-05
+                    2021-02-15
                 </div>
                 
 
@@ -393,7 +393,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    654
+                    541
                 </div>
                 
 
@@ -420,69 +420,127 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>今天我们来介绍一款机器学习中很实用的工具：TensorBoard。它之所以实用，主要是因为它将机器学习这一个类似黑盒的东西可视化出来，让用户对训练过程有一个更好的理解。下面就基于MNIST数据集来实战一下TensorBoard的使用方法。</p>
-<hr>
-<h2 id="TensorBoard可视化MNIST分类代码"><a href="#TensorBoard可视化MNIST分类代码" class="headerlink" title="TensorBoard可视化MNIST分类代码"></a>TensorBoard可视化MNIST分类代码</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
-<span class="token keyword">from</span> keras<span class="token punctuation">.</span>layers <span class="token keyword">import</span> Input<span class="token punctuation">,</span> Dense<span class="token punctuation">,</span> Dropout<span class="token punctuation">,</span> Activation<span class="token punctuation">,</span> Conv2D<span class="token punctuation">,</span> MaxPool2D<span class="token punctuation">,</span> Flatten
-<span class="token keyword">from</span> keras<span class="token punctuation">.</span>datasets <span class="token keyword">import</span> mnist
-<span class="token keyword">from</span> keras<span class="token punctuation">.</span>models <span class="token keyword">import</span> Model
-<span class="token keyword">from</span> keras<span class="token punctuation">.</span>utils <span class="token keyword">import</span> to_categorical
-<span class="token keyword">from</span> keras<span class="token punctuation">.</span>callbacks <span class="token keyword">import</span> TensorBoard
+                <p>​    LaTeX制作的PPT简洁明了，在各大顶会以及各种分享会上都出现。本文就介绍这些学术会议PPT的简单LaTeX制作方式。</p>
+<h2 id="1-头文件导入部分"><a href="#1-头文件导入部分" class="headerlink" title="1. 头文件导入部分"></a>1. 头文件导入部分</h2><pre class="line-numbers language-tex" data-language="tex"><code class="language-tex">\documentclass[11pt]{beamer}                                                                                                             \usetheme{Madrid}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage[english]{babel}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{ctex}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="2-封面制作部分"><a href="#2-封面制作部分" class="headerlink" title="2. 封面制作部分"></a>2. 封面制作部分</h2><pre class="line-numbers language-tex" data-language="tex"><code class="language-tex">\begin{document}
+    \title[Work Summary]{Work Summary}	% 主题介绍
+    \author[Author]{Author} % 作者信息
+    \institute[ZJUT]{Zhejiang University Of Technology} % 设置学院机构
+    \date{\today}  % 显示日期
+        \logo{\includegraphics[width=1.8cm,height=1.8cm]{logo.png}}	% 添加学校logo
+\begin{frame}
+    \titlepage
+\end{frame}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="3-目录部分"><a href="#3-目录部分" class="headerlink" title="3.目录部分"></a>3.目录部分</h2><pre class="line-numbers language-tex" data-language="tex"><code class="language-tex">\section[Contents]{}	% 添加目录内容
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame {
+    \frametitle{\secname}
+    \tableofcontents
+}
+\AtBeginSubsection[] {
+    \frame&lt;handout:0&gt; {
+        \frametitle{Contents}
+        \tableofcontents[current,currentsubsection]
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="4-正文部分"><a href="#4-正文部分" class="headerlink" title="4.正文部分"></a>4.正文部分</h2><pre class="line-numbers language-tex" data-language="tex"><code class="language-tex">\section{Section1}
+\subsection{1.1}
+\begin{frame}[fragile]
+    \frametitle{A}
+\end{frame}
 
-<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
-    <span class="token comment">#数据集处理</span>
-    <span class="token comment"># (X_train, y_train), (X_test, y_test) = mnist.load_data() # 使用keras导入数据集</span>
-    data <span class="token operator">=</span> np<span class="token punctuation">.</span>load<span class="token punctuation">(</span><span class="token string">'mnist.npz'</span><span class="token punctuation">)</span>
-    x_train<span class="token punctuation">,</span> y_train <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'x_train'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> data<span class="token punctuation">[</span><span class="token string">'y_train'</span><span class="token punctuation">]</span>
-    x_test<span class="token punctuation">,</span> y_test <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'x_test'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> data<span class="token punctuation">[</span><span class="token string">'y_test'</span><span class="token punctuation">]</span>
-    x_train <span class="token operator">=</span> np<span class="token punctuation">.</span>expand_dims<span class="token punctuation">(</span>x_train<span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
-    x_test <span class="token operator">=</span> np<span class="token punctuation">.</span>expand_dims<span class="token punctuation">(</span>x_test<span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
-    y_train<span class="token operator">=</span>to_categorical<span class="token punctuation">(</span>y_train<span class="token punctuation">,</span> num_classes<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">)</span>
-    y_test<span class="token operator">=</span>to_categorical<span class="token punctuation">(</span>y_test<span class="token punctuation">,</span> num_classes<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">)</span>
-    
-    <span class="token comment">#参数配置</span>
-    batch_size <span class="token operator">=</span><span class="token number">128</span>
-    epoch <span class="token operator">=</span> <span class="token number">10</span>
+\subsection{1.2}
+\begin{frame}[fragile]
+    \frametitle{B}
+\end{frame}
 
-    <span class="token comment"># 模型搭建</span>
-    inputs <span class="token operator">=</span> Input<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">28</span><span class="token punctuation">,</span> <span class="token number">28</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-    x <span class="token operator">=</span> Conv2D<span class="token punctuation">(</span><span class="token number">32</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">,</span> activation<span class="token operator">=</span><span class="token string">'relu'</span> <span class="token punctuation">)</span><span class="token punctuation">(</span>inputs<span class="token punctuation">)</span>
-    x <span class="token operator">=</span> Conv2D<span class="token punctuation">(</span><span class="token number">64</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">,</span> activation<span class="token operator">=</span><span class="token string">'relu'</span><span class="token punctuation">)</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
-    x <span class="token operator">=</span> MaxPool2D<span class="token punctuation">(</span>pool_size<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
-    x <span class="token operator">=</span> Flatten<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
-    x <span class="token operator">=</span> Dense<span class="token punctuation">(</span><span class="token number">128</span><span class="token punctuation">,</span> activation<span class="token operator">=</span><span class="token string">'relu'</span><span class="token punctuation">)</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
-    x <span class="token operator">=</span> Dropout<span class="token punctuation">(</span><span class="token number">0.5</span><span class="token punctuation">)</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
-    x <span class="token operator">=</span> Dense<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> activation<span class="token operator">=</span><span class="token string">'softmax'</span><span class="token punctuation">)</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
-	
-    model <span class="token operator">=</span> Model<span class="token punctuation">(</span>inputs<span class="token punctuation">,</span> x<span class="token punctuation">)</span>
-	<span class="token comment">#模型编译</span>
-    model<span class="token punctuation">.</span><span class="token builtin">compile</span><span class="token punctuation">(</span>loss<span class="token operator">=</span><span class="token string">'categorical_crossentropy'</span><span class="token punctuation">,</span> optimizer<span class="token operator">=</span><span class="token string">'adam'</span><span class="token punctuation">,</span>metrics<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'acc'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-	<span class="token comment">#面板配置</span>
-    Tensorboard <span class="token operator">=</span> TensorBoard<span class="token punctuation">(</span>log_dir<span class="token operator">=</span><span class="token string">'.\model'</span><span class="token punctuation">,</span> histogram_freq<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> write_grads<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span> <span class="token comment">#log_dir保存目录</span>
-	<span class="token comment">#模型训练</span>
-    result <span class="token operator">=</span> model<span class="token punctuation">.</span>fit<span class="token punctuation">(</span>x_train<span class="token punctuation">,</span> y_train<span class="token punctuation">,</span> batch_size<span class="token operator">=</span>batch_size<span class="token punctuation">,</span> epochs<span class="token operator">=</span>epoch<span class="token punctuation">,</span> shuffle<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> validation_split<span class="token operator">=</span><span class="token number">0.2</span><span class="token punctuation">,</span>callbacks<span class="token operator">=</span><span class="token punctuation">[</span>Tensorboard<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment">#在回调函数中加入TensorBoard！</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<hr>
-<h2 id="TensorBoard启动"><a href="#TensorBoard启动" class="headerlink" title="TensorBoard启动"></a>TensorBoard启动</h2><p>实际上，训练信息已经保存在TensorBoard配置的目录中了。下面进入当前*.py目录下的PowerShell，敲入</p>
-<pre class="line-numbers language-none"><code class="language-none">tensorboard --logdir= XXX（前文中的model）<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>PowerShell会反馈一个本地6006端口开放的提示信息。此时打开浏览器输入</p>
-<pre class="line-numbers language-none"><code class="language-none">http://localhost:6006<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>这样就成功进入TensorBoard界面啦！</p>
-<h2 id="TensorBoard配置"><a href="#TensorBoard配置" class="headerlink" title="TensorBoard配置"></a>TensorBoard配置</h2><p>我们上述实战例子中，我们只能够看到Loss和Acc的训练曲线，而其他信息是没有保存下来的。但世界上TensorBoard的可视化功能非常强大，目前可以支持一下7种可视化类别：</p>
-<ol>
-<li>SCALARS：展示训练过程中的准确率、损失值、权重/偏置的变化情况</li>
-<li>IMAGES：展示训练过程中及记录的图像</li>
-<li>AUDIO：展示训练过程中记录的音频</li>
-<li>GRAPHS：展示模型的数据流图，以及各个设备上消耗的内存和时间</li>
-<li>DISTRIBUTIONS：展示训练过程中记录的数据的分布图</li>
-<li>HISTOGRAMS：展示训练过程中记录的数据的柱状图</li>
-<li>EMBEDDINGS：展示词向量后的投影分布</li>
-</ol>
-<p>具体的参数配置后续再加~</p>
-<h2 id="参考文献："><a href="#参考文献：" class="headerlink" title="参考文献："></a>参考文献：</h2><ol>
-<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/fendouaini/article/details/80368770?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase">https://blog.csdn.net/fendouaini/article/details/80368770?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase</a></li>
-<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/u010099080/article/details/77426577">https://blog.csdn.net/u010099080/article/details/77426577</a></li>
-<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/hnwolfs/article/details/81122380?utm_medium=distribute.pc_relevant.none-task-blog-baidujs-1">https://blog.csdn.net/hnwolfs/article/details/81122380?utm_medium=distribute.pc_relevant.none-task-blog-baidujs-1</a></li>
-</ol>
+\section{Section2}
+\subsection{2.1}
+\begin{frame}[fragile]
+    \frametitle{C}
+\end{frame}
+
+\subsection{2.2}
+\begin{frame}[fragile]
+    \frametitle{D}
+\end{frame}
+
+\section{Section3}
+\subsection{3.1}
+\begin{frame}[fragile]
+    \frametitle{E}
+\end{frame}
+
+\subsection{3.2}
+\begin{frame}[fragile]
+    \frametitle{F}
+\end{frame}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="5-插图部分"><a href="#5-插图部分" class="headerlink" title="5.插图部分"></a>5.插图部分</h2><pre class="line-numbers language-tex" data-language="tex"><code class="language-tex">\begin{frame}[fragile]
+    \frametitle{Pearson Correlation}
+    \begin{figure}[h]%%图
+        \centering  %插入的图片居中表示
+        \includegraphics[width=0.9\linewidth]{R1.png}  
+        \caption{Pearson Correlation Heatmap}  %图片的名称
+    \end{figure}
+\end{frame}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="6-举例部分"><a href="#6-举例部分" class="headerlink" title="6.举例部分"></a>6.举例部分</h2><pre class="line-numbers language-tex" data-language="tex"><code class="language-tex">\subsection{1.2}
+\begin{frame}[fragile]
+    \frametitle{B}
+    \begin{itemize}
+        \item 1 Hello World
+        \item 2 Hello World
+        \item 3 Hello World
+        \item 4 Hello World
+    \end{itemize}
+\end{frame}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="7-定义部分"><a href="#7-定义部分" class="headerlink" title="7.定义部分"></a>7.定义部分</h2><pre class="line-numbers language-tex" data-language="tex"><code class="language-tex">\section{Section2}
+\subsection{2.1}
+\begin{frame}[fragile]
+    \frametitle{C}
+    \begin{block}{定义}
+        Definition:
+    \end{block}
+\end{frame}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="8-公式部分"><a href="#8-公式部分" class="headerlink" title="8.公式部分"></a>8.公式部分</h2><pre class="line-numbers language-tex" data-language="tex"><code class="language-tex">\subsection{2.2}
+\begin{frame}[fragile]
+    \frametitle{D}
+        \begin{block}{Scaling}
+        $$ x^* = \frac{x - x_{min}}{x_{max} - x_{min}} $$
+    \end{block}
+\end{frame}
+%若要公式单独成一行使用 $$    $$
+%若要公式不单独一行 $   $<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="9-表格部分"><a href="#9-表格部分" class="headerlink" title="9.表格部分"></a>9.表格部分</h2><pre class="line-numbers language-tex" data-language="tex"><code class="language-tex">\section{Section3}
+\subsection{3.1}
+\begin{frame}[fragile]
+    \frametitle{E}
+    \begin{table}[]
+        \begin{tabular}{|c|c|c|}
+            \hline
+            index &amp; yD &amp; y2 \\ \hline
+            x1          &amp;      3.347&amp;    1.330\\ \hline
+            x2          &amp;      828.885&amp;    172.967\\ \hline
+            x3 &amp;      0.819&amp;    0.492\\ \hline
+            x4 &amp;      227.881&amp;    63.610\\ \hline
+        \end{tabular}
+        \caption{表格}
+    \end{table}
+\end{frame}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="10-方程组部分"><a href="#10-方程组部分" class="headerlink" title="10.方程组部分"></a>10.方程组部分</h2><pre class="line-numbers language-tex" data-language="tex"><code class="language-tex">\[ 
+f_{\text{ZINB}(x; \pi, \alpha, \beta, \lambda)}  = \begin{cases} \pi + (1 - \pi)(\frac{\beta}{\beta + \lambda \beta})^{\beta},\quad \ \ &amp; 
+x = 0,\\ 
+(1 - \pi) \frac{\Gamma(x + \beta)}{\Gamma(x + 1) \Gamma(\beta)} (\frac{\beta}{\beta + \lambda \alpha})^{\beta}(\frac{\alpha}{\beta + \lambda \alpha})^{x}, \quad \ \ &amp; x \neq 0, 
+\end{cases} 
+\] <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="11-结束部分"><a href="#11-结束部分" class="headerlink" title="11.结束部分"></a>11.结束部分</h2><pre class="line-numbers language-tex" data-language="tex"><code class="language-tex">\end{document}<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a><strong>参考资料</strong></h2><p>[1] <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/b41fc167fea5">https://www.jianshu.com/p/b41fc167fea5</a></p>
+<p>[2] <a target="_blank" rel="noopener" href="https://www.zhihu.com/question/22446174/answer/130143827">https://www.zhihu.com/question/22446174/answer/130143827</a></p>
 
                 
             </div>
@@ -509,7 +567,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://peyton.github.io/2020/06/05/python/tensorboard-shi-zhan/">https://peyton.github.io/2020/06/05/python/tensorboard-shi-zhan/</a>
+                    <a href="https://peyton.github.io/2021/02/15/ji-yu-latex-zhi-zuo-xue-zhu-ppt/">https://peyton.github.io/2021/02/15/ji-yu-latex-zhi-zuo-xue-zhu-ppt/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -547,8 +605,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Tensorboard/">
-                                    <span class="chip bg-color">Tensorboard</span>
+                                <a href="/tags/LaTeX/">
+                                    <span class="chip bg-color">LaTeX</span>
                                 </a>
                             
                         </div>
@@ -722,13 +780,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/06/05/java/java-chang-yong-lei-shi-zhan/">
+                <a href="/2021/02/15/pat/san-lie-ti/pat-jia-ji-1150/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Java常用类实战">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="PAT甲级1150题（旅行商）">
                         
-                        <span class="card-title">Java常用类实战</span>
+                        <span class="card-title">PAT甲级1150题（旅行商）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -739,14 +797,14 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-06-05
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-02-15
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Java/" class="post-category">
-                                    Java
+                            <a href="/categories/PAT/" class="post-category">
+                                    PAT
                                 </a>
                             
                             
@@ -756,8 +814,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Java/">
-                        <span class="chip bg-color">Java</span>
+                    <a href="/tags/%E6%95%A3%E5%88%97%E9%A2%98/">
+                        <span class="chip bg-color">散列题</span>
                     </a>
                     
                 </div>
@@ -771,13 +829,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/06/05/screen-jiao-cheng/">
+                <a href="/2021/02/14/ke-yan-ying-yu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="screen常用命令">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="科研英语">
                         
-                        <span class="card-title">screen常用命令</span>
+                        <span class="card-title">科研英语</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -788,14 +846,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-14
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Linux/" class="post-category">
-                                    Linux
+                            <a href="/categories/English/" class="post-category">
+                                    English
                                 </a>
                             
                             
@@ -805,8 +863,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/screen/">
-                        <span class="chip bg-color">screen</span>
+                    <a href="/tags/English/">
+                        <span class="chip bg-color">English</span>
                     </a>
                     
                 </div>
