@@ -393,14 +393,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.9k
+                    2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    7 分
+                    8 分
                 </div>
                 
 
@@ -535,7 +535,9 @@ value_type<span class="token operator">&amp;</span> <span class="token function"
 <span class="token keyword">void</span> <span class="token function">pop</span> <span class="token punctuation">(</span> <span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//删除队首元素</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="2-8-STL-string"><a href="#2-8-STL-string" class="headerlink" title="2.8 STL-string"></a>2.8 STL-string</h2><pre class="line-numbers language-c" data-language="c"><code class="language-c">string<span class="token punctuation">.</span><span class="token function">c_str</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">//返回的是const char*而非char *，如果想返回char *的话可以这样写：char * a = (char*)string.c_str();</span>
 <span class="token function">strtok</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">//函数很好用，分割字符串 </span>
-<span class="token function">insert</span><span class="token punctuation">(</span><span class="token keyword">int</span> pos<span class="token punctuation">,</span> string s<span class="token punctuation">)</span>	<span class="token comment">//在pos位置后面插入s字串</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<span class="token function">insert</span><span class="token punctuation">(</span><span class="token keyword">int</span> pos<span class="token punctuation">,</span> string s<span class="token punctuation">)</span>	<span class="token comment">//在pos位置后面插入s字串</span>
+<span class="token function">transform</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>s<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>s<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token operator">::</span>tolower<span class="token punctuation">)</span><span class="token punctuation">;</span>	<span class="token comment">// 将s的字串全部变成小写的</span>
+<span class="token function">transform</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>s<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>s<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token operator">::</span>upper<span class="token punctuation">)</span><span class="token punctuation">;</span>	<span class="token comment">// 将s的字串全部变成大写的</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="2-9-判断字符类型"><a href="#2-9-判断字符类型" class="headerlink" title="2.9 判断字符类型"></a>2.9 判断字符类型</h2><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">int</span> <span class="token function">isalnum</span><span class="token punctuation">(</span><span class="token keyword">int</span> ch<span class="token punctuation">)</span><span class="token punctuation">;</span>	<span class="token comment">// 判断是否数字，大写字母或小写字母；如果是，返回非零值，否则返回零值。</span>
 <span class="token keyword">int</span> <span class="token function">isalpha</span><span class="token punctuation">(</span><span class="token keyword">int</span> ch<span class="token punctuation">)</span><span class="token punctuation">;</span>	<span class="token comment">// 判断是否为字母；如果是，返回非零值，否则返回零值</span>
 <span class="token keyword">int</span> <span class="token function">islower</span><span class="token punctuation">(</span><span class="token keyword">int</span> ch<span class="token punctuation">)</span><span class="token punctuation">;</span>	<span class="token comment">// 判断是否为小写字母；如果是，返回非零值，否则返回零值。</span>
@@ -1073,7 +1075,7 @@ value_type<span class="token operator">&amp;</span> <span class="token function"
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">19.4k</span>&nbsp;字
+                class="white-color">20.1k</span>&nbsp;字
             
             
             
