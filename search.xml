@@ -79,6 +79,31 @@
     
     
     <entry>
+      <title>PAT甲级1049题（寻找1）</title>
+      <link href="2021/02/19/pat/shu-lun-ti/pat-jia-ji-1049/"/>
+      <url>2021/02/19/pat/shu-lun-ti/pat-jia-ji-1049/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-题目介绍"><a href="#1-题目介绍" class="headerlink" title="1.题目介绍"></a>1.题目介绍</h2><p><img src="https://github.com/Peyton-Chen/Picture/raw/master/1049.JPG" alt="1049"></p><h2 id="2-考察点，难度"><a href="#2-考察点，难度" class="headerlink" title="2.考察点，难度"></a>2.考察点，难度</h2><p>数论类，数学基础，难度难。</p><p><strong>分析：这是一道数学问题。从第一位（个位）到最高位，设now为当前位的数字，left为now左边的所有数字构成的数字，right是now右边的所有数字构成的数字。只需要一次次累加对于当前位now来说可能出现1的个数，然后把它们累加即可。a表示当前的个位为1，十位为10，百位为100类推。</strong><br><strong>对于now，有三种情况：</strong><br><strong>1.now == 0 : 那么 ans += left * a; //因为now==0说明now位只有在left从0<del>left-1的时候会产生1，所以会产生left次，但是又因为右边会重复从0</del>999…出现a次</strong><br><strong>2.now == 1 : ans += left * a + right + 1;//now = 1的时候就要比上一步多加一个当now为1的时候右边出现0~right个数导致的now为1的次数</strong><br><strong>3.now &gt;= 2 : ans += (left + 1) * a;//now大于等于2就左边0<del>left的时候会在now位置产生1，所以会产生left次，但是又因为右边会重复从0</del>999…出现a次</strong></p><h2 id="3-解题代码"><a href="#3-解题代码" class="headerlink" title="3.解题代码"></a>3.解题代码</h2><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>using namespace std<span class="token punctuation">;</span><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>    <span class="token keyword">int</span> n<span class="token punctuation">,</span> left <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> right <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> now <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> ans <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token keyword">while</span><span class="token punctuation">(</span>n <span class="token operator">/</span> a<span class="token punctuation">)</span> <span class="token punctuation">{</span>        left <span class="token operator">=</span> n <span class="token operator">/</span> <span class="token punctuation">(</span>a <span class="token operator">*</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">,</span> now <span class="token operator">=</span> n <span class="token operator">/</span> a <span class="token operator">%</span> <span class="token number">10</span><span class="token punctuation">,</span> right <span class="token operator">=</span> n <span class="token operator">%</span> a<span class="token punctuation">;</span>        <span class="token keyword">if</span><span class="token punctuation">(</span>now <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> ans <span class="token operator">+=</span> left <span class="token operator">*</span> a<span class="token punctuation">;</span>        <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>now <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> ans <span class="token operator">+=</span> left <span class="token operator">*</span> a <span class="token operator">+</span> right <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>        <span class="token keyword">else</span> ans <span class="token operator">+=</span> <span class="token punctuation">(</span>left <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">*</span> a<span class="token punctuation">;</span>        a <span class="token operator">=</span> a <span class="token operator">*</span> <span class="token number">10</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span>    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span> ans<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="4-原题地址"><a href="#4-原题地址" class="headerlink" title="4.原题地址"></a>4.原题地址</h2><p><a href="https://pintia.cn/problem-sets/994805342720868352/problems/994805430595731456">https://pintia.cn/problem-sets/994805342720868352/problems/994805430595731456</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> PAT </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数论题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>PAT甲级1141题（机构排序）</title>
       <link href="2021/02/19/pat/pai-xu-ti/pat-jia-ji-1141/"/>
       <url>2021/02/19/pat/pai-xu-ti/pat-jia-ji-1141/</url>
