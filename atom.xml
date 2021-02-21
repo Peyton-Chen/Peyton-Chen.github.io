@@ -6,7 +6,7 @@
   <link href="https://peyton.github.io/atom.xml" rel="self"/>
   
   <link href="https://peyton.github.io/"/>
-  <updated>2021-02-20T02:09:18.635Z</updated>
+  <updated>2021-02-21T11:32:51.080Z</updated>
   <id>https://peyton.github.io/</id>
   
   <author>
@@ -15,6 +15,106 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PAT甲级1071题（说话方式）</title>
+    <link href="https://peyton.github.io/2021/02/21/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1071/"/>
+    <id>https://peyton.github.io/2021/02/21/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1071/</id>
+    <published>2021-02-21T05:00:44.000Z</published>
+    <updated>2021-02-21T11:32:51.080Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
+    
+    
+    <category term="字符串处理题" scheme="https://peyton.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PAT甲级1035题（密码）</title>
+    <link href="https://peyton.github.io/2021/02/21/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1035/"/>
+    <id>https://peyton.github.io/2021/02/21/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1035/</id>
+    <published>2021-02-21T04:00:44.000Z</published>
+    <updated>2021-02-21T02:50:52.645Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
+    
+    
+    <category term="字符串处理题" scheme="https://peyton.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PAT甲级1036题（男孩女孩）</title>
+    <link href="https://peyton.github.io/2021/02/21/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1036/"/>
+    <id>https://peyton.github.io/2021/02/21/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1036/</id>
+    <published>2021-02-21T04:00:44.000Z</published>
+    <updated>2021-02-21T03:42:42.477Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
+    
+    
+    <category term="字符串处理题" scheme="https://peyton.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PAT甲级1006题（打卡）</title>
+    <link href="https://peyton.github.io/2021/02/21/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1006/"/>
+    <id>https://peyton.github.io/2021/02/21/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1006/</id>
+    <published>2021-02-21T04:00:44.000Z</published>
+    <updated>2021-02-21T02:20:07.794Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
+    
+    
+    <category term="字符串处理题" scheme="https://peyton.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>PAT甲级1050题（去重子串）</title>
@@ -42,11 +142,61 @@
   </entry>
   
   <entry>
+    <title>PAT甲级1061题（福尔摩斯）</title>
+    <link href="https://peyton.github.io/2021/02/20/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1061/"/>
+    <id>https://peyton.github.io/2021/02/20/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1061/</id>
+    <published>2021-02-20T02:00:44.000Z</published>
+    <updated>2021-02-20T03:28:28.771Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
+    
+    
+    <category term="字符串处理题" scheme="https://peyton.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
     <title>PAT甲级1031题（U字型）</title>
     <link href="https://peyton.github.io/2021/02/20/pat/mo-ni-ti/pat-jia-ji-1031/"/>
     <id>https://peyton.github.io/2021/02/20/pat/mo-ni-ti/pat-jia-ji-1031/</id>
     <published>2021-02-20T00:40:44.000Z</published>
     <updated>2021-02-19T16:05:20.180Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
+    
+    
+    <category term="模拟题" scheme="https://peyton.github.io/tags/%E6%A8%A1%E6%8B%9F%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PAT甲级1054题（最大面积）</title>
+    <link href="https://peyton.github.io/2021/02/20/pat/mo-ni-ti/pat-jia-ji-1054/"/>
+    <id>https://peyton.github.io/2021/02/20/pat/mo-ni-ti/pat-jia-ji-1054/</id>
+    <published>2021-02-20T00:35:44.000Z</published>
+    <updated>2021-02-20T02:35:26.999Z</updated>
     
     
       
@@ -373,156 +523,6 @@
     
     
     <category term="二叉树题" scheme="https://peyton.github.io/tags/%E4%BA%8C%E5%8F%89%E6%A0%91%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PAT甲级1168题（素数日）</title>
-    <link href="https://peyton.github.io/2021/02/11/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1168/"/>
-    <id>https://peyton.github.io/2021/02/11/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1168/</id>
-    <published>2021-02-11T02:00:44.000Z</published>
-    <updated>2021-02-11T03:00:02.557Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
-    
-    
-    <category term="字符串处理题" scheme="https://peyton.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PAT甲级1149题（不兼容商品）</title>
-    <link href="https://peyton.github.io/2021/02/09/pat/san-lie-ti/pat-jia-ji-1149/"/>
-    <id>https://peyton.github.io/2021/02/09/pat/san-lie-ti/pat-jia-ji-1149/</id>
-    <published>2021-02-09T12:52:44.000Z</published>
-    <updated>2021-02-09T02:34:43.255Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
-    
-    
-    <category term="散列题" scheme="https://peyton.github.io/tags/%E6%95%A3%E5%88%97%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PAT甲级1148题（狼人杀）</title>
-    <link href="https://peyton.github.io/2021/02/09/pat/mo-ni-ti/pat-jia-ji-1148/"/>
-    <id>https://peyton.github.io/2021/02/09/pat/mo-ni-ti/pat-jia-ji-1148/</id>
-    <published>2021-02-09T00:40:44.000Z</published>
-    <updated>2021-02-09T01:28:26.539Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
-    
-    
-    <category term="模拟题" scheme="https://peyton.github.io/tags/%E6%A8%A1%E6%8B%9F%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PAT甲级1155题（堆路径）</title>
-    <link href="https://peyton.github.io/2021/02/08/pat/shu-ju-jie-gou/pat-jia-ji-1155/"/>
-    <id>https://peyton.github.io/2021/02/08/pat/shu-ju-jie-gou/pat-jia-ji-1155/</id>
-    <published>2021-02-08T15:52:44.000Z</published>
-    <updated>2021-02-08T15:50:06.196Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
-    
-    
-    <category term="数据结构题" scheme="https://peyton.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PAT甲级1154题（节点染色）</title>
-    <link href="https://peyton.github.io/2021/02/08/pat/san-lie-ti/pat-jia-ji-1154/"/>
-    <id>https://peyton.github.io/2021/02/08/pat/san-lie-ti/pat-jia-ji-1154/</id>
-    <published>2021-02-08T12:52:44.000Z</published>
-    <updated>2021-02-08T01:18:57.653Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
-    
-    
-    <category term="散列题" scheme="https://peyton.github.io/tags/%E6%95%A3%E5%88%97%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PAT甲级1152题（串中素数）</title>
-    <link href="https://peyton.github.io/2021/02/05/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1152/"/>
-    <id>https://peyton.github.io/2021/02/05/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1152/</id>
-    <published>2021-02-05T02:00:44.000Z</published>
-    <updated>2021-02-05T01:59:56.455Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
-    
-    
-    <category term="字符串处理题" scheme="https://peyton.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86%E9%A2%98/"/>
     
   </entry>
   
