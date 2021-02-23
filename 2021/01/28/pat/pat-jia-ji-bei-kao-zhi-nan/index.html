@@ -393,7 +393,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2k
+                    2.1k
                 </div>
                 
 
@@ -546,10 +546,27 @@ value_type<span class="token operator">&amp;</span> <span class="token function"
 <span class="token keyword">int</span> <span class="token function">isxdigit</span><span class="token punctuation">(</span><span class="token keyword">int</span> ch<span class="token punctuation">)</span><span class="token punctuation">;</span>	<span class="token comment">// 判断是否为十六进制数字字符；如果是，返回非零值，否则返回零值。</span>
 <span class="token keyword">int</span> <span class="token function">isspace</span><span class="token punctuation">(</span><span class="token keyword">int</span> ch<span class="token punctuation">)</span><span class="token punctuation">;</span>	<span class="token comment">// 判断是否为空白字符；包括空格，换页，换行，回车，水平垂直制表符；</span>
 <span class="token keyword">int</span> <span class="token function">isblank</span><span class="token punctuation">(</span><span class="token keyword">int</span> ch<span class="token punctuation">)</span><span class="token punctuation">;</span>	<span class="token comment">// 判断是否为空格字符；如果是，返回非零值，否则返回零值。</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h1 id="3-刷题总结"><a href="#3-刷题总结" class="headerlink" title="3. 刷题总结"></a>3. 刷题总结</h1><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token comment">// ******** 字符串格式化输入 *********** //</span>
+<span class="token keyword">char</span> formattime<span class="token punctuation">[</span><span class="token number">25</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token function">sprintf</span><span class="token punctuation">(</span>formattime<span class="token punctuation">,</span> <span class="token string">"%d:%d:%d"</span><span class="token punctuation">,</span>day<span class="token punctuation">,</span>hour<span class="token punctuation">,</span>minute<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
+<span class="token comment">// ******** 结构体重载运算符 *********** //</span>
+<span class="token keyword">struct</span> <span class="token class-name">Person</span><span class="token punctuation">{</span>
+    string name<span class="token punctuation">;</span>
+    string state<span class="token punctuation">;</span>
+    string format_time<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> time<span class="token punctuation">;</span>
+    bool operator<span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token keyword">const</span> Person<span class="token operator">&amp;</span> t<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> time<span class="token operator">&lt;</span>t<span class="token punctuation">.</span>time<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 
+<span class="token comment">// ******** Vector比较 *********** //</span>
+vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> a<span class="token operator">=</span>b<span class="token punctuation">;</span>
+cout<span class="token operator">&lt;&lt;</span>a<span class="token operator">==</span>b<span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>	<span class="token comment">// 用于比较vector序列是否相同，完全相同就输出true</span>
 
-
+<span class="token comment">// ******** Vector倒序遍历 *********** //</span>
+vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> <span class="token function">v</span><span class="token punctuation">(</span>a<span class="token punctuation">.</span><span class="token function">rbegin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>a<span class="token punctuation">.</span><span class="token function">rend</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
@@ -1075,7 +1092,7 @@ value_type<span class="token operator">&amp;</span> <span class="token function"
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">22.5k</span>&nbsp;字
+                class="white-color">23.7k</span>&nbsp;字
             
             
             
