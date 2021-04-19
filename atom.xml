@@ -6,7 +6,7 @@
   <link href="https://peyton.github.io/atom.xml" rel="self"/>
   
   <link href="https://peyton.github.io/"/>
-  <updated>2021-02-24T04:25:22.366Z</updated>
+  <updated>2021-04-19T11:06:49.902Z</updated>
   <id>https://peyton.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>线性代数本质</title>
+    <link href="https://peyton.github.io/2021/04/19/xian-xing-dai-shu-ben-zhi/"/>
+    <id>https://peyton.github.io/2021/04/19/xian-xing-dai-shu-ben-zhi/</id>
+    <published>2021-04-19T00:56:55.000Z</published>
+    <updated>2021-04-19T11:06:49.902Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;线性代数的本质&quot;&gt;&lt;a href=&quot;#线性代数的本质&quot; class=&quot;headerlink&quot; title=&quot;线性代数的本质&quot;&gt;&lt;/a&gt;线性代数的本质&lt;/h2&gt;&lt;h3 id=&quot;1-矩阵本质&quot;&gt;&lt;a href=&quot;#1-矩阵本质&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="数理基础" scheme="https://peyton.github.io/categories/%E6%95%B0%E7%90%86%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="线性代数" scheme="https://peyton.github.io/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>PAT甲级1043题（判断二叉搜索树）</title>
@@ -488,31 +513,6 @@
     
     
     <category term="图论题" scheme="https://peyton.github.io/tags/%E5%9B%BE%E8%AE%BA%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PAT甲级1049题（寻找1）</title>
-    <link href="https://peyton.github.io/2021/02/19/pat/shu-lun-ti/pat-jia-ji-1049/"/>
-    <id>https://peyton.github.io/2021/02/19/pat/shu-lun-ti/pat-jia-ji-1049/</id>
-    <published>2021-02-19T07:30:44.000Z</published>
-    <updated>2021-02-19T12:58:36.664Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
-    
-    
-    <category term="数论题" scheme="https://peyton.github.io/tags/%E6%95%B0%E8%AE%BA%E9%A2%98/"/>
     
   </entry>
   
