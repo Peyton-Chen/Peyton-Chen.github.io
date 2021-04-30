@@ -6,7 +6,7 @@
   <link href="https://peyton.github.io/atom.xml" rel="self"/>
   
   <link href="https://peyton.github.io/"/>
-  <updated>2021-04-24T07:44:41.772Z</updated>
+  <updated>2021-04-30T06:35:23.497Z</updated>
   <id>https://peyton.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Scrapy爬虫之图片爬取</title>
+    <link href="https://peyton.github.io/2021/04/30/python/scrapy-pa-chong-zhi-tu-pian-pa-qu/"/>
+    <id>https://peyton.github.io/2021/04/30/python/scrapy-pa-chong-zhi-tu-pian-pa-qu/</id>
+    <published>2021-04-30T07:39:07.000Z</published>
+    <updated>2021-04-30T06:35:23.497Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-创建项目&quot;&gt;&lt;a href=&quot;#1-创建项目&quot; class=&quot;headerlink&quot; title=&quot;1.创建项目&quot;&gt;&lt;/a&gt;1.创建项目&lt;/h2&gt;&lt;p&gt;进入项目文件夹，打开windows PowerShell，创建爬虫项目：&lt;/p&gt;
+&lt;pre</summary>
+        
+      
+    
+    
+    
+    <category term="python" scheme="https://peyton.github.io/categories/python/"/>
+    
+    
+    <category term="python" scheme="https://peyton.github.io/tags/python/"/>
+    
+    <category term="Scrapy" scheme="https://peyton.github.io/tags/Scrapy/"/>
+    
+  </entry>
   
   <entry>
     <title>线性代数本质</title>
@@ -488,31 +516,6 @@
     
     
     <category term="数据结构题" scheme="https://peyton.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PAT甲级1134题（顶点覆盖）</title>
-    <link href="https://peyton.github.io/2021/02/19/pat/tu-lun-ti/pat-jia-ji-1134/"/>
-    <id>https://peyton.github.io/2021/02/19/pat/tu-lun-ti/pat-jia-ji-1134/</id>
-    <published>2021-02-19T15:52:44.000Z</published>
-    <updated>2021-02-19T09:30:02.706Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
-    
-    
-    <category term="图论题" scheme="https://peyton.github.io/tags/%E5%9B%BE%E8%AE%BA%E9%A2%98/"/>
     
   </entry>
   

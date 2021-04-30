@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="PAT甲级1154题（节点染色）, 杂货铺, Peyton">
+    <meta name="keywords" content="Scrapy爬虫之图片爬取, 杂货铺, Peyton">
     <meta name="description" content="从来没有真正的绝境，只有心灵的迷途">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>PAT甲级1154题（节点染色） | Peytonの杂货铺</title>
+    <title>Scrapy爬虫之图片爬取 | Peytonの杂货铺</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -238,12 +238,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">PAT甲级1154题（节点染色）</h1>
+                    <h1 class="description center-align post-title">Scrapy爬虫之图片爬取</h1>
                 </div>
             </div>
         </div>
@@ -359,8 +359,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%95%A3%E5%88%97%E9%A2%98/">
-                                <span class="chip bg-color">散列题</span>
+                            <a href="/tags/python/">
+                                <span class="chip bg-color">python</span>
+                            </a>
+                        
+                            <a href="/tags/Scrapy/">
+                                <span class="chip bg-color">Scrapy</span>
                             </a>
                         
                     </div>
@@ -371,8 +375,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/PAT/" class="post-category">
-                                PAT
+                            <a href="/categories/python/" class="post-category">
+                                python
                             </a>
                         
                     </div>
@@ -384,7 +388,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-02-08
+                    2021-04-30
                 </div>
                 
 
@@ -393,14 +397,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    179
+                    698
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 
@@ -420,44 +424,100 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="1-题目介绍"><a href="#1-题目介绍" class="headerlink" title="1.题目介绍"></a>1.题目介绍</h2><p><img src="https://github.com/Peyton-Chen/Picture/raw/master/1154.JPG" alt="1154"></p>
-<p><strong>vertex：节点</strong></p>
-<h2 id="2-考察点，难度"><a href="#2-考察点，难度" class="headerlink" title="2.考察点，难度"></a>2.考察点，难度</h2><p>散列类，Vector容器自定义方法，Set容器的运用，难度易</p>
-<h2 id="3-解题代码"><a href="#3-解题代码" class="headerlink" title="3.解题代码"></a>3.解题代码</h2><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;vector&gt;</span></span>
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;set&gt;</span></span>
-using namespace std<span class="token punctuation">;</span>
-<span class="token keyword">struct</span> <span class="token class-name">node</span> <span class="token punctuation">{</span><span class="token keyword">int</span> t1<span class="token punctuation">,</span> t2<span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+                <h2 id="1-创建项目"><a href="#1-创建项目" class="headerlink" title="1.创建项目"></a>1.创建项目</h2><p>进入项目文件夹，打开windows PowerShell，创建爬虫项目：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">scrapy startproject spider<span class="token punctuation">(</span>项目名<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="2-创建爬虫"><a href="#2-创建爬虫" class="headerlink" title="2.创建爬虫"></a>2.创建爬虫</h2><p>进入创建的爬虫项目文件夹，创建爬虫：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">scrapy genspider dogcat<span class="token punctuation">(</span>爬虫名字<span class="token punctuation">)</span> www<span class="token punctuation">.</span>xxx<span class="token punctuation">.</span>com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="3-属性封装"><a href="#3-属性封装" class="headerlink" title="3.属性封装"></a>3.属性封装</h2><p>进入items.py文件：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># Define here the models for your scraped items</span>
+<span class="token comment">#</span>
+<span class="token comment"># See documentation in:</span>
+<span class="token comment"># https://docs.scrapy.org/en/latest/topics/items.html</span>
 
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">int</span> n<span class="token punctuation">,</span> m<span class="token punctuation">,</span> k<span class="token punctuation">;</span>
-    cin <span class="token operator">&gt;&gt;</span> n <span class="token operator">&gt;&gt;</span> m<span class="token punctuation">;</span>
-    vector<span class="token operator">&lt;</span>node<span class="token operator">&gt;</span> <span class="token function">v</span><span class="token punctuation">(</span>m<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> m<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
-        <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d %d"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>v<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>t1<span class="token punctuation">,</span> <span class="token operator">&amp;</span>v<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>t2<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    cin <span class="token operator">&gt;&gt;</span> k<span class="token punctuation">;</span>
-    <span class="token keyword">while</span> <span class="token punctuation">(</span>k<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">int</span> a<span class="token punctuation">[</span><span class="token number">10009</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
-        bool flag <span class="token operator">=</span> true<span class="token punctuation">;</span>
-        set<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> se<span class="token punctuation">;</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            se<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> m<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>a<span class="token punctuation">[</span>v<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>t1<span class="token punctuation">]</span> <span class="token operator">==</span> a<span class="token punctuation">[</span>v<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>t2<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                flag <span class="token operator">=</span> false<span class="token punctuation">;</span>
-                <span class="token keyword">break</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>flag<span class="token punctuation">)</span>
-            <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d-coloring\n"</span><span class="token punctuation">,</span> se<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">else</span>
-            <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"No\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="4-原题地址"><a href="#4-原题地址" class="headerlink" title="4.原题地址"></a>4.原题地址</h2><p><a target="_blank" rel="noopener" href="https://pintia.cn/problem-sets/994805342720868352/problems/1071785301894295552">https://pintia.cn/problem-sets/994805342720868352/problems/1071785301894295552</a></p>
+<span class="token keyword">import</span> scrapy
+
+
+<span class="token keyword">class</span> <span class="token class-name">SpiderItem</span><span class="token punctuation">(</span>scrapy<span class="token punctuation">.</span>Item<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment"># define the fields for your item here like:</span>
+    
+    <span class="token comment"># 定义各种属性</span>
+    src <span class="token operator">=</span> scrapy<span class="token punctuation">.</span>Field<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="4-爬虫机制定义"><a href="#4-爬虫机制定义" class="headerlink" title="4.爬虫机制定义"></a>4.爬虫机制定义</h2><p>进入爬虫py文件（dogcat.py)，导入封装属性包：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> spider<span class="token punctuation">.</span>items <span class="token keyword">import</span> SpiderItem<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>根据对应网页书写 xpath 定义，上传item对象：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">DogcatSpider</span><span class="token punctuation">(</span>scrapy<span class="token punctuation">.</span>Spider<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    name <span class="token operator">=</span> <span class="token string">'dogcat'</span>
+    <span class="token comment"># allowed_domains = ['sc.chinaz.com']</span>
+    start_urls <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'http://sc.chinaz.com/tupian/'</span><span class="token punctuation">]</span>
+
+    <span class="token comment"># 爬虫机制设定</span>
+    <span class="token keyword">def</span> <span class="token function">parse</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> response<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+        <span class="token comment"># 一个id属性为container下的所有div</span>
+        div_list <span class="token operator">=</span> response<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'//div[@id="container"]/div'</span><span class="token punctuation">)</span>
+        <span class="token keyword">for</span> div <span class="token keyword">in</span> div_list<span class="token punctuation">:</span>
+            <span class="token comment"># 获得div下a下img的scr2属性值(伪属性）</span>
+            src <span class="token operator">=</span> div<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'./div/a/img/@src2'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract_first<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+            <span class="token comment"># 实例化对象</span>
+            item <span class="token operator">=</span> SpiderItem<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            item<span class="token punctuation">[</span><span class="token string">'src'</span><span class="token punctuation">]</span> <span class="token operator">=</span> src
+
+            <span class="token comment"># 提交管道</span>
+            <span class="token keyword">yield</span> item<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="5-设置配置信息"><a href="#5-设置配置信息" class="headerlink" title="5.设置配置信息"></a>5.设置配置信息</h2><p>打开网页F12，选择Network，随意选择一个提交文件。打开其Headers选项，拉至最后复制<strong>User-Agent</strong>属性。将这个值填入setting.py中的<strong>USER_AGENT</strong>值处（解除注释状态）。为了让爬取过程更清晰，我们可以在其上一行加入如下设置：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">LOG_LEVEL <span class="token operator">=</span> <span class="token string">"ERROR"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>同时将<strong>ROBOTSTXT_OBEY</strong>改成False：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># Obey robots.txt rules</span>
+ROBOTSTXT_OBEY <span class="token operator">=</span> <span class="token boolean">False</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h2 id="6-管道类重封装"><a href="#6-管道类重封装" class="headerlink" title="6.管道类重封装"></a>6.管道类重封装</h2><p>考虑到爬取图片数据，Scrapy特意准备了一个ImagesPipeline的图像爬取类，我们只需要对其进行继承，重书写即可。具体如下，将pipeline.py文件内容全部注释，重新书写如下：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># Define your item pipelines here</span>
+<span class="token comment">#</span>
+<span class="token comment"># Don't forget to add your pipeline to the ITEM_PIPELINES setting</span>
+<span class="token comment"># See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html</span>
+
+
+<span class="token comment"># useful for handling different item types with a single interface</span>
+<span class="token comment"># from itemadapter import ItemAdapter</span>
+<span class="token comment">#</span>
+<span class="token comment">#</span>
+<span class="token comment"># class SpiderPipeline:</span>
+<span class="token comment">#     def process_item(self, item, spider):</span>
+<span class="token comment">#         return item</span>
+
+<span class="token keyword">import</span> scrapy
+<span class="token keyword">from</span> scrapy<span class="token punctuation">.</span>pipelines<span class="token punctuation">.</span>images <span class="token keyword">import</span> ImagesPipeline
+
+<span class="token comment"># 需要重写三个方法</span>
+<span class="token keyword">class</span> <span class="token class-name">imgsPipeline</span><span class="token punctuation">(</span>ImagesPipeline<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+    <span class="token comment"># 根据图片地址进行图片的请求</span>
+    <span class="token keyword">def</span> <span class="token function">get_media_requests</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> item<span class="token punctuation">,</span> info<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment"># 请求</span>
+        <span class="token keyword">yield</span> scrapy<span class="token punctuation">.</span>Request<span class="token punctuation">(</span>item<span class="token punctuation">[</span><span class="token string">'src'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># 指定图片存储的路径</span>
+    <span class="token keyword">def</span> <span class="token function">file_path</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> request<span class="token punctuation">,</span> response<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> info<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> <span class="token operator">*</span><span class="token punctuation">,</span> item<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment"># 得到图片名称</span>
+        imgName <span class="token operator">=</span> request<span class="token punctuation">.</span>url<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>
+        <span class="token keyword">return</span> imgName
+
+    <span class="token keyword">def</span> <span class="token function">item_completed</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> results<span class="token punctuation">,</span> item<span class="token punctuation">,</span> info<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment"># 返回下一个即将被执行的管道类</span>
+        <span class="token keyword">return</span> item     <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>而图片的存储路径只需要在setting.py的最后一行加入如下配置即可：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># 指定图片存储目录（若不存在则会自动创建）</span>
+IMAGES_STORE <span class="token operator">=</span> <span class="token string">'./imgs'</span> <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>同时在setting.py中打开管道类的开关（大约68行左右），将管道类名字换成自定义的管道类名字即可：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># Configure item pipelines</span>
+<span class="token comment"># See https://docs.scrapy.org/en/latest/topics/item-pipeline.html</span>
+ITEM_PIPELINES <span class="token operator">=</span> <span class="token punctuation">{</span>
+   <span class="token string">'spider.pipelines.imgsPipeline'</span><span class="token punctuation">:</span> <span class="token number">300</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="7-爬取图片"><a href="#7-爬取图片" class="headerlink" title="7.爬取图片"></a>7.爬取图片</h2><p>在命令行运行如下命令进行图片爬取：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">scrapy crawl dogcat<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="8-参考文献"><a href="#8-参考文献" class="headerlink" title="8.参考文献"></a>8.参考文献</h2><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1ha4y1H7sx?p=69&amp;t=1">https://www.bilibili.com/video/BV1ha4y1H7sx?p=69&amp;t=1</a></p>
 
                 
             </div>
@@ -484,7 +544,7 @@ using namespace std<span class="token punctuation">;</span>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://peyton.github.io/2021/02/08/pat/san-lie-ti/pat-jia-ji-1154/">https://peyton.github.io/2021/02/08/pat/san-lie-ti/pat-jia-ji-1154/</a>
+                    <a href="https://peyton.github.io/2021/04/30/python/scrapy-pa-chong-zhi-tu-pian-pa-qu/">https://peyton.github.io/2021/04/30/python/scrapy-pa-chong-zhi-tu-pian-pa-qu/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -522,8 +582,12 @@ using namespace std<span class="token punctuation">;</span>
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%95%A3%E5%88%97%E9%A2%98/">
-                                    <span class="chip bg-color">散列题</span>
+                                <a href="/tags/python/">
+                                    <span class="chip bg-color">python</span>
+                                </a>
+                            
+                                <a href="/tags/Scrapy/">
+                                    <span class="chip bg-color">Scrapy</span>
                                 </a>
                             
                         </div>
@@ -693,17 +757,18 @@ using namespace std<span class="token punctuation">;</span>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/02/08/pat/shu-ju-jie-gou/pat-jia-ji-1155/">
+                <a href="/2021/04/30/python/scrapy-pa-chong-zhi-tu-pian-pa-qu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="PAT甲级1155题（堆路径）">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="Scrapy爬虫之图片爬取">
                         
-                        <span class="card-title">PAT甲级1155题（堆路径）</span>
+                        <span class="card-title">Scrapy爬虫之图片爬取</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -713,26 +778,31 @@ using namespace std<span class="token punctuation">;</span>
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-02-08
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-30
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/PAT/" class="post-category">
-                                    PAT
+                            <a href="/categories/python/" class="post-category">
+                                    python
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%A2%98/">
-                        <span class="chip bg-color">数据结构题</span>
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
+                    </a>
+                    
+                    <a href="/tags/Scrapy/">
+                        <span class="chip bg-color">Scrapy</span>
                     </a>
                     
                 </div>
@@ -746,13 +816,13 @@ using namespace std<span class="token punctuation">;</span>
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/02/05/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1152/">
+                <a href="/2021/04/19/xian-xing-dai-shu-ben-zhi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="PAT甲级1152题（串中素数）">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="线性代数本质">
                         
-                        <span class="card-title">PAT甲级1152题（串中素数）</span>
+                        <span class="card-title">线性代数本质</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -763,14 +833,14 @@ using namespace std<span class="token punctuation">;</span>
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-19
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/PAT/" class="post-category">
-                                    PAT
+                            <a href="/categories/%E6%95%B0%E7%90%86%E5%9F%BA%E7%A1%80/" class="post-category">
+                                    数理基础
                                 </a>
                             
                             
@@ -780,8 +850,8 @@ using namespace std<span class="token punctuation">;</span>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86%E9%A2%98/">
-                        <span class="chip bg-color">字符串处理题</span>
+                    <a href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">
+                        <span class="chip bg-color">线性代数</span>
                     </a>
                     
                 </div>
