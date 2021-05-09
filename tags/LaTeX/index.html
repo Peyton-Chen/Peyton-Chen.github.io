@@ -460,11 +460,11 @@
                 </a>
                 
                 
-                <a href="/tags/English/" title="English: 2">
+                <a href="/tags/English/" title="English: 3">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
                             data-tagname="English" style="background-color: #D5F5E3;">English
-                        <span class="tag-length">2</span>
+                        <span class="tag-length">3</span>
                     </span>
                 </a>
                 
@@ -668,7 +668,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">26.2k</span>&nbsp;字
+                class="white-color">26.8k</span>&nbsp;字
             
             
             
@@ -844,6 +844,27 @@
                                 if (first_occur >= 0) {
                                     // cut out 100 characters
                                     var start = first_occur - 20;
+                                      index_title = data_title.indexOf(keyword);
+                                    index_content = data_content.indexOf(keyword);
+                                    if (index_title < 0 && index_content < 0) {
+                                        isMatch = false;
+                                    } else {
+                                        if (index_content < 0) {
+                                            index_content = 0;
+                                        }
+                                        if (i === 0) {
+                                            first_occur = index_content;
+                                        }
+                                    }
+                                });
+                            }
+                            // show search results
+                            if (isMatch) {
+                                str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                                var content = data.content.trim().replace(/<[^>]+>/g, "");
+                                if (first_occur >= 0) {
+                                    // cut out 100 characters
+                                    var start = first_occur - 20;
                                     var end = first_occur + 80;
                                     if (start < 0) {
                                         start = 0;
@@ -890,63 +911,6 @@
     <script src="/libs/aos/aos.js"></script>
     <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
     <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
-
-    <!-- Baidu Analytics -->
-
-    <!-- Baidu Push -->
-
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
-
-    
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
-    
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
-    
-
-    
-
-    
-
-	
-    
-
-    
-    
-    <script type="text/javascript" size="150" alpha='0.8'
-        zIndex="-1" src="/libs/background/ribbon-refresh.min.js" async="async"></script>
-    
-
-    
-
-    
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
-    
-<script type="text/javascript">
-//只在桌面版网页启用特效
-var windowWidth = $(window).width();
-if (windowWidth > 768) {
-    document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
-}
-</script>
-
-</body>
-
-</html>
-lery/js/lightgallery-all.min.js"></script>
     <script src="/js/matery.js"></script>
 
     <!-- Baidu Analytics -->
