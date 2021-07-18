@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="标签: LaTeX, 杂货铺, Peyton">
+    <meta name="keywords" content="标签: LaTex, 杂货铺, Peyton">
     <meta name="description" content="从来没有真正的绝境，只有心灵的迷途">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>标签: LaTeX | Peytonの杂货铺</title>
+    <title>标签: LaTex | Peytonの杂货铺</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -309,7 +309,7 @@
                 
                 <a href="/tags/LaTeX/" title="LaTeX: 2">
                     <span class="chip center-align waves-effect waves-light
-                             chip-active "
+                             chip-default "
                             data-tagname="LaTeX" style="background-color: #D5F5E3;">LaTeX
                         <span class="tag-length">2</span>
                     </span>
@@ -372,7 +372,7 @@
                 
                 <a href="/tags/LaTex/" title="LaTex: 1">
                     <span class="chip center-align waves-effect waves-light
-                             chip-default "
+                             chip-active "
                             data-tagname="LaTex" style="background-color: #85C1E9;">LaTex
                         <span class="tag-length">1</span>
                     </span>
@@ -569,21 +569,21 @@
         <div class="row tags-posts">
             
             
-            <div class="article tag-post col s12 m6 l4" data-tags="LaTeX" data-aos="fade-up">
+            <div class="article tag-post col s12 m6 l4" data-tags="LaTex, VSCode" data-aos="fade-up">
                 <div class="card">
-                    <a href="/2021/02/15/ji-yu-latex-zhi-zuo-xue-zhu-ppt/">
+                    <a href="/2020/07/11/vscode-you-ya-pei-zhi-latex/">
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="基于LaTeX制作学术PPT">
+                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="VSCode优雅配置LaTeX">
                             
-                            <span class="card-title">基于LaTeX制作学术PPT</span>
+                            <span class="card-title">VSCode优雅配置LaTeX</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-15
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-11
                             </span>
                             <span class="publish-author">
                                 
@@ -593,36 +593,8 @@
                                 LaTeX
                                 </a>
                                 
-                                
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="article tag-post col s12 m6 l4" data-tags="LaTeX" data-aos="fade-up">
-                <div class="card">
-                    <a href="/2020/07/02/latex-huan-jing-da-jian/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="LaTeX环境搭建">
-                            
-                            <span class="card-title">LaTeX环境搭建</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-02
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/LaTeX/" class="post-category">
-                                LaTeX
+                                <a href="/categories/LaTeX/VSCode/" class="post-category">
+                                VSCode
                                 </a>
                                 
                                 
@@ -875,6 +847,28 @@
                                 });
                             }
                             // show search results
+ data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                            var index_title = -1;
+                            var index_content = -1;
+                            var first_occur = -1;
+                            // only match artiles with not empty titles and contents
+                            if (data_title !== '' && data_content !== '') {
+                                keywords.forEach(function (keyword, i) {
+                                    index_title = data_title.indexOf(keyword);
+                                    index_content = data_content.indexOf(keyword);
+                                    if (index_title < 0 && index_content < 0) {
+                                        isMatch = false;
+                                    } else {
+                                        if (index_content < 0) {
+                                            index_content = 0;
+                                        }
+                                        if (i === 0) {
+                                            first_occur = index_content;
+                                        }
+                                    }
+                                });
+                            }
+                            // show search results
                             if (isMatch) {
                                 str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
                                 var content = data.content.trim().replace(/<[^>]+>/g, "");
@@ -979,7 +973,7 @@ if (windowWidth > 768) {
     document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
 }
 </script>
-
+<script src="/js/cursor.js"></script>
 </body>
 
 </html>
