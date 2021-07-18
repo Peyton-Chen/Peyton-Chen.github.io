@@ -6,7 +6,7 @@
   <link href="https://peyton.github.io/atom.xml" rel="self"/>
   
   <link href="https://peyton.github.io/"/>
-  <updated>2021-05-09T07:34:15.792Z</updated>
+  <updated>2021-07-18T11:00:27.291Z</updated>
   <id>https://peyton.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《因果推断入门》学习笔记</title>
+    <link href="https://peyton.github.io/2021/07/18/yin-guo-tui-duan/yin-guo-tui-duan-ru-men-bi-ji/"/>
+    <id>https://peyton.github.io/2021/07/18/yin-guo-tui-duan/yin-guo-tui-duan-ru-men-bi-ji/</id>
+    <published>2021-07-18T07:16:20.000Z</published>
+    <updated>2021-07-18T11:00:27.291Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;《因果推断入门》学习笔记&quot;&gt;&lt;a href=&quot;#《因果推断入门》学习笔记&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="因果推断" scheme="https://peyton.github.io/categories/%E5%9B%A0%E6%9E%9C%E6%8E%A8%E6%96%AD/"/>
+    
+    
+    <category term="因果推断" scheme="https://peyton.github.io/tags/%E5%9B%A0%E6%9E%9C%E6%8E%A8%E6%96%AD/"/>
+    
+  </entry>
   
   <entry>
     <title>四六级-同意替换</title>
@@ -495,31 +520,6 @@
     
     
     <category term="模拟题" scheme="https://peyton.github.io/tags/%E6%A8%A1%E6%8B%9F%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PAT甲级1146题（拓扑排序）</title>
-    <link href="https://peyton.github.io/2021/02/19/pat/tu-lun-ti/pat-jia-ji-1146/"/>
-    <id>https://peyton.github.io/2021/02/19/pat/tu-lun-ti/pat-jia-ji-1146/</id>
-    <published>2021-02-19T15:52:44.000Z</published>
-    <updated>2021-02-18T16:14:49.227Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
-    
-    
-    <category term="图论题" scheme="https://peyton.github.io/tags/%E5%9B%BE%E8%AE%BA%E9%A2%98/"/>
     
   </entry>
   
