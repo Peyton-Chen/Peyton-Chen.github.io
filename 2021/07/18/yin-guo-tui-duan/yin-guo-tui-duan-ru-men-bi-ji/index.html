@@ -393,14 +393,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3k
+                    3.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    11 分
+                    12 分
                 </div>
                 
 
@@ -587,14 +587,19 @@ j \quad & if \ U_z=2 \\
 <p><img src="https://github.com/Peyton-Chen/Picture/raw/master/casual6.1.JPG" alt="Intransitive case图模型"></p>
 <p>​    从模型中我们可以发现，$P(Z=i)=P(Z=i|X=1)=P(Z=i|X=2)$三者都是相等，即Z的取值实际上和X没有关系，而完全取决于$ U_y $和$U_z$，$Z$和$X$之间便是独立的。因此，实际上两个还有因果关系的变量也未必存在统计相关性，这也给因果推断带来了困难。</p>
 <h2 id="7-链式结构（Chain）"><a href="#7-链式结构（Chain）" class="headerlink" title="7.链式结构（Chain）"></a>7.链式结构（Chain）</h2><ul>
-<li><strong>V-Structure的三种结构</strong>：①chain、②folk、③collider（所谓V-structure就是含有三个顶点的图，是图模型的基本组件，掌握了这三个基本组件便一通百通），具体对应的图模型见下图所示。</li>
+<li><strong>V-Structure的三种结构</strong>：①chain、②fork、③collider（所谓V-structure就是含有三个顶点的图，是图模型的基本组件，掌握了这三个基本组件便一通百通），具体对应的图模型见下图所示。</li>
 </ul>
-<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/casual7.1.JPG" alt="V-Structure"></p>
+<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/causal7_0.JPG" alt="V-Structure"></p>
 <ul>
 <li><strong>Chain上的条件独立结论：</strong>从下图（题注为：Chain的性质）中，我们发现<code>X</code>和<code>Z</code>之间存在很多的链式结构。按照前几节的内容可以得到下面结论：<code>X</code>与<code>Y1...Yn</code>都是大概率统计相关的，且<code>Z</code>与<code>Y1...Yn</code>也是大概率统计相关的。进一步可以得到<code>Z</code>和<code>X</code>也是大概率统计相关。</li>
 </ul>
-<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/casual7.2.JPG" alt="Chain的性质"></p>
+<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/causal7_2.JPG" alt="Chain的性质"></p>
 <p>​    <strong>但是如果其中的<code>Y</code>是已知条件（即Condition在<code>Y1..Yn</code>上所有通路），那么<code>X</code>和<code>Z</code>便是统计独立的（相当于<code>X</code>和<code>Z</code>间所有通路断开）——这是链式结构的重要性质。</strong></p>
+<h2 id="8-叉式结构（Fork）"><a href="#8-叉式结构（Fork）" class="headerlink" title="8.叉式结构（Fork）"></a>8.叉式结构（Fork）</h2><ul>
+<li><strong>Fork上的条件独立结论：</strong>从下图（题注为：Fork的性质）中，我们发现<code>Ux</code>、<code>Uy</code>以及<code>Uz</code>为三个外生变量，而<code>X</code>、<code>Y</code>和<code>Z</code>之间构成了Fork结构。按照前几节的内容可以得到下面结论：<code>X</code>与<code>Y</code>都是大概率统计相关的，且<code>X</code>与<code>Z</code>也是大概率统计相关的。进一步可以得到<code>Y</code>和<code>Z</code>也是大概率统计相关。</li>
+</ul>
+<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/causal8_1.JPG" alt="Fork的性质"></p>
+<p>​    <strong>但是如果其中的<code>X</code>是已知条件（即Condition在<code>X</code>上），那么<code>Y</code>和<code>Z</code>便是统计独立的（相当于<code>Y</code>和<code>Z</code>间不存在通路）——这是叉式结构的重要性质。</strong></p>
 
                 
             </div>
@@ -1127,7 +1132,7 @@ j \quad & if \ U_z=2 \\
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">29.8k</span>&nbsp;字
+                class="white-color">30k</span>&nbsp;字
             
             
             
