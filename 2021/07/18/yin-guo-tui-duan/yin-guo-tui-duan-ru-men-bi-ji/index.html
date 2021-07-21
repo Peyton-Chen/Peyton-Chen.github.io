@@ -393,14 +393,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.2k
+                    3.7k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    12 分
+                    14 分
                 </div>
                 
 
@@ -600,6 +600,59 @@ j \quad & if \ U_z=2 \\
 </ul>
 <p><img src="https://github.com/Peyton-Chen/Picture/raw/master/causal8_1.JPG" alt="Fork的性质"></p>
 <p>​    <strong>但是如果其中的<code>X</code>是已知条件（即Condition在<code>X</code>上），那么<code>Y</code>和<code>Z</code>便是统计独立的（相当于<code>Y</code>和<code>Z</code>间不存在通路）——这是叉式结构的重要性质。</strong></p>
+<h2 id="9-对撞结构（Collider）"><a href="#9-对撞结构（Collider）" class="headerlink" title="9.对撞结构（Collider）"></a>9.对撞结构（Collider）</h2><p><strong>Collider上的条件独立结论：</strong>从下图（题注为：Collider的性质）中，我们发现<code>Ux</code>、<code>Uy</code>以及<code>Uz</code>为三个外生变量，而<code>X</code>、<code>Y</code>和<code>Z</code>之间构成了Collider结构。按照前几节的内容介绍，可以得到下面结论：<code>X</code>与<code>Z</code>都是大概率统计相关的，且<code>Y</code>与<code>Z</code>也是大概率统计相关的。而<code>X</code>和<code>Y</code>却是大概率统计独立的。</p>
+<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/causal9_1.JPG" alt="Collider的性质"></p>
+<p>​    <strong>但是如果其中的<code>Z</code>是已知条件（即Condition在<code>Z</code>上），那么<code>X</code>和<code>Y</code>便是统计相关的——这是对撞结构的重要性质。</strong></p>
+<p><font color="red">注：</font>如果<code>Z</code>还存在后代，那么Condition在<code>Z</code>后代上，<code>X</code>和<code>Y</code>依旧是大概率统计相关的。</p>
+<h2 id="10-D-分隔（D-Separation）"><a href="#10-D-分隔（D-Separation）" class="headerlink" title="10.D-分隔（D-Separation）"></a>10.D-分隔（D-Separation）</h2><ul>
+<li><strong>D-分隔定义</strong>：有向图相关性的分隔。通过第7、8、9章的介绍，我们可以得到下表的结论：</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">V-Structure</th>
+<th style="text-align:center">Uncondition</th>
+<th style="text-align:center">Condition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Fork</td>
+<td style="text-align:center">Unblock</td>
+<td style="text-align:center">Block</td>
+</tr>
+<tr>
+<td style="text-align:center">Chain</td>
+<td style="text-align:center">Unblock</td>
+<td style="text-align:center">Block</td>
+</tr>
+<tr>
+<td style="text-align:center">Collider（or descendents）</td>
+<td style="text-align:center">Block</td>
+<td style="text-align:center">Unblock</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><font color="red">注：</font>其中的Unblock为dependent，而Block为independent。</p>
+<ol>
+<li>对于<strong>Fork</strong>：X&lt;—Z—&gt;Y，<code>X</code>和<code>Y</code>是d-connected的，即前面提到的Unblock（连通通路）。</li>
+<li>对于<strong>Chain</strong>：X—&gt;Z—&gt;Y，<code>X</code>和<code>Y</code>是d-connected的，即前面提到的Unblock（连通通路）。</li>
+<li>对于<strong>Collider</strong>：X—&gt;Z&lt;—Y，<code>X</code>和<code>Y</code>是d-separated的，即前面提到的Block（阻断通路）。</li>
+</ol>
+<ul>
+<li><p>如果<code>X</code>和<code>Y</code>是d-connected，那么<code>X</code>和<code>Y</code>是相关的。反之，如果<code>X</code>和<code>Y</code>是d-separated，那么<code>X</code>和<code>Y</code>是独立的。</p>
+</li>
+<li><p>在Uncondition的时候，对撞结构会阻断通路。而叉状和链状结构会连通相关通路。如果Condition在叉状和链状结构上，通路会被阻断；而Condition在对撞结构或其子节点上，通路就被打开。</p>
+</li>
+<li><p>如果<code>X</code>和<code>Y</code>之间的每一条通路都被阻断，那么<code>X</code>和<code>Y</code>就被D-分隔。另一方面，如果<code>X</code>和<code>Y</code>之间存在一条通路连通，那么<code>X</code>和<code>Y</code>就是D-连接。</p>
+</li>
+<li><p><strong>对于复杂的图，只要拆分成V-structure就可以用D-Separation理论来分析。</strong>下面是一个复杂图的D-分隔分析方法。其中，’$\equiv$‘ 表示变量间相关，而‘$\perp$’ 表示变量间独立。</p>
+</li>
+</ul>
+<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/causal10_1.JPG" alt="复杂图的D-Separation"></p>
+<h2 id="11-模型检验和等价类（Model-Testing-and-Causal-Search）"><a href="#11-模型检验和等价类（Model-Testing-and-Causal-Search）" class="headerlink" title="11.模型检验和等价类（Model Testing and Causal Search）"></a>11.模型检验和等价类（Model Testing and Causal Search）</h2><p>更新中。。。</p>
 
                 
             </div>
@@ -1132,7 +1185,7 @@ j \quad & if \ U_z=2 \\
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">30k</span>&nbsp;字
+                class="white-color">30.5k</span>&nbsp;字
             
             
             
