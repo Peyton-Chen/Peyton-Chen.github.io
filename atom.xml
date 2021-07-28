@@ -6,7 +6,7 @@
   <link href="https://peyton.github.io/atom.xml" rel="self"/>
   
   <link href="https://peyton.github.io/"/>
-  <updated>2021-07-21T01:55:13.480Z</updated>
+  <updated>2021-07-28T07:32:57.444Z</updated>
   <id>https://peyton.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《A Survey on Causal Inference》读书笔记</title>
+    <link href="https://peyton.github.io/2021/07/28/yin-guo-tui-duan/a-survey-on-causal-inference-du-shu-bi-ji/"/>
+    <id>https://peyton.github.io/2021/07/28/yin-guo-tui-duan/a-survey-on-causal-inference-du-shu-bi-ji/</id>
+    <published>2021-07-28T07:16:20.000Z</published>
+    <updated>2021-07-28T07:32:57.444Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;《A-Survey-on-Causal-Inference》读书笔记&quot;&gt;&lt;a href=&quot;#《A-Survey-on-Causal-Inference》读书笔记&quot; class=&quot;headerlink&quot; title=&quot;《A Survey on Causal</summary>
+        
+      
+    
+    
+    
+    <category term="因果推断" scheme="https://peyton.github.io/categories/%E5%9B%A0%E6%9E%9C%E6%8E%A8%E6%96%AD/"/>
+    
+    
+    <category term="因果推断" scheme="https://peyton.github.io/tags/%E5%9B%A0%E6%9E%9C%E6%8E%A8%E6%96%AD/"/>
+    
+  </entry>
   
   <entry>
     <title>《因果推断入门》学习笔记</title>
@@ -479,31 +504,6 @@
     <id>https://peyton.github.io/2021/02/20/pat/mo-ni-ti/pat-jia-ji-1031/</id>
     <published>2021-02-20T00:40:44.000Z</published>
     <updated>2021-02-19T16:05:20.180Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
-    
-    
-    <category term="模拟题" scheme="https://peyton.github.io/tags/%E6%A8%A1%E6%8B%9F%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PAT甲级1054题（最大面积）</title>
-    <link href="https://peyton.github.io/2021/02/20/pat/mo-ni-ti/pat-jia-ji-1054/"/>
-    <id>https://peyton.github.io/2021/02/20/pat/mo-ni-ti/pat-jia-ji-1054/</id>
-    <published>2021-02-20T00:35:44.000Z</published>
-    <updated>2021-02-20T02:35:26.999Z</updated>
     
     
       
