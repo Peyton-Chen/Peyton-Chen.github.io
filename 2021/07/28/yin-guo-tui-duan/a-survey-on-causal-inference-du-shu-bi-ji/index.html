@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="《因果推断入门》学习笔记, 杂货铺, Peyton">
+    <meta name="keywords" content="《A Survey on Causal Inference》读书笔记, 杂货铺, Peyton">
     <meta name="description" content="从来没有真正的绝境，只有心灵的迷途">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>《因果推断入门》学习笔记 | Peytonの杂货铺</title>
+    <title>《A Survey on Causal Inference》读书笔记 | Peytonの杂货铺</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -238,12 +238,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">《因果推断入门》学习笔记</h1>
+                    <h1 class="description center-align post-title">《A Survey on Causal Inference》读书笔记</h1>
                 </div>
             </div>
         </div>
@@ -384,7 +384,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-07-18
+                    2021-07-28
                 </div>
                 
 
@@ -393,14 +393,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.7k
+                    6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    14 分
+                    21 分
                 </div>
                 
 
@@ -420,239 +420,307 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="《因果推断入门》学习笔记"><a href="#《因果推断入门》学习笔记" class="headerlink" title="《因果推断入门》学习笔记"></a>《因果推断入门》学习笔记</h1><p>本文是笔者在B站《因果推断入门》课程学习以及教材《Causal Inference in Statistics: A Primer》学习过程中留下的笔记。对应课程链接如下：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1sJ41177sg?from=search&amp;seid=3202461351731182463">因果推断入门课程</a>，对应书籍链接如下：<a target="_blank" rel="noopener" href="http://bayes.cs.ucla.edu/PRIMER/">《Causal Inference in Statistics: A Primer》电子书</a>。</p>
-<h2 id="1-简介（Introduction"><a href="#1-简介（Introduction" class="headerlink" title="1.简介（Introduction)"></a>1.简介（Introduction)</h2><ul>
-<li><p>三位因果推断领域著名的科学家：Juden Pearl（UCLA 计算机科学家），Donald Rubin（Harvard 统计学家），James Robins（Harvard 流行病学、生物学家）。</p>
-</li>
-<li><p><strong>相关性≠因果性</strong>：图中是美国1999-2009年的<strong>自杀人数</strong>与<strong>科研经费花费</strong>的变化图。可以看到两个指标是高度相关。但是他们之间不存在因果性，即不可能因为减少科研经费而导致自杀人数急剧降低。实际上，<strong>相关性通常是对称的，因果性通常是不对称的</strong>（单向箭头），相关性不一定说明了因果性，但因果性一般都会在统计层面导致相关性。</p>
-</li>
-</ul>
-<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/casual1.1.JPG" alt="相关性和因果性"></p>
+                <h1 id="《A-Survey-on-Causal-Inference》读书笔记"><a href="#《A-Survey-on-Causal-Inference》读书笔记" class="headerlink" title="《A Survey on Causal Inference》读书笔记"></a>《A Survey on Causal Inference》读书笔记</h1><p>此文仅是本人阅读因果推断的最新综述《A Survey on Causal Inference》的一点学习记录，其中也记录了本人的理解和总结。（点击右侧链接即可一键查看原文-&gt;<a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2002.02770.pdf">论文地址</a>）</p>
+<p>[TOC]</p>
+<h2 id="1-摘要（Abstract）"><a href="#1-摘要（Abstract）" class="headerlink" title="1. 摘要（Abstract）"></a>1. 摘要（Abstract）</h2><p>因果推断是近几十年各大领域研究的热门话题。随着机器学习领域的快速发展，基于观测数据的因果效应估计方法层出不穷。在这篇综述中，作者全面的回顾因果推断方法下的<strong>潜在结果模型</strong>（其中一个著名的因果推断框架）。根据它们是否需要潜在结果框架的所有<strong>三个假设</strong>而将上述方法分为两类。对于每个类别，都讨论和比较了传统的统计方法和最近的机器学习增强方法。并给出了这些方法在广告、推荐、医药等方面的应用。此外，还总结了常用的benchmark数据集和开源代码，便于研究者和实践者探索、评估和开发因果推断方法。</p>
+<h2 id="2-介绍（Introduction）"><a href="#2-介绍（Introduction）" class="headerlink" title="2. 介绍（Introduction）"></a>2. 介绍（Introduction）</h2><p>因果性$\neq$相关性。我们从数据中往往分析出来的结论大多都是相关性，而因果性则不是那么容易能够得出来。不过目前有一个最有效的方法就是<strong>随机控制实验</strong>（randomized controlled trial）：通过随机控制变量，对照结果的方法得出结论。但是该方法时间损耗较大、不能适用于很多subjects的情况、只是聚焦于样本的平均值、在某些场合不适用等等问题。</p>
+<p>相较于上面随机控制实验的方法，<strong>观察数据的方法</strong>变成了可行的捷径。通过观察数据，我们可以发现他们的行动、结果和所发生事情的信息，但<strong>不能弄清楚他们采取特定行动的机制</strong>。对于观测数据，核心问题是如何得到反事实的结果。</p>
+<p>为了从可观测数据中推断出变量间的因果关系，研究者发现了很多的模型，其中包括：<strong>潜在结果模型（potential outcome framework）</strong>以及<strong>结构因果模型（structural causal model）</strong>。</p>
 <ul>
-<li>推荐入门教材：《Causal Inference In Statistics》by Judea Pearl；《Causal Inference》 by Hernan and Robins。</li>
+<li><p><strong>潜在结果模型</strong>——如果一个女孩每天正常吃早餐，她会有一个特定的体重，而如果她不正常吃早餐，她会有一个不同的体重。为了衡量正常吃早餐对女孩的因果影响，我们需要比较同一个人在两种情况下的结果。显然，我们不可能同时看到两种潜在结果，而其中一种潜在结果总是缺失。<strong>潜在结果框架的目的</strong>是估计这些潜在结果，然后计算干预（treatment）效果。因此，<strong>干预效果估计</strong>（treatment effect estimation）是潜在结果框架下因果推理的核心问题之一。</p>
+</li>
+<li><p><strong>结构因果模型(SCM)</strong>——它包括因果图和结构方程。结构因果模型描述了一个系统的因果机制，其中一组变量及其之间的因果关系是由一组联立结构方程建模的。</p>
+</li>
 </ul>
-<h2 id="2-辛普森悖论（Simpson’s-Paradox）"><a href="#2-辛普森悖论（Simpson’s-Paradox）" class="headerlink" title="2.辛普森悖论（Simpson’s Paradox）"></a>2.辛普森悖论（Simpson’s Paradox）</h2><ul>
-<li><strong>概念：在某个条件下的两组数据，分别讨论时都会满足某种性质，可是一旦合并考虑，却可能导致相反的结论。</strong>下面用一个例子来进一步说明这个问题：下面第一个表为男性在接受某种药物治疗后的康复情况，发现经过治疗后的康复率为0.93，而没有经过药物治疗的康复率为0.86。第二张表是女性的情况，在经过药物治疗后的康复率为0.73，而未经过药物治疗的康复率为0.69。由上面数据我们可以发现：<strong>无论是男性女性，药物对治疗该疾病都是有帮助的</strong>。</li>
-</ul>
-<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/casual2.2.JPG" alt="辛普森悖论例子"></p>
-<p>但是，第三个表格将男女数据全部合并，我们发现：<strong>药物对治疗该疾病是没有帮助的，反而是有害的</strong>。以上这个问题就是典型的辛普森悖论问题。</p>
+<p><strong>因果推断与机器学习</strong>：它们直接存在的非常密切的联系。<strong>一方面</strong>，机器学习领域的蓬勃发展促进了因果推断领域的发展。应用决策树、集成方法、深度神经网络等强大的机器学习方法，更准确地<strong>估计潜在的结果</strong>。除了对结果估计模型的改进，机器学习方法也为<strong>处理混杂因素</strong>提供了一个新的方面。<strong>另一方面</strong>，因果推断也有助于机器学习方法的发展。现代机器学习研究仅仅追求预测的准确性是不够的，<em>准确性</em>和<em>可解释性</em>也是机器学习方法的目标。因果推断正开始帮助改善机器学习，如推荐系统或强化学习。</p>
 <ul>
-<li><p><strong>概率论解释与混淆变量</strong>：下面就用概率论的方法来解释上述现象发生的实质和原因。</p>
-<p>首先，对变量进行编码表示：</p>
-</li>
+<li>tips：在机器学习中，数据越多越好。然而，在因果推理中，仅仅有更多的数据是不够的。有更多的数据只有助于得到更精确的估计，但不能确保这些估计是正确和无偏的。</li>
 </ul>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th style="text-align:center"></th>
-<th style="text-align:center">X</th>
-<th style="text-align:center">Y</th>
-<th style="text-align:center">Z</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">0</td>
-<td style="text-align:center">Women</td>
-<td style="text-align:center">Not Recovered</td>
-<td style="text-align:center">No Treatment</td>
-</tr>
-<tr>
-<td style="text-align:center">1</td>
-<td style="text-align:center">Men</td>
-<td style="text-align:center">Recovered</td>
-<td style="text-align:center">Treatment</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>​        那么上述的“辛普森悖论例子”图片中的①、②、③、④、A以及B便可以用条件概率的形式来表示：</p>
-<script type="math/tex; mode=display">
-①：P(Y=1|X=1,Z=1)=0.93    \\
-②：P(Y=1|X=1,Z=0)=0.87     \\
-③：P(Y=1|X=0,Z=1)=0.73     \\
-④：P(Y=1|X=0,Z=0)=0.69     \\
-A：P(Y=1|Z=1)=P(Y=1|Z=1,X=1)·P(X=1|Z=1)+P(Y=1|Z=1,X=0)·P(X=0|Z=1)    \\
-B：P(Y=1|Z=0)=P(Y=1|Z=0,X=1)·P(X=1|Z=0)+P(Y=1|Z=0,X=0)·P(X=0|Z=0)</script><p>​        这里我们假设$P(X=1|Z=1)$为$q$，则$P(X=0|Z=1)$为$1-q$。假设$P(X=1|Z=0)$为<code>p</code>，则$P(X=0|Z=0)$为$1-p$。那么A和B便可以表示为：</p>
-<script type="math/tex; mode=display">
-A=①*q+③*(1-q)    \\
-B=②*p+④*(1-p)</script><p>​        为了更加形象的说明问题，我们将上述的两个式子转化成如下图：</p>
-<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/casual2.3.JPG" alt="辛普森悖论概率论解释"></p>
-<p>​        可见A和B的取值分别由p和q取值来决定的。从上图中可以看到，出现A&lt;B的内在条件是：1.A点趋于③的位置（q趋向于0，即数据中的药物更多是在女性人群中使用）；2.Prob(③)&lt;Prob(①)（即女性用药人群要比男性用药人群更难恢复）。将这两个条件用因素影响图来表示：</p>
-<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/casual2.4.JPG" alt="辛普森悖论因素影响图"></p>
-<p>​        也就是：性别会影响用药情况和人的恢复，而用药也会影响恢复。这里我们称Sex为<strong>混淆因素</strong>，它不仅会影响我们判断是否用药，也会影响最终的恢复情况。如果你是医生，想要判断该药是否对病情有恢复作用，就必须把Sex这一混淆因素去除掉。<strong>而去除混淆变量的方法很简单，我们只需要看分组数据</strong>（只看男性数据或者只看女性数据，而不是将男女数据合到一起而引入了混淆因素）。通过上述的解读，可以得到一个结论：<strong>统计结论的反转是因为存在混淆变量，该变量同时影响着原因和结果</strong>。</p>
+<p><strong>全文框架</strong>：此文对<strong>潜在结果框架</strong>下的因果推理方法进行了综述。首先介绍潜在结果框架的基本概念，以及识别因果效应的三个关键假设。然后，详细讨论基于这三个假设的各种因果推理方法，包括重加权法（re-weighting methods）、分层法（stratification methods）、基于匹配法（matching based methods）、基于树的方法（tree-base methods）、基于表示的方法（representation-based methods）、基于多任务学习的方法（multi-task learning based methods）和元学习方法（meta-learning methods）综述。在介绍了各种因果效应估计方法之后，以广告领域、推荐领域、医学领域和强化学习领域为代表，讨论了这些方法在实际应用中可能产生的巨大效益。</p>
+<h2 id="3-因果推断基础知识（Basic-Of-Causal-Inference）"><a href="#3-因果推断基础知识（Basic-Of-Causal-Inference）" class="headerlink" title="3. 因果推断基础知识（Basic Of Causal Inference）"></a>3. 因果推断基础知识（Basic Of Causal Inference）</h2><p>在本节中，介绍了因果推理的背景知识，包括任务描述、数学概念、假设、挑战和一般解决方案。我们也给出了一个说明性的例子，将在整个survey中使用。一般来说，因果推理的任务是估计如果应用了另一种干预方法后结果的变化。例如，假设有两种干预方法可以应用于患者：药物A和药物B。对感兴趣的患者队列应用药物A时，治愈率为70%，药物B对同一队列，治愈率为90%。治愈率的变化就是治疗的结果。上面的例子描述了一个衡量干预效果的理想情况：对同一队列应用不同的干预方法。在现实世界中，这种理想的情况只能用随机的方法来近似，例如完全随机实验。这样，接受特定治疗的群体可以看作是我们感兴趣队列的近似。然而，进行随机实验是昂贵的，耗时的，有时甚至不道德。因此，由于观察数据的广泛可用性，<strong>利用观察数据估计干预效果越来越受到关注</strong>。观察数据通常包含一组接受不同干预的个体，他们相应的结果，可能还有更多的信息，但没有直接获得他们采取特定干预的原因/机制。这些观察数据使研究人员能够调查学习因果关系的基本问题。</p>
 <ul>
-<li><p><strong>因果中间变量</strong>：相对于上述的混淆变量，这里还有一类变量：因果中间变量。下面同样以一个例子来说明。</p>
-<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/casual2.5.JPG" alt="因果中间变量"></p>
-<p>​    上图中有三个因素：血压，是否用药以及治疗效果。其中用药对治疗效果有副作用，而另一方面用药可以降血压进一步来提升治疗效果。这里的血压我们称之为<strong>“因果中间变量”</strong>。</p>
+<li><p>[ ] <strong>潜在结果模型</strong>的主要贡献者是哈佛大学著名统计学家唐纳德·鲁宾(Donald B.Rubin)，因此该模型又被称为鲁宾因果模型(Rubin Causal Model)。其核心是比较同一个研究对象(Unit)在接受干预(Treatment)和不接受干预(对照/控制组)时结果差异，认为这一结果差异就是接受干预相对于不接受干预的效果。</p>
+</li>
+<li><p>[ ] 对于同一研究对象而言，通常我们不能够既观察其干预的结果，又观察其不干预的结果。<strong>对于接受干预的研究对象而言，不接受干预时的状态是一种“反事实”状态；对于不接受干预的研究对象而言，接受干预时的状态也是一种“反事实”状态；</strong>所以该模型又被某些研究者称之为反事实框架(Counter factual Framework)。</p>
 </li>
 </ul>
-<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/casual2.6.JPG" alt="因果中间变量实例"></p>
-<p>​        上图是一组实际中的例子。第一行为低血压人群用药的治疗结果：对于没用药有93%治愈率，而对于用药人群只有87%的治愈率。第二行为高血压人群，对于没用药有73%治愈率，而对于用药人群只有69%的治愈率。通过这两行分类数据发现：无论是高血压人群还是低血压人群，药物只体现了其对康复的副作用。而第三行，将高血压和低血压人群合并，发现得到了药物对治疗有促进作用。如果你是医生，想知道药物对治疗疾病的真正效果，你会从分类角度（高血压\低血压独立来看）还是整体角度来看？如果从分类的角度，则只是单独考虑了药物的副作用而忽略了血压的影响，但事实上药物对治疗的影响还存在一部分是血压带来的效益。所以从分类角度来看是有问题的。所以，<strong>对于这种因果中间变量模型，我们应该从整体的角度来评估药物对治疗的效果</strong>。</p>
-<h2 id="3-概率统计知识（Probability-and-Statistics"><a href="#3-概率统计知识（Probability-and-Statistics" class="headerlink" title="3.概率统计知识（Probability and Statistics)"></a>3.概率统计知识（Probability and Statistics)</h2><ul>
-<li><p><strong>条件概率（conditional Probability）：</strong></p>
-<script type="math/tex; mode=display">
-P(A|B)=\frac{P(A\cap B)}{P(B)}</script></li>
-<li><p><strong>独立事件（Independence）：</strong></p>
-</li>
-</ul>
-<script type="math/tex; mode=display">
-P(Mark \ get \ flu|Joe \ is \ 38) = P(Mark \ get \ flu)        \\
-\Leftrightarrow P(A \cap B)=P(A)·P(B)    \\
-Independence:  P(A|B)=P(A)    \\
-Conditional \ Independence:  P(A|B,C)=P(A|C)</script><p>​        其中 <strong>Independence 和 Conditional Independence 是不相等的</strong>，如上式中，给定C使得A和B是条件独立的，但我们是无法得到A和B是独立的。举个例子：A打电话与B打电话本身是独立事件，但是我们假定A和B都给你打电话，如果你的电话响了，那么对于你来说电话要么是A打的要么是B打的，这样A和B事件就是相关了。</p>
+<h3 id="3-1-基本概念（Definitions）"><a href="#3-1-基本概念（Definitions）" class="headerlink" title="3.1 基本概念（Definitions）"></a>3.1 基本概念（Definitions）</h3><p>为了更好的介绍各种干预效果估计方法，下面介绍几个定义，包括<strong>单位</strong>（<code>Unit</code>）、<strong>干预</strong>（<code>Treatment</code>）、结果（<code>Outcome</code>）、因果效应（<code>Treatment Effect</code>）以及<strong>观察数据提供的其他信息</strong>(干预前和干预后变量)。</p>
 <ul>
-<li><strong>贝叶斯法则（Bayes‘ rule）:</strong></li>
-</ul>
-<script type="math/tex; mode=display">
-P(A|B)=\frac{P(B \cap A)}{P(B)}=\frac{P(B \cap A)P(A)}{P(B)}=\frac{P(B|A)P(A)}{P(B)}</script><ul>
-<li><strong>期望（Expectation）：</strong></li>
-</ul>
-<script type="math/tex; mode=display">
-\mathbb{E(x)}=\sum_xxP(X=x)    \\
-\mathbb{E(g(x))}=\sum_xg(x)P(X=x)    \\
-样本估计：\mathbb{E(x)}\approx \bar{x} = \frac{1}{n} \sum_{i=1}^{n}x_i    \\
-条件期望：\mathbb{E}(Y|X=x)=\sum_yyP(Y=y|X=x)</script><ul>
-<li><strong>方差（Variance）：</strong></li>
-</ul>
-<script type="math/tex; mode=display">
-Var(x)=\mathbb{E}((x-\mu)^2)    \quad \mu=\mathbb{E}X    \\
-\sigma_x=\sqrt{Var(X)}    \\
-样本估计：Var(X)    \approx \hat{\sigma_x}^2=\frac{1}{n-1}\sum_{i=1}^n(x_i-\bar{x})^2</script><ul>
-<li><strong>协方差（Covariance）：</strong></li>
-</ul>
-<script type="math/tex; mode=display">
-Cov(X,Y)=\sigma_{XY}\triangleq \mathbb{E}[(x-\mathbb{E}X)(y-\mathbb{E}Y)]    \\
-样本估计:Cov(X,Y) \approx \hat{\sigma}_{XY} = \frac{1}{n-1} \sum_{i=1}^{n}(x_i-\bar{x})(y_i-\bar{y})    \\</script><ul>
-<li><strong>相关系数（Correlation）：</strong></li>
-</ul>
-<script type="math/tex; mode=display">
-\rho_{XY}=\frac{\sigma_{XY}}{\sigma_X \sigma_Y}=\frac{Cov(X,Y)}{\sqrt{Var(X)}\sqrt{Var(Y)}}\in[-1,1]    \\
-样本估计:\rho_{XY} \approx \hat{\rho}_{XY}=\frac{\hat{\sigma}_{XY}}{\hat{\sigma}_X \hat{\sigma}_{Y}}</script><h2 id="4-图模型（Graph-Model）"><a href="#4-图模型（Graph-Model）" class="headerlink" title="4.图模型（Graph Model）"></a>4.图模型（Graph Model）</h2><ul>
-<li><p><strong>完全图（Complete graph）</strong>：图中任意两个节点之间都存在一条连边。</p>
+<li>Unit —— <strong>单元</strong>，原子研究对象。</li>
+<li><p>Treatment —— <strong>干预/治疗</strong>，施加给一个原子对象unit的行为。在二元<code>Treatment</code>的情况下（即$W=0$或$1$ ），<code>Treatment</code>组包含接受Treatment为$W=1$ 的<code>unit</code>，而对照组包含接受<code>Treatment</code>为$W=0$的<code>unit</code>。</p>
 </li>
-<li><p><strong>Parent和Child节点</strong>：如果有一条有向边，那么这条有向边的起始点为Parent节点，而终止点为Child节点。</p>
+<li><p>Outcome —— <strong>结果</strong>，在对<code>unit</code>进行<code>Treatment</code>或者仅仅作为对照之后<code>unit</code>随后产生的反应/结果，一般用<code>Y</code>表示。</p>
 </li>
-<li><p><strong>ancestor和descendent</strong>：如果两个节点被一条有向路径连接，那么第一个节点被在这条路径上称为其他节点的ancestor，而其他节点是第一个节点的descendent。具体可以见下图所示。</p>
-</li>
-</ul>
-<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/casual4.1.JPG" alt="祖先与后代"></p>
+<li><p>Treatment Effect —— <strong>因果效应</strong>，对<code>unit</code>进行不同<code>Treatment</code>之后，<code>unit</code>产生的<code>Outcome</code>的变化，这种效应可以定义在<strong>整体层面、treatment组层面、子组层面和个体层面</strong>。</p>
 <ul>
-<li><strong>闭环图（cyclic）：</strong>含有闭环的有向图，如下图所示:</li>
-</ul>
-<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/casual4.2.JPG" alt="Cyclic"></p>
-<ul>
-<li><strong>非闭环图（acyclic directed graph）DAG：</strong>不含闭环的有向图，如下图所示：</li>
-</ul>
-<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/casual4.3.JPG" alt="Cyclic"></p>
-<h2 id="5-结构因果模型（Structural-Causal-Model）"><a href="#5-结构因果模型（Structural-Causal-Model）" class="headerlink" title="5.结构因果模型（Structural Causal Model）"></a>5.结构因果模型（Structural Causal Model）</h2><ul>
-<li><p><strong>结构因果模型（SCM）刻画：</strong>假设原因X导致了结果Y，那么这种<strong>直接关系</strong>就可以用$Y=f(X)$这一结构因果模型来表示。另一种情况，如果原因X导致结果Z，而结果Z导致结果Y，那么这种<strong>间接关系</strong>可以用$Y=f(g(X))$这一结构因果模型来表示。无论是直接还是间接，X都是Y的原因（cause）。</p>
-</li>
-<li><p><strong>因果、SCM以及图模型关系：</strong>下面就用3个例子来说明现实世界中的因果如何转化成结构因果模型以及图模型。首先，是直接因果关系的情况，即只需一条有向边表示即可。</p>
-</li>
-</ul>
-<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/casual5.1.JPG" alt="结构因果模型1"></p>
-<p>​        其次是结果Y由两个原因X、Z共同导致的情况：</p>
-<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/casual5.2.JPG" alt="结构因果模型2"></p>
-<p>​        最后是间接因果关系的情况，即前面提到复合函数的情况。</p>
-<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/casual5.3.JPG" alt="结构因果模型3"></p>
-<ul>
-<li><strong>外生节点与内生节点：</strong>上面我们提到了3种比较简单的因果模型，下面我们来看一个相对复杂一点的因果图模型。如下图，原因X和W共同导致了结果Z，而结果Z导致了结果Y。那么我们便可以画出对应的因果图模型如下所示。在图中，<strong>我们称X和W这类没有父亲的节点为外生节点（exogenous），而称Z和Y这类有父亲的节点为内生节点（endogenous）</strong>。即：根节点<code>&lt;=&gt;</code>外生节点集合U，根节点的后代节点（descendent）<code>&lt;=&gt;</code>内生节点集合V，连边<code>&lt;=&gt;</code>对应的函数映射。</li>
-</ul>
-<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/casual5.4.JPG" alt="外生节点与内生节点"></p>
-<h2 id="6-因果与相关（Intransitive-Case）"><a href="#6-因果与相关（Intransitive-Case）" class="headerlink" title="6.因果与相关（Intransitive Case）"></a>6.因果与相关（Intransitive Case）</h2><ul>
-<li><strong>1.如果两个变量统计相关，那么这两个变量未必具有因果性</strong>。</li>
-<li><p><strong>2.如果两个变量存在因果性，那么这两个变量在<font color="red">大多数情况下</font>是统计相关的，但未必一定相关。</strong></p>
-</li>
-<li><p>下面用一个例子来说明上述结论2中“未必相关”的部分，下面是该例子的结构因果模型：</p>
-</li>
-</ul>
+<li><p>整体层面 —— Average Treatment Effect(ATE)，平均干预效果：</p>
 <script type="math/tex; mode=display">
-SCM:    V=\{X,Y,Z\},U=\{U_X,U_Y,U_Z\},F=\{f_x,f_y,f_z\}    \\
-f_x:X=U_x    \\
-f_y:Y=\left\{
-\begin{aligned}
-a \quad & if \ X=1,U_y=1 \\
-b \quad & if \ X=2,U_y=1 \\
-c \quad & if \ U_y=2
-\end{aligned}
-\right.    \\
-f_z:Z=\left\{
-\begin{aligned}
-i \quad & if \ Y=c,U_z=1 \\
-j \quad & if \ U_z=2 \\
-\end{aligned}
-\right.</script><p>​    根据上述的结构因果模型可以作得对应的图模型：</p>
-<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/casual6.1.JPG" alt="Intransitive case图模型"></p>
-<p>​    从模型中我们可以发现，$P(Z=i)=P(Z=i|X=1)=P(Z=i|X=2)$三者都是相等，即Z的取值实际上和X没有关系，而完全取决于$ U_y $和$U_z$，$Z$和$X$之间便是独立的。因此，实际上两个还有因果关系的变量也未必存在统计相关性，这也给因果推断带来了困难。</p>
-<h2 id="7-链式结构（Chain）"><a href="#7-链式结构（Chain）" class="headerlink" title="7.链式结构（Chain）"></a>7.链式结构（Chain）</h2><ul>
-<li><strong>V-Structure的三种结构</strong>：①chain、②fork、③collider（所谓V-structure就是含有三个顶点的图，是图模型的基本组件，掌握了这三个基本组件便一通百通），具体对应的图模型见下图所示。</li>
+ATE=E[Y(W=1)-Y(W=0)]</script></li>
+<li><p>Treatment组层面 —— Average Treatment Effect on the Treated Group (ATT)，Treatment组中的平均干预效果：</p>
+<script type="math/tex; mode=display">
+ATT=E[Y(W=1)|W=1]-E[Y(W=0)|W=1]</script></li>
+<li><p>子组层面 —— Conditional Average Treatment Effect (CATE)：</p>
+<script type="math/tex; mode=display">
+CATE=E[Y(W=1)|X=x]-E[Y(W=0)|X=x]</script></li>
+<li><p>个体层面 —— Individual Treatment Effect (ITE)：</p>
+<script type="math/tex; mode=display">
+ITE_i=Y_i(W=1)-Y_i(W=0)</script></li>
 </ul>
-<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/causal7_0.JPG" alt="V-Structure"></p>
+</li>
+<li><p>Potential Outcome —— <strong>潜在结果</strong>，对于每对<code>unit-treatment</code>，当对<code>unit</code>施加相应的<code>treatment</code>之后产生的结果。</p>
+</li>
+<li><p>Observed Outcome —— <strong>观测结果</strong>，<strong>已经发生的事实</strong>，对<code>unit</code>施加某个<code>treatment</code>之后产生的能观测到的结果。</p>
+</li>
+<li>Counterfactual Outcome —— <strong>反事实结果</strong>， <strong>已经发生事实的其他对立面</strong>，也即对某个<code>unit</code><strong>未采用</strong>的其他<code>treatment</code>带来的潜在结果。</li>
+</ul>
+<h3 id="3-2-典型研究案例（An-Illustrative-Example）"><a href="#3-2-典型研究案例（An-Illustrative-Example）" class="headerlink" title="3.2 典型研究案例（An Illustrative Example）"></a>3.2 典型研究案例（An Illustrative Example）</h3><p><strong>任务</strong>：利用观察数据，如电子健康记录(EHR)，评估几种不同药物对一种疾病的治疗效果。</p>
+<p><strong>观测数据：</strong></p>
 <ul>
-<li><strong>Chain上的条件独立结论：</strong>从下图（题注为：Chain的性质）中，我们发现<code>X</code>和<code>Z</code>之间存在很多的链式结构。按照前几节的内容可以得到下面结论：<code>X</code>与<code>Y1...Yn</code>都是大概率统计相关的，且<code>Z</code>与<code>Y1...Yn</code>也是大概率统计相关的。进一步可以得到<code>Z</code>和<code>X</code>也是大概率统计相关。</li>
+<li>患者的人口统计信息</li>
+<li>患者服用特定剂量的特定药物</li>
+<li>医学测试结果</li>
+<li>其他</li>
 </ul>
-<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/causal7_2.JPG" alt="Chain的性质"></p>
-<p>​    <strong>但是如果其中的<code>Y</code>是已知条件（即Condition在<code>Y1..Yn</code>上所有通路），那么<code>X</code>和<code>Z</code>便是统计独立的（相当于<code>X</code>和<code>Z</code>间所有通路断开）——这是链式结构的重要性质。</strong></p>
-<h2 id="8-叉式结构（Fork）"><a href="#8-叉式结构（Fork）" class="headerlink" title="8.叉式结构（Fork）"></a>8.叉式结构（Fork）</h2><ul>
-<li><strong>Fork上的条件独立结论：</strong>从下图（题注为：Fork的性质）中，我们发现<code>Ux</code>、<code>Uy</code>以及<code>Uz</code>为三个外生变量，而<code>X</code>、<code>Y</code>和<code>Z</code>之间构成了Fork结构。按照前几节的内容可以得到下面结论：<code>X</code>与<code>Y</code>都是大概率统计相关的，且<code>X</code>与<code>Z</code>也是大概率统计相关的。进一步可以得到<code>Y</code>和<code>Z</code>也是大概率统计相关。</li>
-</ul>
-<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/causal8_1.JPG" alt="Fork的性质"></p>
-<p>​    <strong>但是如果其中的<code>X</code>是已知条件（即Condition在<code>X</code>上），那么<code>Y</code>和<code>Z</code>便是统计独立的（相当于<code>Y</code>和<code>Z</code>间不存在通路）——这是叉式结构的重要性质。</strong></p>
-<h2 id="9-对撞结构（Collider）"><a href="#9-对撞结构（Collider）" class="headerlink" title="9.对撞结构（Collider）"></a>9.对撞结构（Collider）</h2><p><strong>Collider上的条件独立结论：</strong>从下图（题注为：Collider的性质）中，我们发现<code>Ux</code>、<code>Uy</code>以及<code>Uz</code>为三个外生变量，而<code>X</code>、<code>Y</code>和<code>Z</code>之间构成了Collider结构。按照前几节的内容介绍，可以得到下面结论：<code>X</code>与<code>Z</code>都是大概率统计相关的，且<code>Y</code>与<code>Z</code>也是大概率统计相关的。而<code>X</code>和<code>Y</code>却是大概率统计独立的。</p>
-<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/causal9_1.JPG" alt="Collider的性质"></p>
-<p>​    <strong>但是如果其中的<code>Z</code>是已知条件（即Condition在<code>Z</code>上），那么<code>X</code>和<code>Y</code>便是统计相关的——这是对撞结构的重要性质。</strong></p>
-<p><font color="red">注：</font>如果<code>Z</code>还存在后代，那么Condition在<code>Z</code>后代上，<code>X</code>和<code>Y</code>依旧是大概率统计相关的。</p>
-<h2 id="10-D-分隔（D-Separation）"><a href="#10-D-分隔（D-Separation）" class="headerlink" title="10.D-分隔（D-Separation）"></a>10.D-分隔（D-Separation）</h2><ul>
-<li><strong>D-分隔定义</strong>：有向图相关性的分隔。通过第7、8、9章的介绍，我们可以得到下表的结论：</li>
-</ul>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th style="text-align:center">V-Structure</th>
-<th style="text-align:center">Uncondition</th>
-<th style="text-align:center">Condition</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">Fork</td>
-<td style="text-align:center">Unblock</td>
-<td style="text-align:center">Block</td>
-</tr>
-<tr>
-<td style="text-align:center">Chain</td>
-<td style="text-align:center">Unblock</td>
-<td style="text-align:center">Block</td>
-</tr>
-<tr>
-<td style="text-align:center">Collider（or descendents）</td>
-<td style="text-align:center">Block</td>
-<td style="text-align:center">Unblock</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><font color="red">注：</font>其中的Unblock为dependent，而Block为independent。</p>
-<ol>
-<li>对于<strong>Fork</strong>：X&lt;—Z—&gt;Y，<code>X</code>和<code>Y</code>是d-connected的，即前面提到的Unblock（连通通路）。</li>
-<li>对于<strong>Chain</strong>：X—&gt;Z—&gt;Y，<code>X</code>和<code>Y</code>是d-connected的，即前面提到的Unblock（连通通路）。</li>
-<li>对于<strong>Collider</strong>：X—&gt;Z&lt;—Y，<code>X</code>和<code>Y</code>是d-separated的，即前面提到的Block（阻断通路）。</li>
-</ol>
+<p><strong>研究对象</strong>：病人</p>
+<p><strong>干预：</strong>不同药物</p>
+<p><strong>结果：</strong>恢复/血样测试结果/其他</p>
+<h3 id="3-3-三个重要假设（Assumptions）"><a href="#3-3-三个重要假设（Assumptions）" class="headerlink" title="3.3 三个重要假设（Assumptions）"></a>3.3 三个重要假设（Assumptions）</h3><ul>
+<li><p><strong>稳定单位干预值假设(Stable Unit Treatment Value Assumption/SUTVA)</strong></p>
+<p>任何一个单元的潜在结果不会因分配给其他单元的<code>treatment</code>而有所不同，并且对于每个单元，每个<code>treatment</code>级别没有不同的形式或版本，不会导致不同的潜在结果。</p>
+<p>这个假设强调以下几点：</p>
 <ul>
-<li><p>如果<code>X</code>和<code>Y</code>是d-connected，那么<code>X</code>和<code>Y</code>是相关的。反之，如果<code>X</code>和<code>Y</code>是d-separated，那么<code>X</code>和<code>Y</code>是独立的。</p>
+<li><code>unit</code>之间都是相互独立的，<code>unit</code>之间不会存在相互作用</li>
+<li>同一<code>treatment</code>仅能存在一个版本。例如，在该假设下，不同剂量的同一种药物代表不同的治疗方法。</li>
+</ul>
 </li>
-<li><p>在Uncondition的时候，对撞结构会阻断通路。而叉状和链状结构会连通相关通路。如果Condition在叉状和链状结构上，通路会被阻断；而Condition在对撞结构或其子节点上，通路就被打开。</p>
+<li><p><strong>可忽略性假设(Ignorability)</strong></p>
+<p>给定背景变量<code>X</code> , 干预分配<code>W</code>与潜在的结果无关。</p>
+<p>例如，由上文的药物治疗的例子来看，如果两个患者有相同的背景变量<code>X</code>，无论治疗任务是什么，他们的潜在结果应该是相同的。类似地，如果两个患者具有相同的背景变量值，那么他们的治疗分配机制应该是相同的，无论他们有什么潜在的结果。</p>
 </li>
-<li><p>如果<code>X</code>和<code>Y</code>之间的每一条通路都被阻断，那么<code>X</code>和<code>Y</code>就被D-分隔。另一方面，如果<code>X</code>和<code>Y</code>之间存在一条通路连通，那么<code>X</code>和<code>Y</code>就是D-连接。</p>
-</li>
-<li><p><strong>对于复杂的图，只要拆分成V-structure就可以用D-Separation理论来分析。</strong>下面是一个复杂图的D-分隔分析方法。其中，’$\equiv$‘ 表示变量间相关，而‘$\perp$’ 表示变量间独立。</p>
+<li><p><strong>正值假设(Positivity)</strong></p>
+<p>对于<code>X</code>的任何一组值，处理分配不是确定的：</p>
+<script type="math/tex; mode=display">
+P(W=w|X=x)>0</script><p>如果某些<code>X</code>值的干预分配是确定的，那么至少一种干预的结果永远无法观察到。那么估计因果关系是不可能也没有意义的，这意味着干预组和对照组的“共同支持”或“重叠”。忽略性和正值假设一起也被称为强可忽略性或强可忽略性干预任务。</p>
 </li>
 </ul>
-<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/causal10_1.JPG" alt="复杂图的D-Separation"></p>
-<h2 id="11-模型检验和等价类（Model-Testing-and-Causal-Search）"><a href="#11-模型检验和等价类（Model-Testing-and-Causal-Search）" class="headerlink" title="11.模型检验和等价类（Model Testing and Causal Search）"></a>11.模型检验和等价类（Model Testing and Causal Search）</h2><p>更新中。。。</p>
+<h3 id="3-4-一般的研究方法（General-Solutions）"><a href="#3-4-一般的研究方法（General-Solutions）" class="headerlink" title="3.4 一般的研究方法（General Solutions）"></a>3.4 一般的研究方法（General Solutions）</h3><p><strong>核心问题：</strong>如何估计特定人群的平均潜在治疗/控制结果？</p>
+<p><strong>直观的解决方案：</strong> 计算平均治疗和对照结果之间的差异，即ATE。</p>
+<p><strong>存在的问题：</strong>由于混杂因素(confounders)的存在，这种解决方案是不合理的。</p>
+<h3 id="3-5-混淆因素（Confounders）"><a href="#3-5-混淆因素（Confounders）" class="headerlink" title="3.5 混淆因素（Confounders）"></a>3.5 混淆因素（Confounders）</h3><p><strong>混杂因素(Condounders)是同时影响干预分配和最终结果的变量</strong>。</p>
+<p><strong>举例说明</strong>：</p>
+<p>在下图中，展示的是两种治疗方案对年轻/年老两种病人群体的治疗效果</p>
+<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/A Survey on Causal Inference1.png" alt="混杂因素例子"></p>
+<p>从表格中我们显然可以看出，抛开年龄我们从整体上来看，不难得出结论：A治疗方案更好；但是考虑年龄的话，无论在是年轻的病患群体中还是年老的病患群体中，B方案的治愈率明显更高，由此得到结论：B治疗方案更好。这两种结论显然是互相矛盾的，但是为什么考虑年龄之后，会得出截然相反的结论呢？</p>
+<p>实际上，这是一种名为辛普森悖论的现象。辛普森悖论指的是同一组数据，整体的趋势和分组后的趋势完全不同。也就是说，整体数据和分组数据产生的结论截然相反。</p>
+<p><strong>辛普森悖论的解释</strong>：</p>
+<p>在上面的例子中，数据分组的指标是年龄，而年龄同时影响着恢复率和治疗方案的选择。从恢复率数据来看，无论是哪种治疗方案下，年轻组的恢复率普遍比年老组高得多，而从治疗方案的选择来看，年轻组更倾向于选择A治疗方案，而年老组则更倾向于选择B治疗方案。正是这种共同影响的存在，使得整体结果和分组结果完全不同。</p>
+<p>在这个例子中，干预分配显然就是治疗方案的选择，最终结果就是治愈率，显然可以得知，年龄在这里就是混杂因子。混杂因子的存在导致辛普森悖论现象的产生，因此，在混杂因素存在的情况下，我们不能针对观测数据轻易下结论。</p>
+<h3 id="3-6-选择偏倚（Selection-Bias）"><a href="#3-6-选择偏倚（Selection-Bias）" class="headerlink" title="3.6 选择偏倚（Selection Bias）"></a>3.6 选择偏倚（Selection Bias）</h3><p>混杂因子的存在影响着干预分配的选择，<code>treatment</code>组和对照组的分布有可能不一致，因此导致出现偏差，这也使得反事实结果估计更加困难。</p>
+<h2 id="4-因果推断方法（Causal-Inference-Methods）"><a href="#4-因果推断方法（Causal-Inference-Methods）" class="headerlink" title="4. 因果推断方法（Causal Inference Methods）"></a>4. 因果推断方法（Causal Inference Methods）</h2><ul>
+<li>Re-weighting(重加权算法)</li>
+<li>Stratification(分层算法)</li>
+<li>Matching(匹配算法)</li>
+<li>Tree-based(基于树的方法)</li>
+<li>Representation Learning(表示学习)</li>
+<li>Multitask Learning(多任务学习)</li>
+<li>Meta-learning(元学习)</li>
+</ul>
+<h3 id="4-1-重加权算法（Re-weighting）"><a href="#4-1-重加权算法（Re-weighting）" class="headerlink" title="4.1 重加权算法（Re-weighting）"></a>4.1 重加权算法（Re-weighting）</h3><ul>
+<li><p><strong>思想：</strong></p>
+<p>干预组和对照组观测数据的分布不同，这就是选择偏倚带来的挑战。为了克服选择偏倚，可以考虑对样本进行重新加权。</p>
+<p>通过给观察数据集中的每个样本分配适当的权重，可以创建一个伪总体，使得干预组和对照组的分布相似。然后根据重加权后因果效应的评估。</p>
+<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/A Survey on Causal Inference2.png" alt="重加权算法"></p>
+<p>上图展示了重加权的过程，当存在年龄<code>Age</code>这个混杂因子时，选择偏倚使得干预组和对照组的分布存在一定差异，对样本重新分配权重后(右图加粗部分，可以认为是增加了权重)，使得干预组和对照组的分布相似，从而消除了混杂因子Age带来的选择偏倚。</p>
+</li>
+<li><p><strong>倾向分数（Propensity score）：</strong></p>
+<p>它是给定观测协变量向量的特定干预分配的条件概率，反映出样本<code>x</code>选择<code>treatment</code>的可能性。</p>
+<script type="math/tex; mode=display">
+e(x)=Pr(W=1|X=x)</script></li>
+<li><p><strong>反向倾向加权（IPW）：</strong></p>
+<p>给每个unit指定的权重为：</p>
+<script type="math/tex; mode=display">
+r=\frac{W}{e(x)}+\frac{1-W}{1-e(x)}</script><p>其中 <code>W</code> 是treatment，<code>e(x)</code>是倾向得分。重加权后在整体层面对平均干预效果进行估计：</p>
+<script type="math/tex; mode=display">
+\hat{ATE}_{IPW}=\frac{1}{n}\sum_{i=1}^n\frac{W_iY_i^F}{\hat{e}(x_i)}-\frac{1}{n}\sum_{i=1}^n\frac{(1-W_i)Y_i^F}{1-\hat{e}(x_i)}</script><p>理论结果表明，调整倾向得分足以消除由于所有观测到的协变量而产生的偏差。但是这种加权方法高度依赖倾向性得分的正确性。</p>
+</li>
+<li><p><strong>双保险估计/增广IPW：</strong></p>
+<p>它将基于倾向得分加权的重加权算法和结果回归相结合：</p>
+<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/A Survey on Causal Inference3.png" alt="倾向得分加权的重加权算法和结果回归"></p>
+<p>当倾向性得分或者结果回归中只要有一个是正确的，就能做到无偏估计。</p>
+</li>
+</ul>
+<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/A Survey on Causal Inference4.png" alt="双保险估计表达式"></p>
+<ul>
+<li><p><strong>协变量平衡倾向得分（CBPS）：</strong></p>
+<p>倾向性得分既可作为干预分配的概率，又可作为协变量平衡得分，CBPS利用了这一双重特征，通过解决下面这一问题来估计倾向性得分：</p>
+<script type="math/tex; mode=display">
+\mathbb{E}[\frac{W_i\tilde{x_i}}{e(x_i;\beta)}-\frac{(1-W_i)\tilde{x_i}}{1-e(x_i;\beta)}]=0</script></li>
+<li><p><strong>数据驱动变量分解（$D^2VD$）：</strong></p>
+<p><strong>假设</strong>：观测变量可以分解为混杂变量、调整变量和无关变量</p>
+<p><strong>目的</strong>：区分混杂变量和调整变量，同时剔除无关变量。</p>
+<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/A Survey on Causal Inference5.png" alt="数据驱动变量分解"></p>
+</li>
+<li><p><strong>重加权算法总结：</strong></p>
+</li>
+</ul>
+<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/A Survey on Causal Inference6.png" alt="重加权算法总结"></p>
+<h3 id="4-2-分层算法（Stratification）"><a href="#4-2-分层算法（Stratification）" class="headerlink" title="4.2 分层算法（Stratification）"></a>4.2 分层算法（Stratification）</h3><p>通过将整个组分成子组来调整选择偏差，在每个子组中，treatment组和对照组在某些测量值下是相似的，干预效果的估计结果是所有子组的加权平均。</p>
+<p>利用分层算法估计的平均干预效果：</p>
+<script type="math/tex; mode=display">
+\hat{\tau}^{START}=\sum_{j=1}^Jq(j)[\bar{Y}_t(j)-\bar{Y}_c(j)]</script><h3 id="4-3-匹配算法（Matching）"><a href="#4-3-匹配算法（Matching）" class="headerlink" title="4.3 匹配算法（Matching）"></a>4.3 匹配算法（Matching）</h3><ul>
+<li><p><strong>干预估计</strong></p>
+<p>匹配算法使用下面的公式来估计后果：</p>
+<script type="math/tex; mode=display">
+\hat{Y_i}(0)=
+\begin{cases}
+Y_i \quad if \space W_i=0\\
+\frac{1}{\#\mathbb{J}(i)}\sum_{l\in\mathbb{J}(i)}Y_l\quad if\space W_i=1
+\end{cases}</script><script type="math/tex; mode=display">
+\hat{Y_i}(1)=
+\begin{cases}
+Y_i \quad if \space W_i=1\\
+\frac{1}{\#\mathbb{J}(i)}\sum_{l\in\mathbb{J}(i)}Y_l\quad if\space W_i=0
+\end{cases}</script><p>$\hat{Y_i}(0)$代表对照组，$\hat{Y_i}(1)$表示实验组。$\mathbb{J}(i)$代表在相反的treatment组中和单位$i$距离最近的样本。</p>
+</li>
+<li><p><strong>样本距离度量方法</strong></p>
+<ul>
+<li>欧氏距离</li>
+<li>马氏距离</li>
+</ul>
+</li>
+<li><p><strong>样本空间</strong></p>
+<ul>
+<li>原始空间</li>
+<li>特征变换空间<ul>
+<li>基于倾向得分的转换空间</li>
+<li>其他转换空间</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>基于倾向得分的匹配</strong></p>
+<p>基于倾向得分</p>
+<script type="math/tex; mode=display">
+e(x)=Pr(W=1|X=x)</script><p>定义两个units之间的距离</p>
+<script type="math/tex; mode=display">
+D(x_i,x_j)=|e_i-e_j|</script></li>
+<li><p><strong>匹配算法</strong></p>
+<ul>
+<li>邻近算法</li>
+<li>Caliper算法</li>
+<li>分层算法</li>
+<li>核函数</li>
+</ul>
+</li>
+<li><p><strong>匹配算法总结</strong></p>
+</li>
+</ul>
+<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/A Survey on Causal Inference7.png" alt="匹配算法总结"></p>
+<h3 id="4-4-基于树方法"><a href="#4-4-基于树方法" class="headerlink" title="4.4 基于树方法"></a>4.4 基于树方法</h3><h3 id="4-5-表示学习方法"><a href="#4-5-表示学习方法" class="headerlink" title="4.5 表示学习方法"></a>4.5 表示学习方法</h3><h3 id="4-6-多任务学习方法"><a href="#4-6-多任务学习方法" class="headerlink" title="4.6 多任务学习方法"></a>4.6 多任务学习方法</h3><h3 id="4-7-元学习方法"><a href="#4-7-元学习方法" class="headerlink" title="4.7 元学习方法"></a>4.7 元学习方法</h3><h2 id="5-实验指导（Guideline-About-Experiment）"><a href="#5-实验指导（Guideline-About-Experiment）" class="headerlink" title="5. 实验指导（Guideline About Experiment）"></a>5. 实验指导（Guideline About Experiment）</h2><p>这一章节介绍当前研究可用的数据集、开源代码及研究框架。</p>
+<h3 id="5-1-数据集（Datasets）"><a href="#5-1-数据集（Datasets）" class="headerlink" title="5.1 数据集（Datasets）"></a>5.1 数据集（Datasets）</h3><p>由于反事实的结果永远无法被观察到，因此很难找到一个完全满足实验要求的数据集，即具有基本真实数据集 (ITE) 的观测数据集。</p>
+<p>现在很多研究中使用到的数据集基本上都是半人工合成的数据集，合成的规则不尽相同，如IHDP数据集，是从随机数据集中按照一定的生成过程生成其观测结果，并去除一个有偏子集来模拟观测数据集中的选择偏差。一些数据集，如Jobs数据集，将随机数据集和观察控制数据集结合起来，产生选择偏差。</p>
+<ul>
+<li><strong>目前可用基准数据集</strong>·<ul>
+<li><a target="_blank" rel="noopener" href="http://www.mit.edu/~fredrikj/files/ihdp_100.tar.gz">IHDP</a></li>
+<li><a target="_blank" rel="noopener" href="http://users.nber.org/~rdehejia/data/nswdata2.html">Jobs</a></li>
+<li>Twins</li>
+<li><a target="_blank" rel="noopener" href="https://drive.google.com/file/d/0B7pG5PPgj6A3N09ibmFwNWE1djA/view?resourcekey=0-Nb6XWR_rhsi-4d-gFcsoZg">ACIC dataset</a></li>
+<li><ul>
+<li><a target="_blank" rel="noopener" href="https://drive.google.com/file/d/0B7pG5PPgj6A3N09ibmFwNWE1djA/view">2016</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.synapse.org/#!Synapse:syn11294478/wiki/486304">2018</a></li>
+<li><a target="_blank" rel="noopener" href="https://sites.google.com/view/acic2019datachallenge/data-challenge?authuser=0">2019</a></li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/IBM-HRL-MLHLS/IBM-Causal-Inference-Benchmarking-Framework">IBM causal inference benchmark</a></li>
+<li>BlogCatalog</li>
+<li>Flickr</li>
+<li><a target="_blank" rel="noopener" href="https://archive.ics.uci.edu/ml/datasets/bag+of+words">News</a></li>
+<li>MVICU</li>
+<li><a target="_blank" rel="noopener" href="https://gdc.cancer.gov/">TCGA</a></li>
+<li>Saccharomyces cerevisiae (yeast) cell cycle gene expression dataset</li>
+<li>THE</li>
+<li>FERTIL2</li>
+</ul>
+</li>
+</ul>
+<h3 id="5-2-开源的研究框架（Toolboxs）"><a href="#5-2-开源的研究框架（Toolboxs）" class="headerlink" title="5.2 开源的研究框架（Toolboxs）"></a><strong>5.2 开源的研究框架</strong>（Toolboxs）</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/microsoft/dowhy">Dowhy</a> —— 微软研发，基于Python</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/uber/causalml">Causal ML</a> —— Uber研发，基于Python</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/microsoft/EconML#blogs-and-publications">EconML</a> —— 微软研发，基于Python</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/soerenkuenzel/causalToolbox">causalToolbox</a> —— 基于R语言</li>
+</ul>
+<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/A Survey on Causal Inference8.png" alt="开源框架介绍"></p>
+<h3 id="5-3-开源因果推断方法（Code-of-Methods）"><a href="#5-3-开源因果推断方法（Code-of-Methods）" class="headerlink" title="5.3 开源因果推断方法（Code of Methods）"></a>5.3 开源因果推断方法（Code of Methods）</h3><p><strong>基于Python语言</strong></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://cran.r-project.org/web/packages/PSW/">PSM1</a>/<a target="_blank" rel="noopener" href="https://github.com/akelleh/causality">PSM2</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/d909b/perfect_match">Perfect Match</a></li>
+<li><a target="_blank" rel="noopener" href="https://bitbucket.org/mvdschaar/mlforhealthlabpub/src/baa0aa33a6af3fe490484c9e11e3a158968ae56a/alg/causal_multitask_gaussian_processes_ite/">CMGP</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/JakeColtman/bartpy">BART</a></li>
+<li><a target="_blank" rel="noopener" href="https://bitbucket.org/mvdschaar/mlforhealthlabpub/src/baa0aa33a6af3fe490484c9e11e3a158968ae56a/alg/ganite/">GANITE</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/clinicalml/cfrnet">BNN/CFR</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/AMLab-Amsterdam/CEVAE">CEVAE</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Osier-Yi/SITE">SITE</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/claudiashi57/dragonnet">dragonet</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/d909b/drnet">DRNets</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/rguo12/network-deconfounder-wsdm20">Network Decondounder</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/vveitch/causal-network-embeddings">Network Embeddings</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/rguo12/CIKM18-LCVA">LCVA</a></li>
+</ul>
+<p><strong>基于R语言</strong></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://cran.r-project.org/web/packages/ipw/index.html">IPW</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/gregridgeway/fastDR">DR</a></li>
+<li><a target="_blank" rel="noopener" href="https://cran.r-project.org/web/packages/sensitivityPStrat/index.html">Principal Stratification</a></li>
+<li><a target="_blank" rel="noopener" href="https://cran.r-project.org/web/packages/stratification/">Stratification</a></li>
+<li><a target="_blank" rel="noopener" href="https://cran.r-project.org/web/packages/PSW/">Matching based</a></li>
+<li><a target="_blank" rel="noopener" href="https://cran.r-project.org/web/packages/Matching/">optimal matching</a></li>
+<li><a target="_blank" rel="noopener" href="https://cran.r-project.org/web/packages/cem/">CEM</a></li>
+<li><a target="_blank" rel="noopener" href="https://cran.r-project.org/web/packages/tmle/index.html">TMLE1</a>/<a target="_blank" rel="noopener" href="https://github.com/joshuaschwab/ltmle">TMLE2</a></li>
+<li><a target="_blank" rel="noopener" href="https://cran.r-project.org/web/packages/BayesTree/index.html">BART</a></li>
+<li><a target="_blank" rel="noopener" href="https://cran.r-project.org/web/packages/grf/index.html">grf</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/xnie/rlearner/blob/master/R/xlearner.R">R-learning</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/swager/balanceHD">Residual Balancing</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/kosukeimai/CBPS">CBPS</a></li>
+<li><a target="_blank" rel="noopener" href="https://cran.r-project.org/web/packages/ebal/">Entropy Balancing</a></li>
+</ul>
+<h2 id="6-应用（Applications）"><a href="#6-应用（Applications）" class="headerlink" title="6. 应用（Applications）"></a>6. 应用（Applications）</h2><p>因果推理的应用可以分为三个方向</p>
+<ul>
+<li><strong>决策评估</strong> —— 这与Treatment效果评估的目标是一致的。</li>
+<li><strong>反事实估计</strong> —— 反事实学习极大地帮助了与决策相关的领域，因为它可以提供不同决策选择（或策略）的潜在结果。</li>
+<li><strong>处理选择偏差</strong> —— 在许多实际应用程序中，出现在收集的数据集中的记录并不代表感兴趣的整个群体。如果不恰当地处理选择偏差，将影响训练模型的泛化。</li>
+</ul>
+<p>下面是这三个方向适用的应用场景：</p>
+<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/A Survey on Causal Inference9.png" alt="应用场景"></p>
+<h3 id="6-1-广告（Advertising）"><a href="#6-1-广告（Advertising）" class="headerlink" title="6.1 广告（Advertising）"></a>6.1 广告（Advertising）</h3><p><strong>决策评估</strong></p>
+<p>正确衡量广告活动的效果是品牌方成功营销的关键，如新广告是否增加点击量，或新广告是否增加销售额等。</p>
+<p><strong>衡量方法</strong></p>
+<ul>
+<li>随机试验 —— 成本高且耗时，不应采纳</li>
+<li>从观察数据中估计广告效果<ul>
+<li>随机最近邻匹配法 —— 估计数字营销活动的治疗效果</li>
+<li>协变量平衡广义倾向得分（CBGPS）—— 用于分析政治广告的有效性</li>
+</ul>
+</li>
+</ul>
+<p><strong>处理选择偏差</strong></p>
+<p>由于广告系统中现有的选择机制，显示和未显示的事件之间存在分布差异。忽视这种偏差会使广告点击预测不准确，从而造成收入损失。</p>
+<h3 id="6-2-电子邮件营销（e-mail-marketing）"><a href="#6-2-电子邮件营销（e-mail-marketing）" class="headerlink" title="6.2 电子邮件营销（e-mail marketing）"></a>6.2 电子邮件营销（e-mail marketing）</h3><p><strong>决策评估</strong></p>
+<p>目的：瞄准潜在客户，增加收入。</p>
+<p>使用决策评估帮助在不同的促销电子邮件设计中进行选择。</p>
+<h3 id="6-3-推荐系统（Recommendation）"><a href="#6-3-推荐系统（Recommendation）" class="headerlink" title="6.3 推荐系统（Recommendation）"></a>6.3 推荐系统（Recommendation）</h3><p><strong>决策评估</strong></p>
+<p>在推荐系统中给用户推送商品的过程，相当于给原子研究对象施加干预，通过用户的点击、消费等行为评估干预(推荐)的效果。</p>
+<p>系统的推荐建议与评估的干预效果高度相关。</p>
+<p><strong>处理选择偏差</strong></p>
+<p>推荐系统中使用的数据集通常由于用户的自我选择而产生偏差。</p>
+<p>例如，在电影收视率数据集中，用户倾向于对自己喜欢的电影进行评分：恐怖电影的收视率大多由恐怖电影迷制作，而浪漫电影的影迷则较少。</p>
+<p>对于广告推荐，推荐系统只会将广告推荐给系统认为对这些广告感兴趣的用户。</p>
+<p>在上面的例子中，数据集中的记录并不代表整个群体，这就是选择偏差。这种选择偏差给推荐模型的训练和评价带来了挑战。基于倾向得分的样本再加权是解决选择偏差问题的有效方法。</p>
+<h3 id="6-4-药物治疗（Medicine）"><a href="#6-4-药物治疗（Medicine）" class="headerlink" title="6.4 药物治疗（Medicine）"></a>6.4 药物治疗（Medicine）</h3><p><strong>反事实估计</strong></p>
+<p>当可以估计不同的可用药物的疗效时，医生可以据此开出更好的处方。</p>
+<h3 id="6-5-教育（Education）"><a href="#6-5-教育（Education）" class="headerlink" title="6.5 教育（Education）"></a>6.5 教育（Education）</h3><p><strong>反事实估计</strong></p>
+<p>通过比较不同教学方法对学生群体的影响，可以确定一种更好的教学方法。</p>
+<h3 id="6-6-强化学习（Reinforcement-Learning）"><a href="#6-6-强化学习（Reinforcement-Learning）" class="headerlink" title="6.6 强化学习（Reinforcement Learning）"></a>6.6 强化学习（Reinforcement Learning）</h3><p>机械臂的探索和开发类似于随机试验和观察数据。因此，这两个领域有一些相似的关键挑战:如何获得一个无偏的结果/奖励估计?如何处理影响治疗分配/行动选择和结果/奖励的观察到或未观察到的混杂因素?因此可以使用因果推断中的方法用于强化学习中，得到无偏的估计。</p>
+<h2 id="7-总结（Conclusion）"><a href="#7-总结（Conclusion）" class="headerlink" title="7. 总结（Conclusion）"></a>7. 总结（Conclusion）</h2><p>长期以来，因果推理一直是一个很有吸引力的研究课题，因为它提供了一种有效的方法来揭示现实问题中的因果关系。如今，机器学习的蓬勃发展给这一领域带来了新的活力，同时，因果推理领域的精深思想也推动了机器学习的发展。在这一Survey中，我们在潜在结果框架下，提供了一个全面的回顾方法。由于潜在结果框架依赖于这三个假设，因此方法被分为两类。一个类别依赖于这些假设，而另一个类别放宽了一些假设。对于每个类别，我们提供了详细的讨论、比较和综述方法。文中还列出了这些方法的可用基准数据集和开源代码。最后，介绍了因果推理在现实世界中的一些代表性应用，如广告、推荐、医学和强化学习。</p>
 
                 
             </div>
@@ -679,7 +747,7 @@ j \quad & if \ U_z=2 \\
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://peyton.github.io/2021/07/18/yin-guo-tui-duan/yin-guo-tui-duan-ru-men-bi-ji/">https://peyton.github.io/2021/07/18/yin-guo-tui-duan/yin-guo-tui-duan-ru-men-bi-ji/</a>
+                    <a href="https://peyton.github.io/2021/07/28/yin-guo-tui-duan/a-survey-on-causal-inference-du-shu-bi-ji/">https://peyton.github.io/2021/07/28/yin-guo-tui-duan/a-survey-on-causal-inference-du-shu-bi-ji/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -888,9 +956,10 @@ j \quad & if \ U_z=2 \\
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/07/28/yin-guo-tui-duan/a-survey-on-causal-inference-du-shu-bi-ji/">
                     <div class="card-image">
@@ -908,9 +977,9 @@ j \quad & if \ U_z=2 \\
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-28
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-28
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -923,6 +992,7 @@ j \quad & if \ U_z=2 \\
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -941,13 +1011,13 @@ j \quad & if \ U_z=2 \\
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/05/08/ying-yu-si-liu-ji-tong-yi-ti-huan/">
+                <a href="/2021/07/18/yin-guo-tui-duan/yin-guo-tui-duan-ru-men-bi-ji/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="四六级-同意替换">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="《因果推断入门》学习笔记">
                         
-                        <span class="card-title">四六级-同意替换</span>
+                        <span class="card-title">《因果推断入门》学习笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -958,14 +1028,14 @@ j \quad & if \ U_z=2 \\
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-18
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/English/" class="post-category">
-                                    English
+                            <a href="/categories/%E5%9B%A0%E6%9E%9C%E6%8E%A8%E6%96%AD/" class="post-category">
+                                    因果推断
                                 </a>
                             
                             
@@ -975,8 +1045,8 @@ j \quad & if \ U_z=2 \\
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/English/">
-                        <span class="chip bg-color">English</span>
+                    <a href="/tags/%E5%9B%A0%E6%9E%9C%E6%8E%A8%E6%96%AD/">
+                        <span class="chip bg-color">因果推断</span>
                     </a>
                     
                 </div>
