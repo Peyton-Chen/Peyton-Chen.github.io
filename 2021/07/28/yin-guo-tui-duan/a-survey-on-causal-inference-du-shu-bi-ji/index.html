@@ -421,7 +421,6 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="《A-Survey-on-Causal-Inference》读书笔记"><a href="#《A-Survey-on-Causal-Inference》读书笔记" class="headerlink" title="《A Survey on Causal Inference》读书笔记"></a>《A Survey on Causal Inference》读书笔记</h1><p>此文仅是本人阅读因果推断的最新综述《A Survey on Causal Inference》的一点学习记录，其中也记录了本人的理解和总结。（点击右侧链接即可一键查看原文-&gt;<a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2002.02770.pdf">论文地址</a>）</p>
-<p>[TOC]</p>
 <h2 id="1-摘要（Abstract）"><a href="#1-摘要（Abstract）" class="headerlink" title="1. 摘要（Abstract）"></a>1. 摘要（Abstract）</h2><p>因果推断是近几十年各大领域研究的热门话题。随着机器学习领域的快速发展，基于观测数据的因果效应估计方法层出不穷。在这篇综述中，作者全面的回顾因果推断方法下的<strong>潜在结果模型</strong>（其中一个著名的因果推断框架）。根据它们是否需要潜在结果框架的所有<strong>三个假设</strong>而将上述方法分为两类。对于每个类别，都讨论和比较了传统的统计方法和最近的机器学习增强方法。并给出了这些方法在广告、推荐、医药等方面的应用。此外，还总结了常用的benchmark数据集和开源代码，便于研究者和实践者探索、评估和开发因果推断方法。</p>
 <h2 id="2-介绍（Introduction）"><a href="#2-介绍（Introduction）" class="headerlink" title="2. 介绍（Introduction）"></a>2. 介绍（Introduction）</h2><p>因果性$\neq$相关性。我们从数据中往往分析出来的结论大多都是相关性，而因果性则不是那么容易能够得出来。不过目前有一个最有效的方法就是<strong>随机控制实验</strong>（randomized controlled trial）：通过随机控制变量，对照结果的方法得出结论。但是该方法时间损耗较大、不能适用于很多subjects的情况、只是聚焦于样本的平均值、在某些场合不适用等等问题。</p>
 <p>相较于上面随机控制实验的方法，<strong>观察数据的方法</strong>变成了可行的捷径。通过观察数据，我们可以发现他们的行动、结果和所发生事情的信息，但<strong>不能弄清楚他们采取特定行动的机制</strong>。对于观测数据，核心问题是如何得到反事实的结果。</p>
