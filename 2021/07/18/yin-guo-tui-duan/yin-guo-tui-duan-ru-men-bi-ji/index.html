@@ -393,14 +393,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.7k
+                    4.7k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    14 分
+                    17 分
                 </div>
                 
 
@@ -652,7 +652,49 @@ j \quad & if \ U_z=2 \\
 </li>
 </ul>
 <p><img src="https://github.com/Peyton-Chen/Picture/raw/master/causal10_1.JPG" alt="复杂图的D-Separation"></p>
-<h2 id="11-模型检验和等价类（Model-Testing-and-Causal-Search）"><a href="#11-模型检验和等价类（Model-Testing-and-Causal-Search）" class="headerlink" title="11.模型检验和等价类（Model Testing and Causal Search）"></a>11.模型检验和等价类（Model Testing and Causal Search）</h2><p>更新中。。。</p>
+<h2 id="11-模型检验和等价类（Model-Testing-and-Causal-Search）"><a href="#11-模型检验和等价类（Model-Testing-and-Causal-Search）" class="headerlink" title="11.模型检验和等价类（Model Testing and Causal Search）"></a>11.模型检验和等价类（Model Testing and Causal Search）</h2><ul>
+<li><p><strong>模型检验</strong>：通过给定图模型，可以从中确定出各个变量间的因果关系和统计相关性。而在实际中我们往往有这些变量的统计数据，需要做的就是<strong>从统计数据中估计出变量间的相关性和因果性</strong>，这里估计的方法有很多，如：变量间的线性回归或者非线性回归等等。<strong>图模型得到的因果推断</strong>和<strong>数据统计得到的因果结论</strong>应该是<strong>统一的</strong>，这便有了模型检验。</p>
+</li>
+<li><p><strong>等价类</strong>：从前面的介绍我们可以得到 Fork 和 Chain 的很多性质都是相同的。但 Chain 和 Collider，Fork 和 Collider的性质差异都很大。即：</p>
+<ul>
+<li>叉状和链状结构在统计相关性上是等价的。</li>
+<li>对撞和链式结构并不等价。</li>
+<li>对撞和叉状结构也不等价。</li>
+<li>有连通父节点的对撞结构也是等价类的一种情况。（collider的两个父节点之间存在连边）</li>
+</ul>
+<p><strong>判断两个有向图等价就看他们是否有相同的骨架，也就是在两个有向图里去掉等价类的部分之后，剩下的部分是否等价。</strong></p>
+</li>
+</ul>
+<h2 id="12-乘积分解法则（Rule-of-Product-Decomposition）"><a href="#12-乘积分解法则（Rule-of-Product-Decomposition）" class="headerlink" title="12.乘积分解法则（Rule of Product Decomposition）"></a>12.乘积分解法则（Rule of Product Decomposition）</h2><p><strong>含义：</strong>对于每一个结构化因果模型所对应的联合分布，都可以进行乘积分解，这种乘积分解可以大大的减少联合分布的参数空间维度，使得在数据量有限的情况下，对因果模型联合分布有效的估计成为了可能。这种乘积分解将联合分布分解成若干项，每一项都是模型中的一个变量基于其父节点的条件概率。乘积分解公式的推导基于条件概率公式，用到了D-Separation中的链状结构。最终得到乘积分解法则：</p>
+<script type="math/tex; mode=display">
+P(X_1,X_2,...X_n)=\Pi_{i=1}^{n}P(X_i|pa(X_i))</script><p>其中$pa(X_i)$是变量$X_i$的所有父节点。</p>
+<p>下面用一个例子来证明该法则：</p>
+<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/causal12_1.JPG" alt="乘积分解法则例子"></p>
+<p>实际上只要证明下面的等式，而下面的等式只需要根据D-Separation即可得到。</p>
+<p><img src="https://github.com/Peyton-Chen/Picture/raw/master/causal12_2.JPG" alt="乘积分解法则证明"></p>
+<h2 id="13-混淆变量（Confounding-Variable）"><a href="#13-混淆变量（Confounding-Variable）" class="headerlink" title="13.混淆变量（Confounding Variable）"></a>13.混淆变量（Confounding Variable）</h2><ul>
+<li><p>代表原因的变量：Treatment，代表结果的变量：Outcome。</p>
+</li>
+<li><p><strong>混淆变量</strong>（Confounding Variable/Confounder）：同时影响原因和结果的变量。混淆变量会引入非因果的统计相关性。</p>
+</li>
+<li><p><strong>观测数据</strong>（Observational Study） VS <strong>实验数据</strong>（Experiment）</p>
+<ul>
+<li>观测数据是由被动观测和收集产生。观测数据中数据采集源和采集环境没有受到影响和干预。</li>
+<li>实验数据是干预的环境下得到的结果。一般是先干预再观测。</li>
+</ul>
+<p>例如：要想研究锻炼和感冒的关系。随机取选择样本，记录每一个人的锻炼量和感冒次数就属于观测数据。而实验数据：随机选择参与者，其中一部分进行干预（锻炼），而另一部分不进行干预（不锻炼），记录感冒的次数。</p>
+</li>
+<li><p>随机试验一般是先招募试验个体，然后随机的给受验个体指定Treatment和Control，然后再比较Outcome的区别。</p>
+</li>
+<li><p>观测数据中变量可能呈现相关性，但只有试验数据可以直接验证因果关系。因为随机实验能够去掉Confounding的影响。</p>
+</li>
+</ul>
+<h2 id="14-观测数据与试验数据（Observation-Study-And-Experiment）"><a href="#14-观测数据与试验数据（Observation-Study-And-Experiment）" class="headerlink" title="14.观测数据与试验数据（Observation Study And Experiment）"></a>14.观测数据与试验数据（Observation Study And Experiment）</h2><ul>
+<li><p>观测数据中可能体现的仅仅是统计相关性，而可靠的试验数据可能直接揭示因果性，因为观测数据往往受混淆变量的影响，而随机试验可以消除这种影响。</p>
+</li>
+<li><p>随机试验使得试验组和对照组中个体的混淆变量的分布相同，因此Outcome的变化就可以归咎于Treatment的影响。</p>
+</li>
+</ul>
 
                 
             </div>
@@ -1183,7 +1225,7 @@ j \quad & if \ U_z=2 \\
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">36.6k</span>&nbsp;字
+                class="white-color">37.5k</span>&nbsp;字
             
             
             
