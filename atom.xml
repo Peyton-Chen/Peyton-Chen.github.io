@@ -6,7 +6,7 @@
   <link href="https://peyton.github.io/atom.xml" rel="self"/>
   
   <link href="https://peyton.github.io/"/>
-  <updated>2021-07-28T08:44:39.947Z</updated>
+  <updated>2021-08-04T13:46:14.303Z</updated>
   <id>https://peyton.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>DoWhy实战笔记</title>
+    <link href="https://peyton.github.io/2021/08/04/yin-guo-tui-duan/dowhy-shi-zhan-bi-ji/"/>
+    <id>https://peyton.github.io/2021/08/04/yin-guo-tui-duan/dowhy-shi-zhan-bi-ji/</id>
+    <published>2021-08-04T07:16:20.000Z</published>
+    <updated>2021-08-04T13:46:14.303Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;DoWhy实战笔记&quot;&gt;&lt;a href=&quot;#DoWhy实战笔记&quot; class=&quot;headerlink&quot; title=&quot;DoWhy实战笔记&quot;&gt;&lt;/a&gt;DoWhy实战笔记&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;「因果推断」&lt;/strong&gt;（causal</summary>
+        
+      
+    
+    
+    
+    <category term="因果推断" scheme="https://peyton.github.io/categories/%E5%9B%A0%E6%9E%9C%E6%8E%A8%E6%96%AD/"/>
+    
+    
+    <category term="因果推断" scheme="https://peyton.github.io/tags/%E5%9B%A0%E6%9E%9C%E6%8E%A8%E6%96%AD/"/>
+    
+  </entry>
   
   <entry>
     <title>《A Survey on Causal Inference》读书笔记</title>
@@ -495,31 +520,6 @@
     
     
     <category term="字符串处理题" scheme="https://peyton.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PAT甲级1031题（U字型）</title>
-    <link href="https://peyton.github.io/2021/02/20/pat/mo-ni-ti/pat-jia-ji-1031/"/>
-    <id>https://peyton.github.io/2021/02/20/pat/mo-ni-ti/pat-jia-ji-1031/</id>
-    <published>2021-02-20T00:40:44.000Z</published>
-    <updated>2021-02-19T16:05:20.180Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
-    
-    
-    <category term="模拟题" scheme="https://peyton.github.io/tags/%E6%A8%A1%E6%8B%9F%E9%A2%98/"/>
     
   </entry>
   
