@@ -697,7 +697,7 @@ P(X_1,X_2,...X_n)=\Pi_{i=1}^{n}P(X_i|pa(X_i))</script><p>其中$pa(X_i)$是变�
 </ul>
 <h2 id="15-消除混淆：后门准则（Backdoor-Criterion）"><a href="#15-消除混淆：后门准则（Backdoor-Criterion）" class="headerlink" title="15.消除混淆：后门准则（Backdoor Criterion）"></a>15.消除混淆：后门准则（Backdoor Criterion）</h2><p>有了d-分离的概念基础，我们就可以回到一开始提到的混淆的问题，按照之前所述，我们希望消除混淆因子带来的“伪相关”，找出真正的因果关系。一种消除混杂的方法叫<strong>后门准则</strong>（backdoor criterion）。首先需要明确什么是前门路径，什么是后门路径。</p>
 <p><strong>变量$A$和$Y$之间的后门路径就是连接$A$和$Y$但是箭头不从变量$A$出发的路径。</strong>比如：$A \gets L \to Y$，便称为$A$和$Y$之间的后门路径（backdoor path）。而$A\to Y$就是前门路径（frontdoor path）。</p>
-<p>后门准则可以简述如下：<strong>如果我们有足够的数据能够将所有</strong>$A$<strong>和</strong>$Y$之间的后门路径全部阻断，那么我们就可以识别（identify）<strong><img src="https://www.zhihu.com/equation?tex=A" alt="[公式]"></strong>和 <img src="https://www.zhihu.com/equation?tex=Y" alt="[公式]"> <strong>之间的因果关系。</strong></p>
+<p>后门准则可以简述如下：<strong>如果我们有足够的数据能够将所有</strong>$A$<strong>和</strong>$Y$之间的后门路径全部阻断，那么我们就可以识别（identify）$A$<strong>和 $Y$</strong>之间的因果关系。</p>
 <p>简单来说，混淆（confounding）就是因果变量之间的共因。而混淆因子（confounder）就是能够阻断因果变量之间所有后门路径的变量（可能混杂因子不止一个）。这里要特别说明的是，<strong>混淆因子的概念是建立在因果图结构之上的，必须要指定因果图的结构，混杂因子才有意义</strong>。在一个复杂的因果图中，某个变量可能阻断了某两个变量之间的所有后门路径，因此它是某两个变量的混孝因子，但它对另一个路径来说可能并不是混淆因子。因此我们纠缠于谁是混淆因子没有实际意义，有意义的是：以哪个变量为条件可以消除这条路径上的混淆。</p>
 <p>因此，混淆因子也可以被更准确地定义如下：</p>
 <ol>
