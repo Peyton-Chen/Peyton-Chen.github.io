@@ -6,7 +6,7 @@
   <link href="https://peyton.github.io/atom.xml" rel="self"/>
   
   <link href="https://peyton.github.io/"/>
-  <updated>2021-08-04T13:46:14.303Z</updated>
+  <updated>2021-08-05T01:15:57.335Z</updated>
   <id>https://peyton.github.io/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>《因果推断入门》学习笔记</title>
+    <link href="https://peyton.github.io/2021/08/05/yin-guo-tui-duan/yin-guo-tui-duan-ru-men-bi-ji/"/>
+    <id>https://peyton.github.io/2021/08/05/yin-guo-tui-duan/yin-guo-tui-duan-ru-men-bi-ji/</id>
+    <published>2021-08-05T07:16:20.000Z</published>
+    <updated>2021-08-05T01:15:57.335Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;《因果推断入门》学习笔记&quot;&gt;&lt;a href=&quot;#《因果推断入门》学习笔记&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="因果推断" scheme="https://peyton.github.io/categories/%E5%9B%A0%E6%9E%9C%E6%8E%A8%E6%96%AD/"/>
+    
+    
+    <category term="因果推断" scheme="https://peyton.github.io/tags/%E5%9B%A0%E6%9E%9C%E6%8E%A8%E6%96%AD/"/>
+    
+  </entry>
+  
+  <entry>
     <title>DoWhy实战笔记</title>
     <link href="https://peyton.github.io/2021/08/04/yin-guo-tui-duan/dowhy-shi-zhan-bi-ji/"/>
     <id>https://peyton.github.io/2021/08/04/yin-guo-tui-duan/dowhy-shi-zhan-bi-ji/</id>
     <published>2021-08-04T07:16:20.000Z</published>
-    <updated>2021-08-04T13:46:14.303Z</updated>
+    <updated>2021-08-05T00:56:15.726Z</updated>
     
     
       
@@ -54,31 +79,6 @@
         
         
     <summary type="html">&lt;h1 id=&quot;《A-Survey-on-Causal-Inference》读书笔记&quot;&gt;&lt;a href=&quot;#《A-Survey-on-Causal-Inference》读书笔记&quot; class=&quot;headerlink&quot; title=&quot;《A Survey on Causal</summary>
-        
-      
-    
-    
-    
-    <category term="因果推断" scheme="https://peyton.github.io/categories/%E5%9B%A0%E6%9E%9C%E6%8E%A8%E6%96%AD/"/>
-    
-    
-    <category term="因果推断" scheme="https://peyton.github.io/tags/%E5%9B%A0%E6%9E%9C%E6%8E%A8%E6%96%AD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>《因果推断入门》学习笔记</title>
-    <link href="https://peyton.github.io/2021/07/18/yin-guo-tui-duan/yin-guo-tui-duan-ru-men-bi-ji/"/>
-    <id>https://peyton.github.io/2021/07/18/yin-guo-tui-duan/yin-guo-tui-duan-ru-men-bi-ji/</id>
-    <published>2021-07-18T07:16:20.000Z</published>
-    <updated>2021-07-29T01:36:30.041Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;《因果推断入门》学习笔记&quot;&gt;&lt;a href=&quot;#《因果推断入门》学习笔记&quot; class=&quot;headerlink&quot;</summary>
         
       
     
