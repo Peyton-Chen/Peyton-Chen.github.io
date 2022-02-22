@@ -434,12 +434,12 @@
    通过执行这条命令，便会在当前文件夹下创建Scrapy的大致模板了。</li>
 </ol>
 <hr>
-<ol start="2">
+<ol>
 <li>进入工程文件夹，在终端输入：<pre class="line-numbers language-none"><code class="language-none">scrapy genspider (爬虫py的名字) （爬取的范围）<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </li>
 </ol>
 <hr>
-<ol start="3">
+<ol>
 <li>在items.py中添加item项。<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># -*- coding: utf-8 -*-</span>
 
 <span class="token comment"># Define here the models for your scraped items</span>
@@ -465,7 +465,7 @@
 </li>
 </ol>
 <hr>
-<ol start="4">
+<ol>
 <li>进入前面生成的爬虫py文件中，进行爬取方法的定义。<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># -*- coding: utf-8 -*-</span>
 
 <span class="token comment"># 导入第三方库scrapy以及自定义库items中的Item类DdpythonItem</span>
@@ -510,7 +510,7 @@
 </li>
 </ol>
 <hr>
-<ol start="5">
+<ol>
 <li>在pipelines.py文件中，将item中提取的数据保存下来。<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># -*- coding: utf-8 -*-</span>
 
 <span class="token comment"># Define your item pipelines here</span>
@@ -552,7 +552,7 @@
 </li>
 </ol>
 <hr>
-<ol start="6">
+<ol>
 <li>在settings.py中,将pipelines的配置打开<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># -*- coding: utf-8 -*-</span>
 
 <span class="token comment"># Scrapy settings for DDPython project</span>
@@ -646,7 +646,7 @@ ITEM_PIPELINES <span class="token operator">=</span> <span class="token punctuat
 </li>
 </ol>
 <hr>
-<ol start="7">
+<ol>
 <li>进入工作目录文件夹，输入以下命令启动爬虫：<pre class="line-numbers language-none"><code class="language-none">scrapy crawl (爬虫名)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
 </ol>
 

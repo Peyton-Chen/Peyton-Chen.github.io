@@ -422,7 +422,7 @@
             <div id="articleContent">
                 <p>这期可能是关于Java的最后一期更新了！期末考试即将来临，老师终于官方的发题目啦！这让我倍感涕零。下面二话不说就抛代码了~</p>
 <h3 id="题一（基本循环、选择语句）"><a href="#题一（基本循环、选择语句）" class="headerlink" title="题一（基本循环、选择语句）"></a>题一（基本循环、选择语句）</h3><p> 编写Demo.java，输出10～100以内既能被2整除，又能被3整除的整数，要求每行只能打印5个数。</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Demo</span> <span class="token punctuation">{</span>
+<h2 id=""><a href="#" class="headerlink" title=""></a><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Demo</span> <span class="token punctuation">{</span>
 	<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> agrs<span class="token punctuation">)</span> <span class="token punctuation">{</span>
 		<span class="token keyword">int</span> count<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
 		<span class="token class-name">String</span> s<span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">;</span>
@@ -444,9 +444,7 @@
 		<span class="token punctuation">}</span>
 		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<hr>
-<h3 id="题二（类变量与类方法操作）"><a href="#题二（类变量与类方法操作）" class="headerlink" title="题二（类变量与类方法操作）"></a>题二（类变量与类方法操作）</h3><p>  编写一汽车类Car，其具有以下属性：</p>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></h2><h3 id="题二（类变量与类方法操作）"><a href="#题二（类变量与类方法操作）" class="headerlink" title="题二（类变量与类方法操作）"></a>题二（类变量与类方法操作）</h3><p>  编写一汽车类Car，其具有以下属性：</p>
 <p>品牌：brand，类型String；发动机排量:engineDisplacement, 类型：double；</p>
 <p>速度：speed，类型double；状态：status，类型boolean；</p>
 <p>最高时速：maxSpeed，类型double</p>
@@ -458,7 +456,7 @@
 <p>熄火：stop( )，当speed为0时，将status值变为false。</p>
 <p>每个方法除改变成员变量外，还要打印出方法执行后的状态和速度。</p>
 <p>试完成Car类的实现，并且编写main方法，实例化一个Car对象，其中品牌为”宝马”，排量2.0，最高时速为160，依次执行启动该汽车，加速到120，再减速到0，最后熄火，要求显示各执行结果。</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Car</span> <span class="token punctuation">{</span>
+<h2 id="-1"><a href="#-1" class="headerlink" title=""></a><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Car</span> <span class="token punctuation">{</span>
 	<span class="token keyword">private</span> <span class="token class-name">String</span> brand<span class="token punctuation">;</span>
 	<span class="token keyword">private</span> <span class="token keyword">double</span> engineDisplacement<span class="token punctuation">;</span>
 	<span class="token keyword">private</span> <span class="token keyword">double</span> speed<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
@@ -507,15 +505,13 @@
 		<span class="token punctuation">}</span>
 		c<span class="token punctuation">.</span><span class="token function">stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<hr>
-<h3 id="题三（异常处理）"><a href="#题三（异常处理）" class="headerlink" title="题三（异常处理）"></a>题三（异常处理）</h3><p>编写一银行类Bank，其中存款余额：balance，要求：</p>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></h2><h3 id="题三（异常处理）"><a href="#题三（异常处理）" class="headerlink" title="题三（异常处理）"></a>题三（异常处理）</h3><p>编写一银行类Bank，其中存款余额：balance，要求：</p>
 <p>(1)构造函数：Bank(int balance)；</p>
 <p>(2)存款操作：deposit( )；</p>
 <p>(3)取款操作：withdraw( )；</p>
 <p>(4)获取余额：getBalance( )；</p>
 <p>编写main函数，实例化Bank对象，初始给定存款100，存入50，打印余额，连续取款120，40，打印余额。要求用自定义异常处理方式解决余额不足的问题。</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Bank</span> <span class="token punctuation">{</span>
+<h2 id="-2"><a href="#-2" class="headerlink" title=""></a><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Bank</span> <span class="token punctuation">{</span>
 	<span class="token keyword">private</span> <span class="token keyword">double</span> balance<span class="token punctuation">;</span>
 	
 	<span class="token keyword">public</span> <span class="token class-name">Bank</span><span class="token punctuation">(</span><span class="token keyword">int</span> balance<span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -556,9 +552,7 @@
 		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"去除40元操作后余额："</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>bk<span class="token punctuation">.</span><span class="token function">getBalance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<hr>
-<h3 id="题四（GUI设计）"><a href="#题四（GUI设计）" class="headerlink" title="题四（GUI设计）"></a>题四（GUI设计）</h3><p> 利用Swing组件编写一个界面大小400×300像素的简易文本编辑器MyTextEditor，要求：</p>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></h2><h3 id="题四（GUI设计）"><a href="#题四（GUI设计）" class="headerlink" title="题四（GUI设计）"></a>题四（GUI设计）</h3><p> 利用Swing组件编写一个界面大小400×300像素的简易文本编辑器MyTextEditor，要求：</p>
 <p>(1)程序启动后，多行文本输入框JTextArea中显示当前目录下myText.txt文件中原有内容，如果该文件不存在，则新建文件；</p>
 <p>(2)保存(按钮)功能：将编辑器界面输入的内容写入myText.txt文件中保存；</p>
 <p>(3)取消(按钮)功能：将文本框中内容清空；</p>

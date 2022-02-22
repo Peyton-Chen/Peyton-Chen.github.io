@@ -393,7 +393,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    763
+                    761
                 </div>
                 
 
@@ -420,20 +420,18 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="语言描述法"><a href="#语言描述法" class="headerlink" title="语言描述法"></a>语言描述法</h2><h3 id="1-结构描述法"><a href="#1-结构描述法" class="headerlink" title="1. 结构描述法"></a>1. 结构描述法</h3><p>这种方法的前提是知道逻辑函数的表达式。下面以2位比较器为例子来进一步说明。</p>
-<pre class="line-numbers language-vhdl" data-language="vhdl"><code class="language-vhdl">AeqB<span class="token operator">&lt;=</span><span class="token function">NOT</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token function">a</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">XOR</span> <span class="token function">b</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">OR</span> <span class="token punctuation">(</span><span class="token function">a</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">XOR</span> <span class="token function">b</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">OR</span><span class="token punctuation">(</span><span class="token function">a</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">XOR</span> <span class="token function">b</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">OR</span> <span class="token punctuation">(</span><span class="token function">a</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span> <span class="token operator">XOR</span> <span class="token function">b</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="2-行为描述法"><a href="#2-行为描述法" class="headerlink" title="2. 行为描述法"></a>2. 行为描述法</h3><p>这种方法从功能上进行编程，效率非常高。</p>
-<pre class="line-numbers language-vhdl" data-language="vhdl"><code class="language-vhdl">AeqB<span class="token operator">&lt;=</span><span class="token number">'1'</span> <span class="token keyword">WHEN</span> a<span class="token operator">=</span>b <span class="token keyword">ELSE</span> <span class="token number">'0'</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h2 id="语言描述法"><a href="#语言描述法" class="headerlink" title="语言描述法"></a>语言描述法</h2><h3 id="1-结构描述法"><a href="#1-结构描述法" class="headerlink" title="1. 结构描述法"></a>1. 结构描述法</h3><p>这种方法的前提是知道逻辑函数的表达式。下面以2位比较器为例子来进一步说明。<br></p><pre class="line-numbers language-vhdl" data-language="vhdl"><code class="language-vhdl">AeqB<span class="token operator">&lt;=</span><span class="token function">NOT</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token function">a</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">XOR</span> <span class="token function">b</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">OR</span> <span class="token punctuation">(</span><span class="token function">a</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">XOR</span> <span class="token function">b</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">OR</span><span class="token punctuation">(</span><span class="token function">a</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">XOR</span> <span class="token function">b</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">OR</span> <span class="token punctuation">(</span><span class="token function">a</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span> <span class="token operator">XOR</span> <span class="token function">b</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p></p>
+<h3 id="2-行为描述法"><a href="#2-行为描述法" class="headerlink" title="2. 行为描述法"></a>2. 行为描述法</h3><p>这种方法从功能上进行编程，效率非常高。<br></p><pre class="line-numbers language-vhdl" data-language="vhdl"><code class="language-vhdl">AeqB<span class="token operator">&lt;=</span><span class="token number">'1'</span> <span class="token keyword">WHEN</span> a<span class="token operator">=</span>b <span class="token keyword">ELSE</span> <span class="token number">'0'</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p></p>
 <h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><ol>
 <li>BIT:位类型，其值只能为‘0’或‘1’。</li>
 <li>Std_Logic标准逻辑类型。</li>
 </ol>
 <p>(1).可以代替BIT和BIT_VECTOR(多位)。</p>
 <p>(2).电路中存在三态逻辑必须用STD_LOGIC和STD_LOGIC_VECTOR。</p>
-<p>(3)在使用Std_Logic数据类型时必须声明库和程序包说明语句：</p>
-<pre class="line-numbers language-vhdl" data-language="vhdl"><code class="language-vhdl"><span class="token constant">LIBRARY</span> ieee<span class="token punctuation">;</span>
-<span class="token constant">USE</span> ieee<span class="token punctuation">.</span>std_logic_1164<span class="token punctuation">.</span><span class="token keyword">ALL</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h2 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h2><table>
+<p>(3)在使用Std_Logic数据类型时必须声明库和程序包说明语句：<br></p><pre class="line-numbers language-vhdl" data-language="vhdl"><code class="language-vhdl"><span class="token constant">LIBRARY</span> ieee<span class="token punctuation">;</span>
+<span class="token constant">USE</span> ieee<span class="token punctuation">.</span>std_logic_1164<span class="token punctuation">.</span><span class="token keyword">ALL</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p></p>
+<h2 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h2><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>运算符</th>
@@ -442,7 +440,8 @@
 <th>功能</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>+</td>
 <td>加</td>
 <td>SLL</td>
@@ -484,51 +483,59 @@
 <td>ABS</td>
 <td>取绝对值</td>
 </tr>
-</tbody></table>
-<h2 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h2><table>
+</tbody>
+</table>
+</div>
+<h2 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h2><div class="table-container">
+<table>
 <thead>
 <tr>
-<th align="left">运算符</th>
-<th align="left">功能</th>
+<th style="text-align:left">运算符</th>
+<th style="text-align:left">功能</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="left">AND</td>
-<td align="left">与</td>
+<tbody>
+<tr>
+<td style="text-align:left">AND</td>
+<td style="text-align:left">与</td>
 </tr>
 <tr>
-<td align="left">OR</td>
-<td align="left">或</td>
+<td style="text-align:left">OR</td>
+<td style="text-align:left">或</td>
 </tr>
 <tr>
-<td align="left">NAND</td>
-<td align="left">与非</td>
+<td style="text-align:left">NAND</td>
+<td style="text-align:left">与非</td>
 </tr>
 <tr>
-<td align="left">NOR</td>
-<td align="left">或非</td>
+<td style="text-align:left">NOR</td>
+<td style="text-align:left">或非</td>
 </tr>
 <tr>
-<td align="left">XOR</td>
-<td align="left">亦或</td>
+<td style="text-align:left">XOR</td>
+<td style="text-align:left">亦或</td>
 </tr>
 <tr>
-<td align="left">XNOR</td>
-<td align="left">亦或非</td>
+<td style="text-align:left">XNOR</td>
+<td style="text-align:left">亦或非</td>
 </tr>
 <tr>
-<td align="left">NOT</td>
-<td align="left">非</td>
+<td style="text-align:left">NOT</td>
+<td style="text-align:left">非</td>
 </tr>
-</tbody></table>
-<h2 id="其他运算符"><a href="#其他运算符" class="headerlink" title="其他运算符"></a>其他运算符</h2><table>
+</tbody>
+</table>
+</div>
+<h2 id="其他运算符"><a href="#其他运算符" class="headerlink" title="其他运算符"></a>其他运算符</h2><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>运算符</th>
 <th>功能</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>+</td>
 <td>正</td>
 </tr>
@@ -540,7 +547,9 @@
 <td>&amp;</td>
 <td>并置</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h2 id="VHDL程序基本结构"><a href="#VHDL程序基本结构" class="headerlink" title="VHDL程序基本结构"></a>VHDL程序基本结构</h2><pre class="line-numbers language-vhdl" data-language="vhdl"><code class="language-vhdl"><span class="token constant">LIBRARY</span> ieee<span class="token punctuation">;</span>
 <span class="token constant">USE</span> ieee<span class="token punctuation">.</span>std_logic_1164<span class="token punctuation">.</span><span class="token keyword">ALL</span><span class="token punctuation">;</span>    <span class="token comment">--库说明</span>
 
@@ -587,8 +596,7 @@ X<span class="token operator">&lt;=</span> a <span class="token keyword">WHEN</s
 <p>（1）顺序赋值语句</p>
 <p>变量赋值目标：=赋值源</p>
 <p>信号赋值目标：&lt;=赋值源</p>
-<p>（2）IF语句</p>
-<pre class="line-numbers language-vhdl" data-language="vhdl"><code class="language-vhdl"><span class="token keyword">IF</span> 条件句 <span class="token keyword">THEN</span>
+<p>（2）IF语句<br></p><pre class="line-numbers language-vhdl" data-language="vhdl"><code class="language-vhdl"><span class="token keyword">IF</span> 条件句 <span class="token keyword">THEN</span>
     顺序语句
 <span class="token keyword">ELSE</span>
     顺序语句
@@ -600,16 +608,12 @@ X<span class="token operator">&lt;=</span> a <span class="token keyword">WHEN</s
     顺序语句
    <span class="token keyword">ELSE</span>
     顺序语句
-<span class="token keyword">END</span> <span class="token keyword">IF</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>(3)CASE_WHEN语句</p>
-<pre class="line-numbers language-vhdl" data-language="vhdl"><code class="language-vhdl"><span class="token keyword">CASE</span> 表达式 <span class="token keyword">IS</span>
+<span class="token keyword">END</span> <span class="token keyword">IF</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>(3)CASE_WHEN语句<br><pre class="line-numbers language-vhdl" data-language="vhdl"><code class="language-vhdl"><span class="token keyword">CASE</span> 表达式 <span class="token keyword">IS</span>
     <span class="token keyword">WHEN</span> 选择值<span class="token operator">=</span><span class="token operator">&gt;</span>顺序语句；
     ………
     <span class="token keyword">WHEN</span> 选择值<span class="token operator">=</span><span class="token operator">&gt;</span>顺序语句；
     <span class="token punctuation">[</span><span class="token keyword">WHEN</span> <span class="token keyword">OTHERS</span><span class="token operator">=</span><span class="token operator">&gt;</span>顺序语句；<span class="token punctuation">]</span>
-<span class="token keyword">END</span> <span class="token keyword">CASE</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>下面以四选一数据选择器为例：</p>
-<pre class="line-numbers language-vhdl" data-language="vhdl"><code class="language-vhdl">mux4_1<span class="token punctuation">:</span><span class="token keyword">PROCESS</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>c<span class="token punctuation">,</span>d<span class="token punctuation">,</span>s<span class="token punctuation">)</span>
+<span class="token keyword">END</span> <span class="token keyword">CASE</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>下面以四选一数据选择器为例：<br><pre class="line-numbers language-vhdl" data-language="vhdl"><code class="language-vhdl">mux4_1<span class="token punctuation">:</span><span class="token keyword">PROCESS</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>c<span class="token punctuation">,</span>d<span class="token punctuation">,</span>s<span class="token punctuation">)</span>
     <span class="token keyword">BEGIN</span>
         <span class="token keyword">CASE</span> s <span class="token keyword">IS</span>
             <span class="token keyword">WHEN</span><span class="token vhdl-vectors number">"00"</span><span class="token operator">=</span><span class="token operator">&gt;</span> x<span class="token operator">&lt;=</span>a<span class="token punctuation">;</span>
@@ -617,7 +621,7 @@ X<span class="token operator">&lt;=</span> a <span class="token keyword">WHEN</s
             <span class="token keyword">WHEN</span><span class="token vhdl-vectors number">"10"</span><span class="token operator">=</span><span class="token operator">&gt;</span> x<span class="token operator">&lt;=</span>c<span class="token punctuation">;</span>
             <span class="token keyword">WHEN</span> <span class="token keyword">OTHERS</span><span class="token operator">=</span><span class="token operator">&gt;</span> x<span class="token operator">&lt;=</span>d<span class="token punctuation">;</span>
         <span class="token keyword">END</span> <span class="token keyword">CASE</span><span class="token punctuation">;</span>
-    <span class="token keyword">END</span> <span class="token keyword">PROCESS</span> mux4_1<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    <span class="token keyword">END</span> <span class="token keyword">PROCESS</span> mux4_1<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p></p>
 <h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><pre class="line-numbers language-vhdl" data-language="vhdl"><code class="language-vhdl"><span class="token comment">---变量声明</span>
 <span class="token keyword">VARIABLE</span> tmp<span class="token punctuation">:</span> Bit<span class="token punctuation">;</span>
 <span class="token comment">---整体赋值</span>

@@ -422,7 +422,7 @@
             <div id="articleContent">
                 <p>时间之矢稍纵即逝，接近2周就要Java期末考了。作为一个一学期没怎么认真听Java课的我来说，内心波澜起伏。借着空余的时间，把Java的重点稍微总结了一下，下面就以涵盖全书的4个例子展开。</p>
 <h3 id="题1-数组-："><a href="#题1-数组-：" class="headerlink" title="题1(数组)："></a>题1(数组)：</h3><p>使用Scanner输入n个数(小于100)，并将之升序输出。</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">Scanner</span><span class="token punctuation">;</span>
+<h2 id=""><a href="#" class="headerlink" title=""></a><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">Scanner</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">Arrays</span><span class="token punctuation">;</span>
 
 <span class="token keyword">public</span> <span class="token keyword">class</span> haha <span class="token punctuation">{</span>
@@ -438,12 +438,10 @@
 			<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>xiang<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 		<span class="token punctuation">}</span>
 	<span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<hr>
-<h3 id="题2-继承-："><a href="#题2-继承-：" class="headerlink" title="题2(继承)："></a>题2(继承)：</h3><p>（1）编写一个圆类Circle，该类拥有：<br>①一个成员变量<br>Radius（私有，浮点型）；  // 存放圆的半径；<br>②两个构造方法<br>    Circle( )           // 将半径设为0<br>    Circle(double  r )         //创建Circle对象时将半径初始化为r<br>③ 三个成员方法<br>    double getArea( )       //获取圆的面积<br>    double getPerimeter( )   //获取圆的周长<br>     void  show( )          //将圆的半径、周长、面积输出到屏幕<br>（2）编写一个圆柱体类Cylinder，它继承于上面的Circle类。还拥有：<br>①一个成员变量<br>    double hight（私有，浮点型）；  // 圆柱体的高；<br>②构造方法<br>    Cylinder (double r, double  h )      //创建Circle对象时将半径初始化为r<br>③ 成员方法<br>    double getVolume( )             //获取圆柱体的体积<br>    void  showVolume( )             //将圆柱体的体积输出到屏幕<br>编写应用程序，创建类的对象，分别设置圆的半径、圆柱体的高，计算并分别显示圆半径、圆面积、圆周长，圆柱体的体积。</p>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></h2><h3 id="题2-继承-："><a href="#题2-继承-：" class="headerlink" title="题2(继承)："></a>题2(继承)：</h3><p>（1）编写一个圆类Circle，该类拥有：<br>①一个成员变量<br>Radius（私有，浮点型）；  // 存放圆的半径；<br>②两个构造方法<br>    Circle( )           // 将半径设为0<br>    Circle(double  r )         //创建Circle对象时将半径初始化为r<br>③ 三个成员方法<br>    double getArea( )       //获取圆的面积<br>    double getPerimeter( )   //获取圆的周长<br>     void  show( )          //将圆的半径、周长、面积输出到屏幕<br>（2）编写一个圆柱体类Cylinder，它继承于上面的Circle类。还拥有：<br>①一个成员变量<br>    double hight（私有，浮点型）；  // 圆柱体的高；<br>②构造方法<br>    Cylinder (double r, double  h )      //创建Circle对象时将半径初始化为r<br>③ 成员方法<br>    double getVolume( )             //获取圆柱体的体积<br>    void  showVolume( )             //将圆柱体的体积输出到屏幕<br>编写应用程序，创建类的对象，分别设置圆的半径、圆柱体的高，计算并分别显示圆半径、圆面积、圆周长，圆柱体的体积。</p>
 <hr>
 <p>Circle.java:</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Circle</span> <span class="token punctuation">{</span>
+<h2 id="-1"><a href="#-1" class="headerlink" title=""></a><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Circle</span> <span class="token punctuation">{</span>
 	<span class="token keyword">private</span> <span class="token keyword">double</span> <span class="token class-name">Radius</span><span class="token punctuation">;</span>
 	
 	<span class="token keyword">public</span> <span class="token class-name">Circle</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -467,10 +465,8 @@
 		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"圆面积："</span><span class="token operator">+</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getArea</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"圆周长:"</span><span class="token operator">+</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getPerimeter</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<hr>
-<p>Cylinder.java</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Cylinder</span> <span class="token keyword">extends</span> <span class="token class-name">Circle</span> <span class="token punctuation">{</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></h2><p>Cylinder.java</p>
+<h2 id="-2"><a href="#-2" class="headerlink" title=""></a><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Cylinder</span> <span class="token keyword">extends</span> <span class="token class-name">Circle</span> <span class="token punctuation">{</span>
 	<span class="token keyword">private</span> <span class="token keyword">double</span> hight<span class="token punctuation">;</span>
 	
 	<span class="token keyword">public</span> <span class="token class-name">Cylinder</span><span class="token punctuation">(</span><span class="token keyword">double</span> r<span class="token punctuation">,</span><span class="token keyword">double</span> h<span class="token punctuation">)</span><span class="token punctuation">{</span>
@@ -491,22 +487,18 @@
 		obj<span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 		obj<span class="token punctuation">.</span><span class="token function">showVolume</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<hr>
-<h3 id="题3-抽象类"><a href="#题3-抽象类" class="headerlink" title="题3(抽象类)"></a>题3(抽象类)</h3><p>1.设计Person抽象类，具有年龄、性别、体重、身高等属性，其中年龄、性别为一般方法，体重、身高为抽象方法；</p>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></h2><h3 id="题3-抽象类"><a href="#题3-抽象类" class="headerlink" title="题3(抽象类)"></a>题3(抽象类)</h3><p>1.设计Person抽象类，具有年龄、性别、体重、身高等属性，其中年龄、性别为一般方法，体重、身高为抽象方法；</p>
 <p>2.在Person抽象类基础上，进一步派生Teacher类，包含工号、系别等信息；</p>
 <p>3.设计Teacher测试运行例子，输出相应信息。</p>
 <hr>
 <p>Person.java</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+<h2 id="-3"><a href="#-3" class="headerlink" title=""></a><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
 	<span class="token keyword">void</span> <span class="token function">setAge</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
 	<span class="token keyword">void</span> <span class="token function">setSex</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
 	<span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">setWeight</span><span class="token punctuation">(</span><span class="token keyword">double</span> weight<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token keyword">abstract</span> <span class="token keyword">void</span> <span class="token function">setHeight</span><span class="token punctuation">(</span><span class="token keyword">double</span> height<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<hr>
-<p>Teacher.java</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Teacher</span> <span class="token keyword">extends</span> <span class="token class-name">Person</span><span class="token punctuation">{</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></h2><p>Teacher.java</p>
+<h2 id="-4"><a href="#-4" class="headerlink" title=""></a><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Teacher</span> <span class="token keyword">extends</span> <span class="token class-name">Person</span><span class="token punctuation">{</span>
 	<span class="token keyword">private</span> <span class="token keyword">int</span> age<span class="token punctuation">;</span>
 	<span class="token keyword">private</span> <span class="token class-name">String</span> sex<span class="token punctuation">;</span>
 	<span class="token keyword">private</span> <span class="token keyword">double</span> weight<span class="token punctuation">;</span>
@@ -562,17 +554,15 @@
 		t<span class="token punctuation">.</span><span class="token function">setNumber</span><span class="token punctuation">(</span><span class="token string">"1801"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 		t<span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<hr>
-<h3 id="题4-接口-："><a href="#题4-接口-：" class="headerlink" title="题4(接口)："></a>题4(接口)：</h3><ol>
-<li>   设计Person接口，具有获取和设置年龄、性别、体重、身高等属性的方法</li>
-<li>   设计Teacher类实现Person接口，包含工号、系别等信息；实现信息输出功能；</li>
-<li>   设计Student类实现Person接口，包含学号信息；实现输出功能；</li>
-<li>   设计Student、Tercher测试运行类，体现接口的应用</li>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></h2><h3 id="题4-接口-："><a href="#题4-接口-：" class="headerlink" title="题4(接口)："></a>题4(接口)：</h3><ol>
+<li>设计Person接口，具有获取和设置年龄、性别、体重、身高等属性的方法</li>
+<li>设计Teacher类实现Person接口，包含工号、系别等信息；实现信息输出功能；</li>
+<li>设计Student类实现Person接口，包含学号信息；实现输出功能；</li>
+<li>设计Student、Tercher测试运行类，体现接口的应用</li>
 </ol>
 <hr>
 <p>Person.java</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+<h2 id="-5"><a href="#-5" class="headerlink" title=""></a><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
 	<span class="token keyword">void</span> <span class="token function">setAge</span><span class="token punctuation">(</span><span class="token keyword">int</span> age<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token keyword">int</span> <span class="token function">getaAge</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token keyword">void</span> <span class="token function">setSex</span><span class="token punctuation">(</span><span class="token class-name">String</span> sex<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -582,9 +572,7 @@
 	<span class="token keyword">void</span> <span class="token function">setWeight</span><span class="token punctuation">(</span><span class="token keyword">double</span> <span class="token class-name">W</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token keyword">double</span> <span class="token function">getWeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token keyword">void</span> <span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<hr>
-<p>Teacher.java</p>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></h2><p>Teacher.java</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Teacher</span> <span class="token keyword">implements</span> <span class="token class-name">Person</span><span class="token punctuation">{</span>
 	<span class="token keyword">private</span> <span class="token keyword">int</span> age<span class="token punctuation">;</span>
 	<span class="token keyword">private</span> <span class="token class-name">String</span> sex<span class="token punctuation">;</span>
