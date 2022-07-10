@@ -6,7 +6,7 @@
   <link href="https://peyton.github.io/atom.xml" rel="self"/>
   
   <link href="https://peyton.github.io/"/>
-  <updated>2022-06-09T14:11:47.688Z</updated>
+  <updated>2022-07-10T03:23:56.901Z</updated>
   <id>https://peyton.github.io/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2022年轻薄本汇总</title>
+    <link href="https://peyton.github.io/2022/07/10/2022-nian-qing-bo-ben-hui-zong/"/>
+    <id>https://peyton.github.io/2022/07/10/2022-nian-qing-bo-ben-hui-zong/</id>
+    <published>2022-07-10T03:20:55.000Z</published>
+    <updated>2022-07-10T03:23:56.901Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;2022年13寸、14寸中高端轻薄本推荐&quot;&gt;&lt;a href=&quot;#2022年13寸、14寸中高端轻薄本推荐&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="电脑测评" scheme="https://peyton.github.io/categories/%E7%94%B5%E8%84%91%E6%B5%8B%E8%AF%84/"/>
+    
+    
+    <category term="电脑测评" scheme="https://peyton.github.io/tags/%E7%94%B5%E8%84%91%E6%B5%8B%E8%AF%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PS学习笔记</title>
+    <link href="https://peyton.github.io/2022/06/22/ps-xue-xi-bi-ji/"/>
+    <id>https://peyton.github.io/2022/06/22/ps-xue-xi-bi-ji/</id>
+    <published>2022-06-22T00:56:55.000Z</published>
+    <updated>2022-06-23T01:30:58.526Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;快捷键&quot;&gt;&lt;a href=&quot;#快捷键&quot; class=&quot;headerlink&quot; title=&quot;快捷键&quot;&gt;&lt;/a&gt;快捷键&lt;/h2&gt;&lt;div class=&quot;table-container&quot;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th</summary>
+        
+      
+    
+    
+    
+    <category term="PS" scheme="https://peyton.github.io/categories/PS/"/>
+    
+    
+    <category term="PS" scheme="https://peyton.github.io/tags/PS/"/>
+    
+  </entry>
   
   <entry>
     <title>解锁MacBook的正确方式</title>
@@ -454,56 +508,6 @@
     <id>https://peyton.github.io/2021/02/21/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1035/</id>
     <published>2021-02-21T04:00:44.000Z</published>
     <updated>2021-02-21T02:50:52.645Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
-    
-    
-    <category term="字符串处理题" scheme="https://peyton.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PAT甲级1036题（男孩女孩）</title>
-    <link href="https://peyton.github.io/2021/02/21/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1036/"/>
-    <id>https://peyton.github.io/2021/02/21/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1036/</id>
-    <published>2021-02-21T04:00:44.000Z</published>
-    <updated>2021-02-21T03:42:42.477Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
-    
-    
-    <category term="字符串处理题" scheme="https://peyton.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PAT甲级1050题（去重子串）</title>
-    <link href="https://peyton.github.io/2021/02/20/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1050/"/>
-    <id>https://peyton.github.io/2021/02/20/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1050/</id>
-    <published>2021-02-20T02:00:44.000Z</published>
-    <updated>2021-02-20T02:09:18.635Z</updated>
     
     
       
