@@ -6,7 +6,7 @@
   <link href="https://peyton.github.io/atom.xml" rel="self"/>
   
   <link href="https://peyton.github.io/"/>
-  <updated>2022-07-10T05:13:16.772Z</updated>
+  <updated>2022-07-21T07:28:27.429Z</updated>
   <id>https://peyton.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Networks学习笔记</title>
+    <link href="https://peyton.github.io/2022/07/21/networks-xue-xi-bi-ji/"/>
+    <id>https://peyton.github.io/2022/07/21/networks-xue-xi-bi-ji/</id>
+    <published>2022-07-21T00:56:55.000Z</published>
+    <updated>2022-07-21T07:28:27.429Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Networks学习笔记&quot;&gt;&lt;a href=&quot;#Networks学习笔记&quot; class=&quot;headerlink&quot; title=&quot;Networks学习笔记&quot;&gt;&lt;/a&gt;Networks学习笔记&lt;/h1&gt;&lt;h2 id=&quot;第二部分——网络理论基础&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Network Science" scheme="https://peyton.github.io/categories/Network-Science/"/>
+    
+    
+    <category term="Network Science" scheme="https://peyton.github.io/tags/Network-Science/"/>
+    
+  </entry>
   
   <entry>
     <title>2022年轻薄本汇总</title>
@@ -483,31 +508,6 @@
     <id>https://peyton.github.io/2021/02/21/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1006/</id>
     <published>2021-02-21T04:00:44.000Z</published>
     <updated>2021-02-21T02:20:07.794Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1-题目介绍&quot;&gt;&lt;a href=&quot;#1-题目介绍&quot; class=&quot;headerlink&quot; title=&quot;1.题目介绍&quot;&gt;&lt;/a&gt;1.题目介绍&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="PAT" scheme="https://peyton.github.io/categories/PAT/"/>
-    
-    
-    <category term="字符串处理题" scheme="https://peyton.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PAT甲级1035题（密码）</title>
-    <link href="https://peyton.github.io/2021/02/21/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1035/"/>
-    <id>https://peyton.github.io/2021/02/21/pat/zi-fu-chuan-chu-li-ti/pat-jia-ji-1035/</id>
-    <published>2021-02-21T04:00:44.000Z</published>
-    <updated>2021-02-21T02:50:52.645Z</updated>
     
     
       
